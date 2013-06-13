@@ -51,7 +51,6 @@ div.chaseui-pagetitle{
     }
 }
 
-
 .chaseui-form{
     margin-top:30px;
     @include span-columns(15,20);
@@ -84,30 +83,56 @@ div.chaseui-pagetitle{
         clear:both;
         div.chaseui-intro{
             @include span-columns(15 omega,15);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
         }
-        .chaseui-fields{
-             @include span-columns(10,15);    
+        .chaseui-formnav{
+            @include span-columns(15 omega,15);
+            border-top: 1px solid #ccc;
+            margin-bottom:100px;
+            button{
+                float:right;
+                width:190px;
+            }
         }
         input{
             border-radius: 6px;
             border: 1px solid #9c9c9c;
-            padding: 7px 5px;
+            padding: 10px 5px;
             color: #666;
             background-color: #f2f2f2;
             font-size: 0.8em;
             font-family: verdana, helvetica, arial;
             @include input-placeholder(#666);
+            margin-right: 16px;
+            margin-bottom:30px;
             &.first_name{
-                width:125px;
+                width:185px;
             }
             &.middle_name{
                 width:30px;
             }
             &.last_name{
-                width:125px;
+                width:185px;
             }
             &.suffix{
                 width:30px;
+            }
+            &.address{
+                width:335px;
+            }
+            &.city{
+                width:235px;
+            }
+            &.state{
+                width:110px;
+            }
+            &.zip{
+                width:80px;
+            }
+            &.phone{
+                width:185px;
             }
         }   
     }
@@ -126,20 +151,35 @@ div.chaseui-pagetitle{
     display:none;
 }
 .chaseui-voice{
-    font-size:0.5em; 
     @include span-columns(5 omega,20);
-    background-color:#f0ede6;
-    min-height:400px;
     margin:10px 0px;
-    border-radius:15px;
-    
+    .inner{
+        width:75%;
+        border:1px solid #333;
+        font-size:0.5em; 
+        background-color:#f0ede6;
+        min-height:565px;
+        margin:0 auto;
+        border-radius:15px;
+        padding:0px 30px;
+    }
 }
+
+
+
+
+
+//BREAK POINTS
 @include at-breakpoint($mini) {
+    .chaseui-voice{display:none;}
     div.chaseui-pagebody, div.chaseui-container{
         @include container;
     }
     .chaseui-form{
         @include span-columns(5,5);
+        .chaseui-fields{
+            @include span-columns(5,5);
+        }
     }
     .chaseui-voice{
         @include span-columns(5,5);
@@ -157,7 +197,9 @@ div.chaseui-pagetitle{
         }
     }
 }
+
 @include at-breakpoint($mobile) {
+    .chaseui-voice{display:none;}
     div.chaseui-pagebody, div.chaseui-container{
         @include container;
     }
@@ -165,8 +207,8 @@ div.chaseui-pagetitle{
         @include span-columns(8,8);
         input{width:30px;}
         form{
-            .group1, .group2, .groups3{
-                @include span-columns(8 omega,8);
+            .chaseui-fields{
+                @include span-columns(6,8);
             }
         }
     }
@@ -185,10 +227,16 @@ div.chaseui-pagetitle{
     }
     .chaseui-form{
         @include span-columns(8,12);
+        .chaseui-fields{
+                @include span-columns(8,8);
+
+            }
+        div.chaseui-intro{
+            @include span-columns(8 omega,8);
+        }
     }
     .chaseui-voice{
         @include span-columns(4 omega,12);
-        min-height:100px;
     } 
  
 }
@@ -198,6 +246,12 @@ div.chaseui-pagetitle{
     }
     .chaseui-form{
         @include span-columns(10,14);
+        .chaseui-fields{
+            @include span-columns(8,10);
+        }
+        div.chaseui-intro{
+            @include span-columns(10 omega,10);
+        }
     }
     .chaseui-voice{
         @include span-columns(4 omega,14);
@@ -209,6 +263,9 @@ div.chaseui-pagetitle{
     }
     .chaseui-form{
         @include span-columns(12,16);
+        .chaseui-fields{
+            @include span-columns(8,12);
+        }
     }
     .chaseui-voice{
         @include span-columns(4 omega,16);
@@ -220,6 +277,9 @@ div.chaseui-pagetitle{
     }
     .chaseui-form{
         @include span-columns(15,20);
+        .chaseui-fields{
+            @include span-columns(8,15);
+        }
     }
     .chaseui-voice{
         @include span-columns(5 omega,20);
