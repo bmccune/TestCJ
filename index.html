@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+        // function to check browser type (this will be replaced with server side logic at some point...)
+        (function () {
+            var ua = navigator.userAgent;
+            var ie = /MSIE/.test(ua) && ua.replace(/.*?MSIE (.).*/, "$1");
+            var ff = /Firefox/.test(ua) && ua.replace(/.*?Firefox\/(.)\.(.).*/, "$1_$2");
+            var safari = /Safari/.test(ua) && ua.replace(/.*?Version\/(.).*/, "$1");
+            var chrome = /Chrome/.test(ua) && ua.replace(/.*?Chrome\/(.).*/, "$1");
+            var opera = /Opera/.test(ua) && ua.replace(/.*?Opera\/(.).*/, "$1");
+            document.getElementsByTagName("html")[0].className = "js" + (ie ? " ie ie" + ie : ff ? " ff ff" + ff : chrome ? " chrome chrome" + chrome : safari ? " safari safari" + safari : opera ? " opera opera" + opera : "");
+        })();
+    </script>
+
+    <!-- minimum scripts to load.  All others will be loaded via requirejs dependencies -->
+    <!-- end minimum scripts to load -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+    
+    <title>NCJ Concept 3</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://lesscss.org/js/less.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <div class="chaseui-container">
+            <h1 class="chaseui-pagelogo">CHASE</h1>
+            <ul class="chaseui-utilitynav">
+                <li>Call Now 888-888-8888</li>
+                <li class="chaseutil-border-right">Save and Continue Later</li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        
+    </nav>
+    <div class="chaseui-pagetitle">
+        <div class="chaseui-container">
+            <h2>Chase Sapphire <i>Preferred<sup>&reg;</sup></i> Card Application</h2>
+        </div>
+    </div>
+    <div class="chaseui-pagebody">
+        <div class="chaseui-form"> 
+            <ul class="chaseui-progress">
+                <li class="chaseui-progress-step1 active">step1</li>
+                <li class="chaseui-progress-step2">step2</li>
+                <li class="chaseui-progress-step3">step3</li>
+            </ul>
+            <form>
+                <div class="chaseui-intro">
+                    <h3>Tell us about your self and get <strong>started in minutes!</strong></h3>
+                    <button class="chaseui-button chaseui-button-facebook">
+                            <i class="chaseui-icon chaseui-icon-facebook"></i> Sign in with Facebook
+                    </button>
+                    <button class="chaseui-button chaseui-primary">Provide Info Manually</button>
+                </div>
+                <div class="chaseui-fields">  
+                    <input class="first_name" type="text" name="first_name" placeholder="First Name" size="20">
+                    <input class="middle_name" type="text" name="middle_name" placeholder="M.I." size="2">
+                    <input class="last_name" type="text" name="last_name" placeholder="Last Name" size="20">
+                    <input type="text" name="home_address" placeholder="Home Address" size="35">
+                    <input type="text" name="apt_number" placeholder="Unit/Apt">
+                    <input class="chaseui-input-zip" type="text" name="zip_code" placeholder="Zip Code" size="9">
+                    <div class="zipcodehelp">You don't need to provide alimony, child support or other maintenance income.</div>
+                    <input type="text" name="zip_code" placeholder="Primary phone number" size="20">
+                    Date of Birth: <input type="date" name="bday">
+                </div>
+                <div class="chasui-formnav">
+                    <button class="chaseui-button chaseui-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="chaseui-voice">
+            <h2><span class="chaseutil-stronger">"</span>Thank you for choosing Chase.</h2>
+            <p>Our 3 step application is easy and will only take a few minutes. You'll need to provide us your social security and some financial information We're serious about your security and will keep your information safe and confidential.</p>
+            <h3>As a cardholder you'll have access to:</h3>
+            <ul>
+                <li>Lorem ipsume dolor sit amet</li>
+                <li>Ut labore et dolore</li>
+                <li>Lorem ipsume dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+<script>
+    $(function() {
+     .chaseui-input-zip
+    });    
+</script>
+</html>

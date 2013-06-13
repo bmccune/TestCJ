@@ -1,0 +1,227 @@
+@mixin input-placeholder($color) {
+      &.placeholder {
+        color: $color; 
+        }
+      &:-moz-placeholder {
+        color: $color; 
+        }
+      &::-webkit-input-placeholder {
+        color: $color; 
+        } 
+    }
+div.chaseui-pagebody, div.chaseui-container{
+    @include container;
+}
+div.chaseui-pagetitle{
+    background-color:#061F58;
+    background-image: url('../images/Headerbackground.svg');
+    background-position-x: 0px;
+    background-size: 100%;
+    h2{
+        @include span-columns(20,20);
+        color:#fff;
+        font-size: 1.7em;
+        padding:10px 0px;
+        text-shadow: 0.1em 0.1em 0.05em #333;
+
+    }
+}
+.leftnav{
+    height:200px;
+    background-color:#555;
+    @include span-columns(5,20);
+}
+.rightblock{
+    height:200px;
+    @include span-columns(15 omega,20);
+    .block1{
+        height:100px;
+        background-color:#000;
+        @include span-columns(5,15);
+    }
+    .block2{
+        height:100px;
+        background-color:#111;
+        @include span-columns(5,15);
+    }
+    .block3{
+        height:100px;
+        background-color:#222;
+        @include span-columns(5 omega,15);
+    }
+}
+
+
+.chaseui-form{
+    margin-top:30px;
+    @include span-columns(15,20);
+    ul{
+        margin:0px;
+        padding:0px;
+    }
+    ul.chaseui-progress{
+        list-style:none;
+        li{
+            width:25%;
+            display:block;
+            height:8px;
+            background-color:#ccc;
+            border:1px solid #83a0b7;
+            text-indent:-99999px;
+            float:left;
+            &.completed{
+                background-color:lightblue;
+            }
+            &.active{
+                background-color:#025899;
+            }
+        }
+        &:after{
+            clear:both;    
+        }
+    }
+    form{
+        clear:both;
+        div.chaseui-intro{
+            @include span-columns(15 omega,15);
+        }
+        .chaseui-fields{
+             @include span-columns(10,15);    
+        }
+        input{
+            border-radius: 6px;
+            border: 1px solid #9c9c9c;
+            padding: 7px 5px;
+            color: #666;
+            background-color: #f2f2f2;
+            font-size: 0.8em;
+            font-family: verdana, helvetica, arial;
+            @include input-placeholder(#666);
+            &.first_name{
+                width:125px;
+            }
+            &.middle_name{
+                width:30px;
+            }
+            &.last_name{
+                width:125px;
+            }
+            &.suffix{
+                width:30px;
+            }
+        }   
+    }
+}
+
+
+
+
+
+
+
+.zipcodehelp{
+    font-size:0.7em;
+    border:1px solid #ccc;
+    width: 290px;
+    display:none;
+}
+.chaseui-voice{
+    font-size:0.5em; 
+    @include span-columns(5 omega,20);
+    background-color:#f0ede6;
+    min-height:400px;
+    margin:10px 0px;
+    border-radius:15px;
+    
+}
+@include at-breakpoint($mini) {
+    div.chaseui-pagebody, div.chaseui-container{
+        @include container;
+    }
+    .chaseui-form{
+        @include span-columns(5,5);
+    }
+    .chaseui-voice{
+        @include span-columns(5,5);
+        min-height:100px;
+    } 
+    div.chaseui-pagetitle{
+        background-position-x: -200px;
+        background-size: 150%;
+    }
+    .chaseui-form{
+        ul.chaseui-progress{
+            li{
+                width:25%;
+            }
+        }
+    }
+}
+@include at-breakpoint($mobile) {
+    div.chaseui-pagebody, div.chaseui-container{
+        @include container;
+    }
+    .chaseui-form{
+        @include span-columns(8,8);
+        input{width:30px;}
+        form{
+            .group1, .group2, .groups3{
+                @include span-columns(8 omega,8);
+            }
+        }
+    }
+    .chaseui-voice{
+        @include span-columns(8,8);
+        min-height:100px;
+    }
+    div.chaseui-pagetitle{
+        background-position-x: -200px;
+        background-size: 150%;
+    }
+}
+@include at-breakpoint($tablet) {
+    div.chaseui-pagebody, div.chaseui-container{
+        @include container;
+    }
+    .chaseui-form{
+        @include span-columns(8,12);
+    }
+    .chaseui-voice{
+        @include span-columns(4 omega,12);
+        min-height:100px;
+    } 
+ 
+}
+@include at-breakpoint($desktopsmall) {
+    div.chaseui-pagebody, div.chaseui-container{
+        @include container;
+    }
+    .chaseui-form{
+        @include span-columns(10,14);
+    }
+    .chaseui-voice{
+        @include span-columns(4 omega,14);
+    } 
+}
+@include at-breakpoint($desktopmedium) {
+    div.chaseui-pagebody, div.chaseui-container{
+        @include container;
+    }
+    .chaseui-form{
+        @include span-columns(12,16);
+    }
+    .chaseui-voice{
+        @include span-columns(4 omega,16);
+    } 
+}
+@include at-breakpoint($desktoplarge) {
+    div.chaseui-pagebody, div.chaseui-container{
+        @include container;
+    }
+    .chaseui-form{
+        @include span-columns(15,20);
+    }
+    .chaseui-voice{
+        @include span-columns(5 omega,20);
+    }  
+}

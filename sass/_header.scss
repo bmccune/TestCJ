@@ -1,0 +1,145 @@
+header{
+    width:100%;
+    padding:0px;
+    margin:0px;
+    border-bottom:1px solid #bfbfbf;
+    display:block;
+    clear:both;
+    // needs latest Compass, add '@import "compass"' to your scss
+    background-color: #ffffff; // Old browsers
+    @include filter-gradient(#ffffff, #e5e5e5, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  #ffffff 0%,#e5e5e5 100%));
+    box-shadow: 0px 0px 15px #888888;
+
+    h1{
+        @include span-columns(4,20);
+        font-family: 'FontAwesome';
+        font-size:2.8em;
+        margin-top:0.5em;
+        margin-bottom:0.5em;
+        &:after{
+            content:'\e014';
+            color:#0f5ba7;
+        }
+    }
+    ul{
+        padding:0px;
+        margin:0px;
+        font-size:0.8em;
+        height:15px;
+        @include span-columns(10 omega,20);
+        li{
+            font-family:verdana,arial,helvetica,sans-serif;
+            color:#727272;
+            float:right;
+            list-style:none;
+            padding: 0px 10px;
+            margin-top: 34px;
+            height: 15px;
+        }
+        &:after{
+            clear:both;    
+        }
+    }
+}
+@include at-breakpoint($mini) {
+    header h1{
+        @include span-columns(3,5);
+        font-size:1.5em;
+        margin-top:0.3em;
+        margin-bottom:0.3em;
+    }
+    header ul{
+        font-size:0.4em;
+        @include span-columns(2 omega,5);
+        margin-top:3px;
+        li{
+            padding:4px 3px;
+            height:5px;
+            margin-top:0px;
+            &.chaseutil-border-right{
+                border:none;
+            }
+        }
+    }
+}
+@include at-breakpoint($mobile) {
+    header h1{
+        @include span-columns(3,8);
+        font-size:1.8em;
+        margin-top:0.3em;
+        margin-bottom:0.3em;
+    }
+    header ul{
+        font-size:0.5em;
+        @include span-columns(5 omega,8);
+        li{
+            padding:0px 10px;
+            margin-top:15px;
+        }
+    }
+}
+@include at-breakpoint($tablet) {
+    header h1{
+        @include span-columns(3,12);
+        font-size:2.0em;
+        margin-top:0.3em;
+        margin-bottom:0.3em;
+    }
+    header ul{
+        font-size:0.6em;
+        @include span-columns(6 omega,12);
+        li{
+            padding:0px 10px;
+            margin-top:18px;
+        }
+    }
+}
+@include at-breakpoint($desktopsmall) {
+    header h1{
+        @include span-columns(4,14);
+        font-size:2.4em;
+        margin-top:0.5em;
+        margin-bottom:0.5em;
+    }
+    header ul{
+        font-size:0.8em;
+        @include span-columns(7 omega,14);
+        li{
+            padding:0px 10px;
+            margin-top:28px;
+        }
+    }
+}
+@include at-breakpoint($desktopmedium) {
+    header h1{
+        @include span-columns(4,16);
+        font-size:2.6em;
+        margin-top:0.5em;
+        margin-bottom:0.5em;
+    }
+    header ul{
+        font-size:0.8em;
+        @include span-columns(8 omega,16);
+        li{
+            padding:2px 10px;
+            margin-top:28px;
+        }
+    }
+}
+@include at-breakpoint($desktoplarge) {
+    header h1{
+        @include span-columns(4,20);
+        font-size:2.8em;
+        margin-top:0.5em;
+        margin-bottom:0.5em;
+    }
+    header ul{
+        font-size:0.8em;
+        @include span-columns(10 omega,20);
+        li{
+            padding:2px 10px;
+            margin-top:32px;
+        }
+    }
+}

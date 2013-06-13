@@ -1,0 +1,71 @@
+// ---------------------------------------------------------------------------
+// Imports
+$legacy-support-for-ie: false;
+@import "susy";
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$total-columns  : 20;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$mini           : 0em 5 28em;
+$mobile         : 28em 8 46em;
+$tablet         : 46em 12 62em;
+$desktopsmall   : 62em 14 78em;
+$desktopmedium  : 78em 16 88em;
+$desktoplarge   : 88em 20 999em;
+$show-grid-backgrounds  : true;
+
+// ----------------------
+// Fonts
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/chaseiconsneue?v=3.0.1');
+  src: url('../fonts/chaseiconsneue.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+    url('../fonts/chaseiconsneue.woff?v=3.0.1') format('woff'),
+    url('../fonts/chaseiconsneue.ttf?v=3.0.1') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+    font-family:verdana,arial,helvetica,sans-serif;
+}
+.chaseutil-border-right{
+    border-right:1px solid #666;
+}
+button{
+    min-width:15em;
+    display:block;
+    float:left;
+    clear:both;
+    margin:10px 0;
+    padding:8px 0;
+    border-radius:5px;
+    font-size:0.9em;
+    &.chaseui-button-facebook{
+        // needs latest Compass, add '@import "compass"' to your scss
+        background-color: #0e85b4; // Old browsers
+        @include filter-gradient(#0e85b4, #055175, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  #0e85b4 0%,#055175 100%));
+        color:#FFF;
+        border:1px solid #086492;
+    }
+    &.chaseui-primary{
+        background-color: #fafafa; // Old browsers
+        @include filter-gradient(#fafafa, #bec6ca, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  #fafafa 0%,#bec6ca 100%));
+        color:#43444e;
+        border:1px solid #bebfbf;
+    }
+    &.chaseui-submit{
+        // needs latest Compass, add '@import "compass"' to your scss
+        background-color: #439b09; // Old browsers
+        @include filter-gradient(#439b09, #186602, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  #439b09 0%,#186602 100%));
+        color:#FFFFFF;
+        border:1px solid #0b6306;
+    }
+}
