@@ -54,6 +54,9 @@ div.chaseui-pagetitle{
 .chaseui-form{
     margin-top:30px;
     @include span-columns(15,20);
+    &.step2, &.step3{
+        display:none;
+    }
     ul{
         margin:0px;
         padding:0px;
@@ -134,6 +137,9 @@ div.chaseui-pagetitle{
             &.phone{
                 width:185px;
             }
+            &.dob{
+                width:185px;
+            }
         }   
     }
 }
@@ -162,6 +168,9 @@ div.chaseui-pagetitle{
         margin:0 auto;
         border-radius:15px;
         padding:0px 30px;
+    }
+    &.step2, &.step3{
+        display:none;
     }
 }
 

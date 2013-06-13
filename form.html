@@ -23,7 +23,6 @@
     
     <title>NCJ Concept 3</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://lesscss.org/js/less.js"></script>
     <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
 </head>
 
@@ -46,7 +45,7 @@
         </div>
     </div>
     <div class="chaseui-pagebody">
-        <div class="chaseui-form"> 
+        <div class="chaseui-form step1"> 
             <ul class="chaseui-progress">
                 <li class="chaseui-progress-step1 active">step1</li>
                 <li class="chaseui-progress-step2">step2</li>
@@ -67,17 +66,80 @@
                     <input class="address" type="text" name="home_address" placeholder="Home Address" size="35">
                     <input class="city" type="text" name="city" placeholder="City">
                     <input class="state" type="text" name="zip_code" placeholder="State" size="9">
-                    <input class="zip" type="text" name="zip_code" placeholder="Zip Code" size="9">
+                    <input class="zip" type="number" name="zip_code" placeholder="Zip Code" size="9">
                 
-                    <input class="phone" type="text" name="phone_number" placeholder="Primary phone number" size="20">
-                    <br/>Date of Birth: <input type="date" name="bday">
+                    <input class="phone" type="tel" name="phone_number" placeholder="Primary phone number" size="20">
+                    <br/>Date of Birth: <input class="dob" type="date" name="bday">
                 </div>
                 <div class="chaseui-formnav">
-                    <button class="chaseui-button chaseui-submit">Continue</button>
+                    <button id="step1btn" class="chaseui-button chaseui-submit">Continue</button>
                 </div>
             </form>
         </div>
-        <div class="chaseui-voice">
+        <div class="chaseui-voice step1">
+            <div class="inner">
+            <h2><span class="chaseutil-stronger">"</span>Thank you for choosing Chase.</h2>
+            <p>Our 3 step application is easy and will only take a few minutes. You'll need to provide us your social security and some financial information We're serious about your security and will keep your information safe and confidential.</p>
+            <h3>As a cardholder you'll have access to:</h3>
+            <ul>
+                <li>Lorem ipsume dolor sit amet</li>
+                <li>Ut labore et dolore</li>
+                <li>Lorem ipsume dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+            </ul>
+            </div>
+        </div>
+        <div class="chaseui-form step2"> 
+            <ul class="chaseui-progress">
+                <li class="chaseui-progress-step1">step1</li>
+                <li class="chaseui-progress-step2 active">step2</li>
+                <li class="chaseui-progress-step3">step3</li>
+            </ul>
+            <form>
+                <div class="chaseui-intro">
+                    <h3>Step 2!</strong></h3>
+                    
+                </div>
+                <div class="chaseui-fields">  
+                    
+                </div>
+                <div class="chaseui-formnav">
+                    <button id="step2btn" class="chaseui-button chaseui-submit">Continue</button>
+                </div>
+            </form>
+        </div>
+        <div class="chaseui-voice step2">
+            <div class="inner">
+            <h2><span class="chaseutil-stronger">"</span>Thank you for choosing Chase.</h2>
+            <p>Our 3 step application is easy and will only take a few minutes. You'll need to provide us your social security and some financial information We're serious about your security and will keep your information safe and confidential.</p>
+            <h3>As a cardholder you'll have access to:</h3>
+            <ul>
+                <li>Lorem ipsume dolor sit amet</li>
+                <li>Ut labore et dolore</li>
+                <li>Lorem ipsume dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+            </ul>
+            </div>
+        </div>
+        <div class="chaseui-form step3"> 
+            <ul class="chaseui-progress">
+                <li class="chaseui-progress-step1">step1</li>
+                <li class="chaseui-progress-step2">step2</li>
+                <li class="chaseui-progress-step3 active">step3</li>
+            </ul>
+            <form>
+                <div class="chaseui-intro">
+                    <h3>Step 3</strong></h3>
+                </div>
+                <div class="chaseui-fields">  
+                    
+                </div>
+                <div class="chaseui-formnav">
+                    <button class="chaseui-button chaseui-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="chaseui-voice step3">
             <div class="inner">
             <h2><span class="chaseutil-stronger">"</span>Thank you for choosing Chase.</h2>
             <p>Our 3 step application is easy and will only take a few minutes. You'll need to provide us your social security and some financial information We're serious about your security and will keep your information safe and confidential.</p>
@@ -97,7 +159,27 @@
 </body>
 <script>
     $(function() {
-     .chaseui-input-zip
+        $('#step1btn').click(function(event){
+            event.preventDefault();
+            $('div.chaseui-form.step1').hide();
+            $('div.chaseui-form.step2').show();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+        $('#step2btn').click(function(event){
+            event.preventDefault();
+            $('div.chaseui-form.step2').hide();
+            $('div.chaseui-form.step3').show();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+        $('#step3btn').click(function(event){
+            event.preventDefault();
+            $('div.chaseui-form.step1').hide();
+            $('div.chaseui-form.step2').show();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
     });    
 </script>
 </html>
