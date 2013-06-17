@@ -436,28 +436,28 @@ table {
   font-weight: normal;
 }
 
-/* line 52, ../sass/_base.scss */
+/* line 54, ../sass/_base.scss */
 html {
   font-family: verdana,arial,helvetica,sans-serif;
 }
 
-/* line 55, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 h3 {
   font-weight: normal;
   font-family: 'Amplitude';
   font-size: 1.7em;
 }
-/* line 59, ../sass/_base.scss */
+/* line 61, ../sass/_base.scss */
 h3 strong {
   font-family: 'AmplitudeMedium';
 }
 
-/* line 63, ../sass/_base.scss */
+/* line 65, ../sass/_base.scss */
 .chaseutil-border-right {
   border-right: 1px solid #666;
 }
 
-/* line 66, ../sass/_base.scss */
+/* line 68, ../sass/_base.scss */
 button {
   min-width: 18em;
   display: block;
@@ -468,7 +468,7 @@ button {
   border-radius: 5px;
   font-size: 0.9em;
 }
-/* line 75, ../sass/_base.scss */
+/* line 77, ../sass/_base.scss */
 button.chaseui-button-facebook {
   background-color: #0e85b4;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0e85b4), color-stop(100%, #055175));
@@ -479,7 +479,7 @@ button.chaseui-button-facebook {
   color: #FFF;
   border: 1px solid #086492;
 }
-/* line 83, ../sass/_base.scss */
+/* line 85, ../sass/_base.scss */
 button.chaseui-primary {
   background-color: #fafafa;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #bec6ca));
@@ -490,7 +490,7 @@ button.chaseui-primary {
   color: #43444e;
   border: 1px solid #bebfbf;
 }
-/* line 90, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 button.chaseui-submit {
   background-color: #439b09;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #439b09), color-stop(100%, #186602));
@@ -503,7 +503,7 @@ button.chaseui-submit {
   min-width: 190px;
 }
 
-/* line 100, ../sass/_base.scss */
+/* line 102, ../sass/_base.scss */
 a:link, a:visited, a:hover, a:active {
   color: #666;
   text-decoration: none;
@@ -771,7 +771,44 @@ header h1 {
   height: 600px;
 }
 
-/* line 17, ../sass/_stepOne.scss */
+/* line 22, ../sass/_stepOne.scss */
+.wrapper {
+  padding-top: 30px;
+}
+/* line 24, ../sass/_stepOne.scss */
+.wrapper h3 {
+  font-family: 'Interstate';
+  font-size: 1.3em;
+  font-weight: normal;
+  color: white;
+}
+/* line 29, ../sass/_stepOne.scss */
+.wrapper h3 strong {
+  font-weight: bold;
+}
+/* line 33, ../sass/_stepOne.scss */
+.wrapper form {
+  margin-top: 20px;
+}
+/* line 35, ../sass/_stepOne.scss */
+.wrapper form input {
+  border-radius: 3px;
+  border: 1px solid #333;
+}
+/* line 39, ../sass/_stepOne.scss */
+.wrapper form .first_name {
+  width: 100px;
+}
+/* line 42, ../sass/_stepOne.scss */
+.wrapper form .middle_name {
+  width: 40px;
+}
+/* line 45, ../sass/_stepOne.scss */
+.wrapper form .last_name {
+  width: 100px;
+}
+
+/* line 57, ../sass/_stepOne.scss */
 .chaseui-pagebody.step2 {
   background-color: #ddd;
   background-size: auto;
@@ -779,7 +816,7 @@ header h1 {
   height: 600px;
 }
 
-/* line 23, ../sass/_stepOne.scss */
+/* line 63, ../sass/_stepOne.scss */
 .chaseui-pagebody.step3 {
   background-image: url("../images/testbg.jpg");
   background-size: auto;
@@ -787,7 +824,7 @@ header h1 {
   height: 600px;
 }
 
-/* line 29, ../sass/_stepOne.scss */
+/* line 69, ../sass/_stepOne.scss */
 .chaseui-pagebody.step4 {
   background-image: url("../images/testbg2.jpg");
   background-size: auto;
@@ -795,7 +832,7 @@ header h1 {
   height: 600px;
 }
 
-/* line 35, ../sass/_stepOne.scss */
+/* line 75, ../sass/_stepOne.scss */
 .chaseui-pagebody.step5 {
   background-color: #ddd;
   background-size: auto;
@@ -803,7 +840,7 @@ header h1 {
   height: 600px;
 }
 
-/* line 41, ../sass/_stepOne.scss */
+/* line 81, ../sass/_stepOne.scss */
 .chaseui-pagebody.step6 {
   background-image: url("../images/testbg.jpg");
   background-size: auto;

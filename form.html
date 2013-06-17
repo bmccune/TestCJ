@@ -41,7 +41,20 @@
     <div class="chaseui-section">
         <!-- START STEP 1 -->
         <div class="chaseui-pagebody step1" data-stellar-background-ratio="2">
-            
+            <div id="form1" class="wrapper" style="position:relative;top:100px;">
+                <h3 style="padding:0px;margin:0px;">Tell us a bit more about yourself and <strong>get started in minutes!</strong></h3>
+                <form>
+                    <input class="first_name" type="text" name="first_name" placeholder="First Name" size="20">
+                    <input class="middle_name" type="text" name="middle_name" placeholder="M.I." size="2">
+                    <input class="last_name" type="text" name="last_name" placeholder="Last Name" size="20">
+                    <input class="address" type="text" name="home_address" placeholder="Home Address" size="35">
+                    <input class="city" type="text" name="city" placeholder="City">
+                    <input class="state" type="text" name="zip_code" placeholder="State" size="9">
+                    <input class="zip" type="number" name="zip_code" placeholder="Zip Code" size="9">
+                    <input class="phone" type="tel" name="phone_number" placeholder="Primary phone number" size="20">
+                    <br/>Date of Birth: <input class="dob" type="date" name="bday">
+                </form>
+            </div>
         </div>
         <!-- END STEP 1 -->
         <!-- START STEP 2 -->
@@ -90,6 +103,7 @@
             blocks:'.chaseui-pagebody',
             enablePin:false
         });
+        scrollorama.animate('#form1',{ duration: 200, property:'opacity', end:0 }) 
         scrollorama.animate('#example1',{ delay: 400, duration: 300, property:'opacity', start:0 }) 
         scrollorama.onBlockChange(function() {
             console.log('You just scrolled to block#'+scrollorama.blockIndex);
