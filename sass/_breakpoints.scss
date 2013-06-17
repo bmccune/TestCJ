@@ -1,0 +1,196 @@
+//BREAK POINTS
+@include at-breakpoint($mini) {
+    .chaseui-voice{display:none;}
+        .chaseui-pagebody{
+        background-size: 300%;
+        background-position-x: -320px;
+    }
+    div.chaseui-container{
+        @include container;
+    }
+    @include with-grid-settings(20,4em,1em,0em) {
+        div.chaseui-pagebody { @include container; }
+    };
+    .chaseui-form{
+        @include span-columns(3,5);
+        @include pad(1,1);
+        //@include isolate(2);
+        background-color:rgba(255, 255, 255, 0.8);
+        .chaseui-fields{
+            @include span-columns(8,8);
+        }
+        form{
+            div.inputwlabel{
+                @include span-columns(5,5);
+                label{
+                    width:100%;
+                }
+            }
+        }
+    }
+    .chaseui-voice{
+        @include span-columns(5,5);
+        min-height:100px;
+    } 
+    div.chaseui-pagetitle{
+        background-position-x: -145px;
+        background-size: 150%;
+    }
+    .chaseui-form{
+        margin-top:0px;
+        ul.chaseui-progress{
+            li{
+                width:25%;
+            }
+        }
+    }
+    .chaseui-form{
+        form{
+            input{
+                &.address{
+                    width:90%;
+                }
+            }
+        }
+    }
+}
+
+@include at-breakpoint($mobile) {
+    .chaseui-voice{display:none;}
+    .chaseui-pagebody{
+        background-size: 220%;
+        background-position-x: -320px;
+    }
+    div.chaseui-container{
+        @include container;
+    }
+    @include with-grid-settings(20,4em,1em,0em) {
+        div.chaseui-pagebody { 
+            @include container; 
+        }
+    };
+    .chaseui-form{
+        @include span-columns(4,8);
+        @include pad(1,1);
+        @include isolate(2);
+        background-color:rgba(255, 255, 255, 0.8);
+        .chaseui-fields{
+            @include span-columns(8,8);
+        }
+            div.inputwlabel{
+                @include span-columns(8,8);
+                label{
+                    width:100%;
+                }
+            }
+    }
+    .chaseui-voice{
+        @include span-columns(8,8);
+        min-height:100px;
+    }
+    div.chaseui-pagetitle{
+        background-position-x: -145px;
+        background-size: 150%;
+    }
+}
+@include at-breakpoint($tablet) {
+    .chaseui-pagebody{
+        background-size: 190%;
+        background-position-x: -320px;
+    }
+    div.chaseui-container{
+        @include container;
+    }
+    @include with-grid-settings(20,4em,1em,0em) {
+        div.chaseui-pagebody { @include container; }
+    };
+    .chaseui-form{
+        @include span-columns(5,12);
+        @include pad(1,1);
+        @include isolate(2);
+        background-color:rgba(255, 255, 255, 0.8);
+        .chaseui-fields{
+            @include span-columns(8,8);
+        }
+        div.chaseui-intro{
+            @include span-columns(8 omega,8);
+        }
+    }
+    .chaseui-voice{
+        @include span-columns(4 omega,12);
+    } 
+ 
+}
+@include at-breakpoint($desktopsmall) {
+    .chaseui-pagebody{
+        background-size: 150%;
+        background-position-x: -320px;
+    }
+    div.chaseui-container{
+        @include container;
+    }
+    @include with-grid-settings(20,4em,1em,0em) {
+        div.chaseui-pagebody { @include container; }
+    };
+    .chaseui-form{
+        @include span-columns(6,14);
+        @include pad(1,1);
+        @include isolate(3);
+        background-color:rgba(255, 255, 255, 0.8);
+        .chaseui-fields{
+            @include span-columns(8,8);
+        }
+        div.chaseui-intro{
+            @include span-columns(10 omega,10);
+        }
+    }
+    .chaseui-voice{
+        @include span-columns(4 omega,14);
+    } 
+}
+@include at-breakpoint($desktopmedium) {
+    div.chaseui-container{
+        @include container;
+    }
+    @include with-grid-settings(20,4em,1em,0em) {
+        div.chaseui-pagebody { @include container; }
+    };
+    .chaseui-form{        
+        @include span-columns(6,16);
+        @include pad(1,1);
+        @include isolate(3);
+        background-color:rgba(255, 255, 255, 0.8);
+        .chaseui-fields{
+            @include span-columns(8,8);
+        }
+    }
+    .chaseui-voice{
+        @include span-columns(5,16);
+        @include isolate(11);
+    } 
+}
+@include at-breakpoint($desktoplarge) {
+    div.chaseui-container{
+        @include container;
+    }
+    @include with-grid-settings(20,4em,1em,0em) {
+        div.chaseui-pagebody { 
+            @include container;
+            max-width:120em;
+        }
+    };
+    .chaseui-form{
+        @include span-columns(6,20);
+        @include pad(1,1);
+        @include isolate(5);
+        background-color:rgba(255, 255, 255, 0.8);
+        .chaseui-fields{
+            @include span-columns(8,8);
+        }
+    }
+    .chaseui-voice{
+        @include span-columns(5,20);
+        @include isolate(13);
+
+    }  
+}
