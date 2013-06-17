@@ -1,0 +1,17 @@
+.status{
+    position:fixed;
+    top:200px;
+    z-index:99999;
+    height:250px;
+    @include span-columns(4,20);
+    @include isolate(16);
+    margin-left: gutter(0) + columns(4,20);
+    background-color:#FFF;
+    border-radius:5px;
+    padding-right:10px;
+    ul{
+        li{
+            list-style:none;
+        }
+    }
+}

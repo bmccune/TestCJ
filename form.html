@@ -24,8 +24,8 @@
     <title>NCJ Concept 3</title>
 	<script src="JS/jquery.min.js"></script>
     <script src="JS/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="JS/jquery.stellar.min.js" type="text/javascript"></script>
-    
+    <script src="JS/jquery.stellar.min.js" type="text/javascript"></script>  
+    <script src="JS/jquery.scrollorama.js" type="text/javascript"></script>   
 </head>
 
 <body>
@@ -36,186 +36,67 @@
     </header>
     
     <div class="status">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
+
     </div>
-    <div class="chaseui-section chaseui-part1" data-stellar-background-ratio="0.2">
-        <div class="chaseui-pagebody step1" data-stellar-ratio="0.5">
-        <div class="chaseui-form step1"> 
-            <form>
-                <div class="chaseui-intro">
-                    <h3>Tell us a bit more about yourself and<strong> get started in minutes!</strong></h3>
-                </div>
-                <div class="chaseui-fields">  
-                    <input class="first_name" type="text" name="first_name" placeholder="First Name" size="20">
-                    <input class="middle_name" type="text" name="middle_name" placeholder="M.I." size="2">
-                    <input class="last_name" type="text" name="last_name" placeholder="Last Name" size="20">
-                    <input class="address" type="text" name="home_address" placeholder="Home Address" size="35">
-                    <input class="city" type="text" name="city" placeholder="City">
-                    <input class="state" type="text" name="zip_code" placeholder="State" size="9">
-                    <input class="zip" type="number" name="zip_code" placeholder="Zip Code" size="9">
-                    <input class="phone" type="tel" name="phone_number" placeholder="Primary phone number" size="20">
-                    <br/>Date of Birth: <input class="dob" type="date" name="bday">
-                </div>
-                <div class="chaseui-formnav">
-                    <button id="step1btn" class="chaseui-button chaseui-submit" href="#destination1">Continue</button>
-                    
-                </div>
-            </form>
+    <div class="chaseui-section">
+        <!-- START STEP 1 -->
+        <div class="chaseui-pagebody step1" data-stellar-background-ratio="2">
+            
         </div>
-        <div class="chaseui-voice step1" data-stellar-ratio="0.9" data-stellar-horizontal-offset="0" data-stellar-vertical-offset="1000">
-            <div class="inner">
-            <h2><span class="chaseutil-stronger">"</span>Thank you for choosing Chase.</h2>
-            <p>Our 3 step application is easy and will only take a few minutes. You'll need to provide us your social security and some financial information We're serious about your security and will keep your information safe and confidential.</p>
-            <h3>As a cardholder you'll have access to:</h3>
-            <ul>
-                <li>Lorem ipsume dolor sit amet</li>
-                <li>Ut labore et dolore</li>
-                <li>Lorem ipsume dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-            </ul>
+        <!-- END STEP 1 -->
+        <!-- START STEP 2 -->
+        <div class="chaseui-pagebody step2" data-stellar-background-ratio="0.5">
+            
+        </div>
+        <!-- END STEP 2 -->
+        <!-- START STEP 3 -->
+        <div class="chaseui-pagebody step3" data-stellar-background-ratio="0.5">
+            <div id="example1" style="position:relative;top:200px;">
+                HELLO
             </div>
         </div>
-    </div>
-    <div id="destination1" class="chaseui-section chaseui-part2" data-stellar-background-ratio="0.5">
-     <div class="chaseui-pagebody step2">
-        <div class="chaseui-form step2"> 
-            <ul class="chaseui-progress">
-                <li class="chaseui-progress-step1">step1</li>
-                <li class="chaseui-progress-step2 active">step2</li>
-                <li class="chaseui-progress-step3">step3</li>
-            </ul>
-            <form>
-                <div class="chaseui-intro">
-                    <h3><strong>Almost There...</strong> Just a few questions before we run your credit check</h3>
-                    
-                </div>
-                <div class="chaseui-fields">
-                    <div class="inputwlabel">
-                        <label>What is your gross annual income?</label>
-                        <input class="income" type="number" name="annual_income" placeholder="Annual income">
-                    </div>
-                    <div class="inputwlabel">
-                        <label>Do you rent or own?</label>
-                        <select>
-                            <option value="own">Own Home</option>
-                            <option value="rent">Rent</option>
-                            <option value="relative">Live with Relative</option>
-                        </select>
-                    </div>
-                    <div class="inputwlabel">
-                        <label>What types of accounts do you own</label>
-                        <select>
-                            <option value="both">Checking &amp; Savings</option>
-                            <option value="checking">Checking</option>
-                            <option value="savings">Savings</option>
-                        </select>
-                    </div>
-                    <div class="inputwlabel">
-                        <label>Social Security Number or TIN</label>
-                        <input class="ssn" type="number" name="annual_income" placeholder="999-99-9999">
-                    </div>
-                    <p class="disclaimer">By clicking "Run credit check" you certify that all the information provided is true. You authorize the bank to run a credit check to confirm your identity and approve you for an account.</p>
-                </div>
-                <div class="chaseui-formnav">
-                    <button id="step2btn" class="chaseui-button chaseui-submit">Run Credit Check</button>
-                </div>
-            </form>
+        <!-- END STEP 3 -->
+        <!-- START STEP 4 -->
+        <div class="chaseui-pagebody step4" data-stellar-background-ratio="2">
+            
         </div>
-        <div class="chaseui-voice step2">
-            <div class="inner">
-            <h2><span class="chaseutil-stronger">"</span>Thank you for choosing Chase.</h2>
-            <p>Our 3 step application is easy and will only take a few minutes. You'll need to provide us your social security and some financial information We're serious about your security and will keep your information safe and confidential.</p>
-            <h3>As a cardholder you'll have access to:</h3>
-            <ul>
-                <li>Lorem ipsume dolor sit amet</li>
-                <li>Ut labore et dolore</li>
-                <li>Lorem ipsume dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-            </ul>
-            </div>
+        <!-- END STEP 4 -->
+        <!-- START STEP 5 -->
+        <div class="chaseui-pagebody step5" data-stellar-background-ratio="0.5">
+            
         </div>
+        <!-- END STEP 5 -->
+        <!-- START STEP 6 -->
+        <div class="chaseui-pagebody step6" data-stellar-background-ratio="0.5">
+            
         </div>
-    </div>
-    <div class="chaseui-section chaseui-part3" data-stellar-background-ratio="0.5">
-    <div class="chaseui-pagebody step3">
-        <div class="chaseui-form step3"> 
-            <ul class="chaseui-progress">
-                <li class="chaseui-progress-step1">step1</li>
-                <li class="chaseui-progress-step2">step2</li>
-                <li class="chaseui-progress-step3 active">step3</li>
-            </ul>
-            <form>
-                <div class="chaseui-intro">
-                    <h3><strong>Ready to join Chase Sapphire?</strong></h3>
-                    <p>Accept the member agreement to open the account and use your card immediatly.</p>
-                    <div class="chaseui-approved">
-                    You're approved for a <strong>$10,000</strong> credit limit with Chase Sapphire Preferred.
-                    </div>
-                    <div class="chaseui-subtitle">
-                    Sapphire agreement overview
-                    </div>
-                    <ul class="chaseui-accordian">
-                        <li>General information</li>
-                        <li>How to make a payment</li>
-                        <li>Fees and penalties</li>
-                        <li>Card certifcation</li>
-                    </ul>
-                </div>
-                
-                <div class="chaseui-formnav">
-                    <button class="chaseui-button chaseui-submit">Open my card</button>
-                </div>
-            </form>
-        </div>
-        <div class="chaseui-voice step3">
-            <div class="inner">
-            <h2><span class="chaseutil-stronger">"</span>Thank you for choosing Chase.</h2>
-            <p>Our 3 step application is easy and will only take a few minutes. You'll need to provide us your social security and some financial information We're serious about your security and will keep your information safe and confidential.</p>
-            <h3>As a cardholder you'll have access to:</h3>
-            <ul>
-                <li>Lorem ipsume dolor sit amet</li>
-                <li>Ut labore et dolore</li>
-                <li>Lorem ipsume dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-            </ul>
-            </div>
-        </div>
-        </div>
-    </div>
-    
-       
         
     </div>
 </body>
 <script>
-    $(function() {
-        
-    });    
+    function resizeME(){
+         var viewportHeight = $(window).height()
+        $('.chaseui-pagebody').css('height',viewportHeight + 'px');
+    }
+    $(function(){
+        $.stellar({
+            horizontalScrolling: false,
+            verticalScrolling: true,
+            verticalOffset: 40,
+            responsive: true
+        });
+        resizeME();
+        var scrollorama = $.scrollorama({
+            blocks:'.chaseui-pagebody',
+            enablePin:false
+        });
+        scrollorama.animate('#example1',{ delay: 400, duration: 300, property:'opacity', start:0 }) 
+        scrollorama.onBlockChange(function() {
+            console.log('You just scrolled to block#'+scrollorama.blockIndex);
+        });
+    });
+    $(window).resize(function() {
+        resizeME();    
+    });
 </script>
-    <script>
-		$(function(){
-			$.stellar({
-				horizontalScrolling: false,
-				verticalOffset: 40,
-                responsive: true
-			});
-            $('.chaseui-voice').stellar({
-                scrollProperty: 'transform'
-            });
-		});
-        $("#step1btn").click(function(event){
-             event.preventDefault();
-             //go to destination
-            $('html,body').animate({scrollTop:700+87+100}, 1500,'swing');
-        });
-        $("#step2btn").click(function(event){
-             event.preventDefault();
-             //go to destination
-            $('html,body').animate({scrollBottom:1400+174}, 1000,'swing');
-        });
-		</script>
 </html>

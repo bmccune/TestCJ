@@ -1,123 +1,148 @@
 header{
-    position:absolute;
+    position:fixed;
     z-index:999999;
     margin:0px;
     padding:0px;
     width:100%;
-    @include with-grid-settings(20,4em,1em,0em) {
-        .chaseui-container { @include container; }
-    };
-    h1{
-        margin-top:0px;
-        margin-bottom:0px;
+    top:0px;
+    h1{        
         background-color:#003366;
         @include span-columns(3,20);
         @include isolate(6);
-        img{
-            margin-left:40px;
-        }
+        max-width:250px;
+        margin-top:0px;
+        margin-bottom:0px;
+        padding-top:0px;
     }
 }
-
-
-
-
-
-
-//breakpoints
+// BREAK POINTS
 @include at-breakpoint($mini) {
-    header h1{
-        @include span-columns(3,5);
-        img{
-            width:123px;
-        }
-        
+    .chaseui-container, .chaseui-pagebody{
+        @include container;
+   //     @include susy-grid-background;
+
     }
-    header ul{
-        font-size:0.4em;
-        @include span-columns(2 omega,5);
-        margin-top:3px;
-        li{
-            padding:4px 3px;
-            height:5px;
+    header{
+        h1{
+    
+            background-color:#003366;
+            @include span-columns(3,5);
+            @include isolate(1);
             margin-top:0px;
-            &.chaseutil-border-right{
-                border:none;
+            margin-bottom:0px;
+            padding-top:0px;
+            text-align:center;
+            img{
+                width:80%;
             }
         }
     }
 }
 @include at-breakpoint($mobile) {
-    header h1{
-        @include span-columns(3,8);
-        font-size:1.8em;
-        margin-top:0.3em;
-        margin-bottom:0.3em;
+    .chaseui-container, .chaseui-pagebody{
+        @include container;
+     //   @include susy-grid-background;
     }
-    header ul{
-        font-size:0.5em;
-        @include span-columns(5 omega,8);
-        li{
-            padding:0px 10px;
-            margin-top:15px;
+    header{
+        h1{
+    
+            background-color:#003366;
+            @include span-columns(3,8);
+            @include isolate(2);
+            margin-top:0px;
+            margin-bottom:0px;
+            padding-top:0px;
+            text-align:center;
+            img{
+                width:80%;
+            }
         }
     }
 }
 @include at-breakpoint($tablet) {
-    header h1{
-        @include span-columns(3,12);
-        font-size:2.0em;
-        margin-top:0.1em;
-        margin-bottom:0.1em;
-        img{
-            width:140px;
-        }
+    .chaseui-container, .chaseui-pagebody{
+        @include container;
+     //   @include susy-grid-background;
     }
-    header ul{
-        font-size:0.6em;
-        @include span-columns(6 omega,12);
-        li{
-            padding:0px 10px;
-            margin-top:18px;
+    header{
+        h1{
+    
+            background-color:#003366;
+            @include span-columns(4,12);
+            @include isolate(3);
+            margin-top:0px;
+            margin-bottom:0px;
+            padding-top:0px;
+            text-align:center;
+            img{
+                width:80%;
+            }
         }
     }
 }
 @include at-breakpoint($desktopsmall) {
-    header h1{
-        @include span-columns(4,14);
-        font-size:2.4em;
-        margin-top:0.2em;
-        margin-bottom:0.2em;
-        img{
-            width:150px;
-        }
+    .chaseui-container, .chaseui-pagebody{
+        @include container;
+   //     @include susy-grid-background;
     }
-    header ul{
-        font-size:0.8em;
-        @include span-columns(7 omega,14);
-        li{
-            padding:0px 10px;
-            margin-top:28px;
+    header{
+        h1{
+    
+            background-color:#003366;
+            @include span-columns(3,14);
+            @include isolate(4);
+            margin-top:0px;
+            margin-bottom:0px;
+            padding-top:0px;
+            text-align:center;
+            img{
+                width:80%;
+            }
         }
     }
 }
 @include at-breakpoint($desktopmedium) {
-    header h1{
-        @include span-columns(4,16);
-        font-size:2.6em;
-        margin-top:0.1em;
-        margin-bottom:0.1em;
-        img{
-            width:160px;
-        }
+   .chaseui-container, .chaseui-pagebody{
+        @include container;
+      //  @include susy-grid-background;
     }
-    header ul{
-        font-size:0.8em;
-        @include span-columns(8 omega,16);
-        li{
-            padding:2px 10px;
-            margin-top:28px;
+header{
+        h1{
+    
+            background-color:#003366;
+            @include span-columns(3,16);
+            @include isolate(5);
+            margin-top:0px;
+            margin-bottom:0px;
+            padding-top:0px;
+            img{
+                margin-left:40px;
+            }
         }
     }
 }
+@include at-breakpoint($desktoplarge) {
+    .chaseui-container, .chaseui-pagebody{
+        @include container;
+       // @include susy-grid-background;
+    }
+header{
+        h1{
+    
+            background-color:#003366;
+            @include span-columns(3,20);
+            @include isolate(6);
+            margin-top:0px;
+            margin-bottom:0px;
+            padding-top:0px;
+            img{
+                margin-left:40px;
+            }
+        }
+    }
+}
+
+
+
+
 

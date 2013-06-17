@@ -1,0 +1,225 @@
+<form>
+                    <div class="chaseui-intro">
+                        <h3>Tell us a bit more about yourself and<strong> get started in minutes!</strong></h3>
+                    </div>
+                    <div class="chaseui-fields">  
+                        <input class="first_name" type="text" name="first_name" placeholder="First Name" size="20">
+                        <input class="middle_name" type="text" name="middle_name" placeholder="M.I." size="2">
+                        <input class="last_name" type="text" name="last_name" placeholder="Last Name" size="20">
+                        <input class="address" type="text" name="home_address" placeholder="Home Address" size="35">
+                        <input class="city" type="text" name="city" placeholder="City">
+                        <input class="state" type="text" name="zip_code" placeholder="State" size="9">
+                        <input class="zip" type="number" name="zip_code" placeholder="Zip Code" size="9">
+                        <input class="phone" type="tel" name="phone_number" placeholder="Primary phone number" size="20">
+                        <br/>Date of Birth: <input class="dob" type="date" name="bday">
+                    </div>
+                    <div class="chaseui-formnav">
+                        <button id="step1btn" class="chaseui-button chaseui-submit" href="#destination1">Continue</button>
+                    </div>
+                </form>
+
+
+
+<form>
+                    <div class="chaseui-intro">
+                        <h3><strong>Almost There...</strong> Just a few questions before we run your credit check</h3>
+                    </div>
+                    <div class="chaseui-fields">
+                        <div class="inputwlabel">
+                            <label>What is your gross annual income?</label>
+                            <input class="income" type="number" name="annual_income" placeholder="Annual income">
+                        </div>
+                        <div class="inputwlabel">
+                            <label>Do you rent or own?</label>
+                            <select>
+                                <option value="own">Own Home</option>
+                                <option value="rent">Rent</option>
+                                <option value="relative">Live with Relative</option>
+                            </select>
+                        </div>
+                        <div class="inputwlabel">
+                            <label>What types of accounts do you own</label>
+                            <select>
+                                <option value="both">Checking &amp; Savings</option>
+                                <option value="checking">Checking</option>
+                                <option value="savings">Savings</option>
+                            </select>
+                        </div>
+                        <div class="inputwlabel">
+                            <label>Social Security Number or TIN</label>
+                            <input class="ssn" type="number" name="annual_income" placeholder="999-99-9999">
+                        </div>
+                        <p class="disclaimer">By clicking "Run credit check" you certify that all the information provided is true. You authorize the bank to run a credit check to confirm your identity and approve you for an account.</p>
+                    </div>
+                    <div class="chaseui-formnav">
+                        <button id="step2btn" class="chaseui-button chaseui-submit">Run Credit Check</button>
+                    </div>
+                </form>
+
+
+
+
+<form>
+                    <div class="chaseui-intro">
+                        <h3><strong>Ready to join Chase Sapphire?</strong></h3>
+                        <p>Accept the member agreement to open the account and use your card immediatly.</p>
+                        <div class="chaseui-approved">
+                        You're approved for a <strong>$10,000</strong> credit limit with Chase Sapphire Preferred.
+                        </div>
+                        <div class="chaseui-subtitle">
+                        Sapphire agreement overview
+                        </div>
+                        <ul class="chaseui-accordian">
+                            <li>General information</li>
+                            <li>How to make a payment</li>
+                            <li>Fees and penalties</li>
+                            <li>Card certifcation</li>
+                        </ul>
+                    </div>
+                
+                    <div class="chaseui-formnav">
+                        <button class="chaseui-button chaseui-submit">Open my card</button>
+                    </div>
+                </form>
+
+
+
+
+
+
+
+
+chaseui-form{
+    margin-top:80px;
+    border-radius:5px;
+    height: 550px;
+    @include span-columns(10,20);
+    // @include pad(1,1);
+    @include isolate(6);
+    background-color:rgba(255, 255, 255, 0.8);
+    .chaseui-fields{
+        @include span-columns(8,8);
+    }
+    ul{
+        margin:0px;
+        padding:0px;
+    }
+    ul.chaseui-progress{
+        list-style:none;
+        margin-top:15px;
+        li{
+            width:25%;
+            display:block;
+            height:8px;
+            background-color:#ccc;
+            border:1px solid #83a0b7;
+            text-indent:-99999px;
+            float:left;
+            &.completed{
+                background-color:lightblue;
+            }
+            &.active{
+                background-color:#025899;
+            }
+        }
+        &:after{
+            clear:both;    
+        }
+    }
+    form{
+        clear:both;
+        div.chaseui-intro{
+            @include span-columns(15 omega,15);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+        }
+        .chaseui-formnav{
+            @include span-columns(15 omega,15);
+            border-top: 1px solid #ccc;
+            margin-bottom:100px;
+            button{
+                float:right;
+                width:190px;
+            }
+        }
+        div.inputwlabel{
+            @include span-columns(6,15);
+            label{
+                font-size:0.6em;
+                color:#777;
+                float:left;
+            }
+            select{
+                border-radius: 6px;
+                border: 1px solid #9c9c9c;
+                padding: 10px 5px;
+                color: #666;
+                background-color: #f2f2f2;
+                font-size: 0.8em;
+                font-family: verdana, helvetica, arial;
+                margin-right: 16px;
+                margin-bottom: 30px;
+                height:38px;
+            }
+        }
+        p.disclaimer{
+            @include span-columns(15,15);
+            display:block;
+            text-align: center;
+            font-size: 0.8em;
+            color: #9f9f9f;
+        }
+        input{
+            border-radius: 6px;
+            border: 1px solid #9c9c9c;
+            padding: 10px 5px;
+            color: #666;
+            background-color:rgba(255, 255, 255, 0.2);
+            font-size: 0.8em;
+            font-family: verdana, helvetica, arial;
+            @include input-placeholder(#666);
+            margin-right: 16px;
+            margin-bottom:30px;
+            &.first_name{
+                width:185px;
+            }
+            &.middle_name{
+                width:30px;
+            }
+            &.last_name{
+                width:185px;
+            }
+            &.suffix{
+                width:30px;
+            }
+            &.address{
+                width:300px;
+            }
+            &.city{
+                width:235px;
+            }
+            &.state{
+                width:110px;
+            }
+            &.zip{
+                width:80px;
+            }
+            &.phone{
+                width:185px;
+            }
+            &.dob{
+                width:185px;
+            }
+        }   
+    }
+}
+
+
+ 
+.zipcodehelp{
+  //  font-size:0.7em;
+//    border:1px solid #ccc;
+  //  width: 290px;
+//    display:none;
+}

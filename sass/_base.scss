@@ -7,10 +7,11 @@ $legacy-support-for-ie: false;
 // ---------------------------------------------------------------------------
 // Basic Grid
 
-$total-columns  : 20;
+$total-columns  : 5;
 $column-width   : 4em;
 $gutter-width   : 1em;
 $grid-padding   : $gutter-width;
+$container-style: magic;
 
 $mini           : 0em 5 28em;
 $mobile         : 28em 8 46em;
@@ -18,7 +19,9 @@ $tablet         : 46em 12 62em;
 $desktopsmall   : 62em 14 78em;
 $desktopmedium  : 78em 16 88em;
 $desktoplarge   : 88em 20 999em;
+$media-layout   : 12 lt-ie9;
 $show-grid-backgrounds  : true;
+
 
 // ----------------------
 // Fonts
