@@ -1,0 +1,212 @@
+.chaseui-pagebody.step3{
+    position:relative;
+    background-color:#ddd;
+    background-image: url('../images/bng_test_image3.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    height:600px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#voice3{
+    position:relative;
+    top:200px;
+    color:#FFF;
+    font-family:'GroteskReg';
+    font-size:2.375em;
+    background-color:rgba(0, 132, 203, 0.9);
+    @include span-columns(4,16);
+    @include isolate(2);
+}
+.help{
+    margin-left:20px;
+    margin-top:10px;
+    font-size:0.6em;
+    span{
+        margin-top: -35px;
+        display: block;
+        margin-bottom: 35px;
+        margin-left: 50px;
+    }
+}
+#form3{
+    position:relative;
+    top:200px;
+    background-color:rgba(0, 0, 0, 0.2);
+    @include span-columns(9,16);
+    @include isolate(6);
+    button{
+        width:280px;
+        margin:40px 40px 40px 130px;
+        text-align:center;
+    }
+    div.sublabel{
+        display:none;
+    }
+    form{
+        padding:40px;
+        h3{
+            font-family: 'GroteskReg';
+            font-size:2.625em;
+            margin-top:0px;
+            margin-bottom:30px;
+            font-weight:normal;
+            color:white;
+            strong{
+                font-weight:bold;
+            }
+        }
+        label{
+            color:#FFF;
+            text-align:left;
+            display:block;
+            font-size:1em;
+            font-family:'GroteskReg';
+            margin-bottom:-5px;
+        }
+        input, select{
+            border-radius:0;
+            border:none;
+            padding:8px;
+            color:#000;
+            margin:0px 0px;
+            background-color:rgba(255, 255, 255, 1);
+            &.placeholder {
+                color: #000; 
+            }
+            &:-moz-placeholder {
+                color: #000; 
+            }
+            &::-webkit-input-placeholder {
+                color: #000; 
+            } 
+        }
+        .floatleft{
+            float:left;
+            width:50%;
+            clear:left;
+        }
+        .floatright{
+            float:right;
+            width:50%;
+        }
+        p{
+            clear:both;
+            margin-top:25px;
+            color:#FFF;
+            padding:25px;
+        }
+        .ssn{
+            width:85%;
+            margin-top:10px;
+            border-right:5px solid #FFF;
+            padding:4%;
+            background-color:rgba(255, 255, 255, 1);
+            margin-bottom:20px;
+
+        }
+        .income{
+            width:90%;
+            margin-top:10px;
+            border-right:5px solid #FFF;
+            padding:4%;
+            background-color:rgba(255, 255, 255, 1);
+            margin-bottom:20px;
+        }
+        .rent{
+            width:85%;
+            margin-top:10px;
+            border-right:5px solid #FFF;
+            padding:4%;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .amount{
+            width:90%;
+            margin-top:10px;
+            border-right:5px solid #FFF;
+            padding:4%;
+            background-color:rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+
+@include at-breakpoint($mini) {
+//5
+    #voice3{
+    @include span-columns(5 omega,5);
+    top:130px;
+    font-size:1.375em;
+    }
+    .help{
+        margin-left:20px;
+        margin-top:0px;
+        font-size:0.6em;
+        span{
+            margin-top: -35px;
+            display: block;
+            margin-bottom: 35px;
+            margin-left: 50px;
+        }
+    }
+    #form3{
+        @include span-columns(5 omega,5);
+        top:150px;
+        button{
+            min-width:257px;
+            width:257px;
+            margin:40px 40px 40px 0px;
+            text-align:center;
+        }
+        form{
+            .floatleft{
+                width:100%;
+            }
+            .floatright{
+                width:100%;
+            }
+            h3{
+                font-size:1.625em;
+                margin-bottom:20px;
+            }
+            .ssn, .income, .rent, .amount{
+                width:91%;
+                margin-top:5px;
+                margin-bottom:5px;
+            }
+        }
+    }
+}
+@include at-breakpoint($desktopmedium) {
+//16
+    #form3{
+        @include span-columns(9,16);
+        @include isolate(6);
+    }
+}
+
+
+
+
+//voice
+.chaseui-pagebody.voice{
+    background-color:#FFF;
+    background-size:auto;
+    position:relative;
+    height:600px;
+    .chaseui-voicetext{
+        width:100%;
+        height: 400px;
+        background-color: #0084CB;
+        position: relative;
+        top: 25%;      
+        .chaseui-inner{
+            color: #FFF;
+            font-family: 'GroteskReg';
+            font-size: 2.375em;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-top: 145px;
+        }
+    }
+}

@@ -1,3 +1,9 @@
+.headerbgimg{
+        overflow:hidden;
+        img{
+          //  width:100%;
+        }
+    }
 header{
     position:fixed;
     z-index:999999;
@@ -5,10 +11,11 @@ header{
     padding:0px;
     width:100%;
     top:0px;
+    height:5px;
+    background-color:#0084CB;
     h1{        
-        background-color:#003366;
-        @include span-columns(3,20);
-        @include isolate(6);
+        @include span-columns(3,16);
+        @include isolate(2);
         max-width:250px;
         margin-top:0px;
         margin-bottom:0px;
@@ -19,13 +26,15 @@ header{
 @include at-breakpoint($mini) {
     .chaseui-container, .chaseui-pagebody{
         @include container;
-   //     @include susy-grid-background;
+        //@include susy-grid-background;
 
+    }
+    .headerbgimg img{
+        height:80px;
+        margin-left: -888px;
     }
     header{
         h1{
-    
-            background-color:#003366;
             @include span-columns(3,5);
             @include isolate(1);
             margin-top:0px;
@@ -38,111 +47,26 @@ header{
         }
     }
 }
-@include at-breakpoint($mobile) {
-    .chaseui-container, .chaseui-pagebody{
+
+@include at-breakpoint($desktopmedium) {
+   .chaseui-container{
         @include container;
-     //   @include susy-grid-background;
+       // @include susy-grid-background;
     }
-    header{
+     .chaseui-pagebody{
+    
+    }
+header{
         h1{
     
-            background-color:#003366;
-            @include span-columns(3,8);
+            @include span-columns(3,16);
             @include isolate(2);
             margin-top:0px;
             margin-bottom:0px;
             padding-top:0px;
-            text-align:center;
             img{
-                width:80%;
+                
             }
         }
     }
 }
-@include at-breakpoint($tablet) {
-    .chaseui-container, .chaseui-pagebody{
-        @include container;
-     //   @include susy-grid-background;
-    }
-    header{
-        h1{
-    
-            background-color:#003366;
-            @include span-columns(4,12);
-            @include isolate(3);
-            margin-top:0px;
-            margin-bottom:0px;
-            padding-top:0px;
-            text-align:center;
-            img{
-                width:80%;
-            }
-        }
-    }
-}
-@include at-breakpoint($desktopsmall) {
-    .chaseui-container, .chaseui-pagebody{
-        @include container;
-   //     @include susy-grid-background;
-    }
-    header{
-        h1{
-    
-            background-color:#003366;
-            @include span-columns(3,14);
-            @include isolate(4);
-            margin-top:0px;
-            margin-bottom:0px;
-            padding-top:0px;
-            text-align:center;
-            img{
-                width:80%;
-            }
-        }
-    }
-}
-@include at-breakpoint($desktopmedium) {
-   .chaseui-container, .chaseui-pagebody{
-        @include container;
-      //  @include susy-grid-background;
-    }
-header{
-        h1{
-    
-            background-color:#003366;
-            @include span-columns(3,16);
-            @include isolate(5);
-            margin-top:0px;
-            margin-bottom:0px;
-            padding-top:0px;
-            img{
-                margin-left:40px;
-            }
-        }
-    }
-}
-@include at-breakpoint($desktoplarge) {
-    .chaseui-container, .chaseui-pagebody{
-        @include container;
-       // @include susy-grid-background;
-    }
-header{
-        h1{
-    
-            background-color:#003366;
-            @include span-columns(3,20);
-            @include isolate(6);
-            margin-top:0px;
-            margin-bottom:0px;
-            padding-top:0px;
-            img{
-                margin-left:40px;
-            }
-        }
-    }
-}
-
-
-
-
-

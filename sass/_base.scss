@@ -5,9 +5,9 @@ $legacy-support-for-ie: false;
 @import "compass/css3/opacity";
 
 // ---------------------------------------------------------------------------
-// Basic Grid
+// Basic Grid//
 
-$total-columns  : 5;
+$total-columns  : 16;
 $column-width   : 4em;
 $gutter-width   : 1em;
 $grid-padding   : $gutter-width;
@@ -26,11 +26,11 @@ $show-grid-backgrounds  : true;
 // ----------------------
 // Fonts
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/chaseiconsneue?v=3.0.1');
-  src: url('../fonts/chaseiconsneue.eot?#iefix&v=3.0.1') format('embedded-opentype'),
-    url('../fonts/chaseiconsneue.woff?v=3.0.1') format('woff'),
-    url('../fonts/chaseiconsneue.ttf?v=3.0.1') format('truetype');
+  font-family: 'GroteskReg';
+  src: url('../fonts/akzidgrostdlig-webfont.eot');
+  src: url('../fonts/akzidgrostdlig-webfont.eot') format('embedded-opentype'),
+    url('../fonts/akzidgrostdlig-webfont.woff') format('woff'),
+    url('../fonts/akzidgrostdlig-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,6 +49,17 @@ $show-grid-backgrounds  : true;
     src:url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-2.eot?") format("embedded-opentype"),url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-3.woff") format("woff"),url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-1.ttf") format("truetype"),url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-4.svg#web") format("svg");font-style:normal;font-weight:normal;}
 @font-face{
     font-family:AmplitudeMedium;src:url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-2.eot");src:url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-2.eot?") format("embedded-opentype"),url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-3.woff") format("woff"),url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-1.ttf") format("truetype"),url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-4.svg#web") format("svg");font-style:normal;font-weight:normal;}
+
+@font-face {
+  font-family: 'social';
+  src: url('../fonts/social.eot?78558470');
+  src: url('../fonts/social.eot?78558470#iefix') format('embedded-opentype'),
+       url('../fonts/social.woff?78558470') format('woff'),
+       url('../fonts/social.ttf?78558470') format('truetype'),
+       url('../fonts/social.svg?78558470#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 html{
@@ -72,8 +83,11 @@ button{
     clear:both;
     margin:10px 0;
     padding:10px 0;
-    border-radius:5px;
-    font-size:0.9em;
+    font-size:1.125em;
+    height:54px;
+    background-color:#0084CB;
+    color:#FFF;
+    border:none;
     &.chaseui-button-facebook{
         // needs latest Compass, add '@import "compass"' to your scss
         background-color: #0e85b4; // Old browsers

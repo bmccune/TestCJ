@@ -1,0 +1,267 @@
+.chaseui-pagebody.step2{
+    position:relative;
+    background-color:#FFF;
+    background-image: url('../images/bng_test_image2.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    height:600px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#voice2{
+    position:relative;
+    top:200px;
+    color:#FFF;
+    font-family:'GroteskReg';
+    font-size:2.375em;
+    background-color:rgba(0, 132, 203, 0.9);
+    @include span-columns(4,16);
+    @include isolate(2);
+}
+.help{
+    margin-left:20px;
+    margin-top:10px;
+    font-size:0.6em;
+    span{
+        margin-top: -35px;
+        display: block;
+        margin-bottom: 35px;
+        margin-left: 50px;
+    }
+}
+.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+}
+
+.two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+}
+
+.three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.voicedetails{
+    display:block;
+    padding:20px;
+}
+#form2{
+    position:relative;
+    top:200px;
+    background-color:rgba(0, 0, 0, 0.2);
+    @include span-columns(9,16);
+    @include isolate(6);
+    button{
+        width:280px;
+        margin:40px 40px 40px 130px;
+        text-align:center;
+    }
+    div.sublabel{
+        display:none;
+    }
+    h3{
+        font-family: 'GroteskReg';
+        font-size:2.625em;
+        margin-top:0px;
+        margin-bottom:30px;
+        font-weight:normal;
+        color:white;
+        strong{
+            font-weight:bold;
+        }
+    }
+    form{
+        padding:40px;
+        label{
+            display:none;
+        }
+        input, select{
+            border-radius:0;
+            border:none;
+            padding:8px;
+            color:#000;
+            margin:0px 0px;
+            background-color:rgba(255, 255, 255, 0.2);
+            &.placeholder {
+                color: #000; 
+            }
+            &:-moz-placeholder {
+                color: #000; 
+            }
+            &::-webkit-input-placeholder {
+                color: #000; 
+            } 
+        }
+        .first_name{
+            width:84%;
+            padding:2%;
+            background-color:rgba(255, 255, 255, 1);
+
+        }
+        .middle_name{
+            width:7%;
+            padding:2%;
+            margin-left:-5px;
+            border-right:5px solid #FFF;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .last_name{
+            width:96%;
+            padding:2%;
+            margin-top:2px;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .address{
+            width:96%;
+            padding:2%;
+            margin-top:24px;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .city{
+            width:38%;
+            padding:2%;
+            margin-top:2px;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .state{
+            width:24%;
+            padding:2%;
+            margin-left:-5px;
+            border-right:5px solid #FFF;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .zip{
+            width:24%;
+            padding:2%;
+            margin-top:2px;
+            margin-left:-5px;
+            border-right:5px solid #FFF;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .phone{
+            width:96%;
+            padding:2%;
+            margin-top:24px;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .dob{
+            width:96%;
+            padding:2%;
+            margin-top:24px;
+            background-color:rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+@include at-breakpoint($mini) {
+//5
+    #voice2{
+    @include span-columns(5 omega,5);
+    top:130px;
+    font-size:1.375em;
+    }
+    .help{
+        margin-left:20px;
+        margin-top:10px;
+        font-size:0.6em;
+        span{
+            margin-top: -35px;
+            display: block;
+            margin-bottom: 35px;
+            margin-left: 50px;
+        }
+    }
+    #form2{
+        @include span-columns(5 omega,5);
+        top:150px;
+        button{
+            min-width:257px;
+            width:257px;
+            margin:40px 40px 40px 0px;
+            text-align:center;
+        }
+        h3{
+            font-size:1.625em;
+        }
+        form{
+            .first_name{
+                width:82%;
+                padding:2%;
+            }
+            .middle_name{
+                width:7%;
+                padding:2%;
+                margin-left:-5px;
+                border-right:4px solid #FFF;
+                background-color:rgba(255, 255, 255, 1);
+            }
+            .last_name{
+                width:95%;
+                padding:2%;
+                margin-top:2px;
+                background-color:rgba(255, 255, 255, 1);
+            }
+            .address{
+                width:95%;
+                padding:2%;
+                margin-top:15px;
+                background-color:rgba(255, 255, 255, 1);
+            }
+            .city{
+                width:35%;
+                padding:2%;
+                margin-top:2px;
+                background-color:rgba(255, 255, 255, 1);
+            }
+            .state{
+                width:17%;
+                padding:2%;
+                margin-left:-5px;
+                border-right:5px solid #FFF;
+                background-color:rgba(255, 255, 255, 1);
+            }
+            .zip{
+                width:31%;
+                padding:2%;
+                margin-top:2px;
+                margin-left:-5px;
+                border-right:3px solid #FFF;
+                background-color:rgba(255, 255, 255, 1);
+            }
+            .phone{
+                width:96%;
+                padding:2%;
+                margin-top:15px;
+                background-color:rgba(255, 255, 255, 1);
+            }
+            .dob{
+                width:96%;
+                padding:2%;
+                margin-top:15px;
+                background-color:rgba(255, 255, 255, 1);
+            }
+        }
+    }
+}
+@include at-breakpoint($desktopmedium) {
+//16
+    #form2{
+        position:relative;
+        top:200px;
+        background-color:rgba(0, 0, 0, 0.2);
+        @include span-columns(9,16);
+        @include isolate(6);
+    }
+}

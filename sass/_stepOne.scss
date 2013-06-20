@@ -1,86 +1,226 @@
-.chaseui-section{
-}
-.chaseui-pagebody.step1{
-background-color: #032a54;
-    background-repeat: repeat-x;
-    background-image: -khtml-gradient(linear, left top, left bottom, from(#011428), to(#032a54));
-    background-image: -moz-linear-gradient(top, #011428, #032a54);
-    background-image: -ms-linear-gradient(top, #011428, #032a54);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #011428), color-stop(100%, #032a54));
-    background-image: -webkit-linear-gradient(top, #011428, #032a54);
-    background-image: -o-linear-gradient(top, #011428, #032a54);
-    background-image: linear-gradient(top, #011428, #032a54);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#011428', endColorstr='#032a54', GradientType=0);
-    position:relative;
+$primaryBlue: #0084cb;
+$headingColor: #002d62;
+.chaseui-pagebody.step1 {
+	position:relative;
+    background-color:#ddd;
+    background-image: url('../images/bng_test_image.jpg');
+    background-size:130%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
     height:600px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    #form0{
+        margin: 60px 0px 0px 0px;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #002d62;
+    }
+	.wrapper {
+		@include prefix(3);
+		@include suffix(3);
+		@include span-columns(10);
+		
+        .chaseui-welcome-message {
+			color: $headingColor;
+            margin-bottom:8px;
+		}
+		.chaseui-form {
+			@include span-columns(4, 4);
+			background-color: rgba(255, 255, 255, 0.5);
+			padding: 20px 0 40px 0;
+            margin-top:30px;
+			form {
+				.chaseui-form-title {
+					text-align: center;
+					margin-bottom: 10px;
+					color: #43444e;
+                    font-family:'GroteskReg';
+                    font-size:0.8em;
+				}
+				.chaseui-fields {
+					margin: 0 auto;
+					text-align: center;
+				}
+				input {										
+					@include span-columns(6);
+					background-color: white;
+					border: none;
+					margin-right: 5px;
+					color: black;
+				    padding:1em;
+					font-size: 0.4em;
+					float: none;
+                    &.placeholder {
+                        color: #000; 
+                    }
+                    &:-moz-placeholder {
+                        color: #000; 
+                    }
+                    &::-webkit-input-placeholder {
+                        color: #000; 
+                    } 
+				}
+				.chaseui-formnav {
+					text-align: center;
+					button {
+						background: $primaryBlue;
+						border: none;
+						float: none;
+						text-align: center;
+                        font-size:0.4em;
+                        width:280px;
+						margin: 20px auto -10px;
+					}
+					a {
+                        color: #43444e;
+                        font-family:'GroteskReg';
+                        font-size:0.4em;
+				        span{
+                            color: $primaryBlue;
+                        }
+                    }
+				}
+			}
+		}
+		.chaseui-thirdparty-signup {
+			text-align: center;
+			h4 {
+				color: #43444e;
+                font-family:'GroteskReg';
+                font-size:0.8em;
+                margin:20px 0px 25px 0px;
+			}
+			button {
+				@include span-columns(4);
+				min-width: 8em;
+				display: inline;
+				font-size: 18px;
+				float: none;
+				background: #00456e;
+				background-image: none;
+				text-align: left;
+				.chaseui-icon {
+					border-right: solid #fff 1px;
+					padding: 10px;
+					margin-right: 10px;
+				}
+			}
+		}
+		.chaseui-form-separator {
+			text-align: center;
+			margin: 40px 0 0 0;
+		}
+	}
+}
+
+.chaseui-form-separator {		
+	hr {
+		display: inline-block;
+		width: 10%;
+		min-width: 1.125em;
+		height: 0px;
+		background-color: #a9b3b9;
+		position: relative;
+		bottom: 8px;
+	}
+	span {
+		position: relative;
+		bottom: 10px;
+		background: url(../Images/or_element.png) 0 0 no-repeat;
+		width: 38px;
+		height: 38px;
+		display: inline-block;
+	}
+}
+.chaseui-icon {
+	&.facebook:before {
+		font-family: "social";
+		content: '\e801';		
+	}
+	&.amazon:before {
+		font-family: "social";
+		content: '\e800';
+	}
+	&.google:before {
+		font-family: "social";
+		content: '\e802';
+	}
 }
 
 
-
-
-
-.wrapper{
-    padding-top:30px;
-    h3{
-        font-family: 'Interstate';
-        font-size:1.3em;
-        font-weight:normal;
-        color:white;
-        strong{
-            font-weight:bold;
+@include at-breakpoint($mini) {
+    .chaseui-pagebody.step1 {
+        background-size:auto;
+        #form0{
+            margin: 30px 0px 0px 0px;
+            font-size:1.1em;
+        }
+	   .wrapper {
+            @include prefix(0);
+            @include suffix(0);
+            @include span-columns(5);
+            .chaseui-welcome-message {
+                margin-bottom:0px;
+            }
+            .chaseui-form{
+                background-color: rgba(255, 255, 255, 0);
+                padding: 0px;
+                margin-top: 0px;
+                form{
+                    .chaseui-form-title{
+                        margin-bottom:25px;
+                        font-size:1em;
+                    }
+                    .chaseui-formnav{
+                        button{
+                            font-size:1em;
+                            margin:20px auto 10px;
+                        }
+                        a{
+                            font-size:1em;
+                        }
+                    }
+                    input {										
+				        width:92%;
+                        font-size:0.727em;
+                        margin-bottom:10px;
+                    }
+                }
+            }
+            .chaseui-thirdparty-signup {
+                h4{
+                    font-size:1em;
+                    margin:20px 0px 10px 0px;
+                }
+                button {
+                    @include span-columns(4);
+                    min-width: 8em;
+                    display: inline;
+                    font-size: 18px;
+                    float: none;
+                    background: #00456e;
+                    background-image: none;
+                    text-align: left;
+				    .chaseui-icon {
+				        border-right: solid #fff 1px;
+                        padding: 10px;
+				        margin-right: 10px;
+                    }
+                }
+            }
+            .chaseui-form-separator {
+                text-align: center;
+                margin: 20px 0 0 0;
+            }
+        }  
+    }
+    .chaseui-form-separator{
+        span{
+            background-size:100%;
+            bottom:5px;
+            width:26px;
+            height:26px;
         }
     }
-    form{
-        margin-top:20px;
-        input{
-            border-radius:3px;
-            border:1px solid #333;
-        }
-        .first_name{
-            width:100px;
-        }
-        .middle_name{
-            width:40px;
-        }
-        .last_name{
-            width:100px;
-        }
-        .address{}
-        .city{}
-        .state{}
-        .zip{}
-        .phone{}
-        .dob{}
-    }
-}
-
-.chaseui-pagebody.step2{
-    background-color:#ddd;
-    background-size:auto;
-    position:relative;
-    height:600px;
-}
-.chaseui-pagebody.step3{
-    background-image: url('../images/testbg.jpg');
-    background-size:auto;
-    position:relative;
-    height:600px;
-}
-.chaseui-pagebody.step4{
-    background-image: url('../images/testbg2.jpg');
-    background-size:auto;
-    position:relative;
-    height:600px;
-}
-.chaseui-pagebody.step5{
-    background-color:#ddd;
-    background-size:auto;
-    position:relative;
-    height:600px;
-}
-.chaseui-pagebody.step6{
-    background-image: url('../images/testbg.jpg');
-    background-size:auto;
-    position:relative;
-    height:600px;
 }

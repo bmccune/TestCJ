@@ -1,0 +1,177 @@
+.chaseui-pagebody.step2{
+    position:relative;
+    background-color:#ddd;
+    background-image: url('../images/bng_test_image.jpg');
+    background-size:130%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    height:600px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+#voice2{
+    position:relative;
+    top:100px;
+    height:300px;
+    background-color:#FFF;
+    @include span-columns(5,16);
+}
+#form2{
+    position:relative;
+    top:100px;
+    @include span-columns(11 omega,16);
+    button{
+        width:100%;
+    }
+    label{
+        color:#FFF;
+        width:200px;
+        text-align:left;
+        display:block;
+        font-size:0.7em;
+        margin-bottom:-5px;
+    }
+    div.sublabel{
+        color:#FFF;
+        width:200px;
+        text-align:left;
+        display:block;
+        font-size:0.7em;
+        margin-top:-5px;
+        margin-bottom:15px;
+    }
+    h3{
+        font-family: 'Interstate';
+        font-size:1.3em;
+        font-weight:normal;
+        color:white;
+        strong{
+            font-weight:bold;
+        }
+    }
+    form{
+        margin-top:20px;
+        input, select{
+            border-radius:3px;
+            border:1px solid rgba(255, 255, 255, 0.6);
+            padding:8px;
+            color:#FFF;
+            margin:10px 0px;
+            background-color:rgba(255, 255, 255, 0.2);
+        }
+        .first_name{
+            width:250px;
+            padding:8px;
+            color:#FFF;
+            margin:5px 0px 0px 0px;
+            background-color:rgba(255, 255, 255, 0.2);
+
+        }
+        .middle_name{
+            width:40px;
+            padding:8px;
+            color:#FFF;
+            margin:10px 0px;
+            background-color:rgba(255, 255, 255, 0.2);
+        }
+        .last_name{
+            width:250px;
+            padding:8px;
+            color:#FFF;
+            margin:10px 0px;
+            background-color:rgba(255, 255, 255, 0.2);
+        }
+        .address{
+            width:250px;
+            padding:8px;
+            color:#FFF;
+            margin:10px 0px;
+            background-color:rgba(255, 255, 255, 0.2);
+        }
+        .city{
+            padding:8px;
+            color:#FFF;
+            margin:10px 0px;
+            background-color:rgba(255, 255, 255, 0.2);
+        }
+        .state{
+            padding:8px;
+            color:#FFF;
+            margin:10px 0px;
+            height:37px;
+            background-color:rgba(255, 255, 255, 0.2);
+        }
+        .zip{}
+        .phone{}
+        .dob{}
+    }
+}
+
+
+@include at-breakpoint($mini) {
+//5
+    #voice2{
+    @include span-columns(5 omega,5);
+    }
+    #form2{
+        @include span-columns(5 omega,5);
+    }
+}
+@include at-breakpoint($desktopmedium) {
+//16
+    #form2{
+        @include span-columns(11 omega,16);
+    }
+}
+
+
+
+
+//voice
+.chaseui-pagebody.voice{
+    background-color:#FFF;
+    background-size:auto;
+    position:relative;
+    height:600px;
+    .chaseui-voicetext{
+        width:100%;
+        height: 400px;
+        background-color: #0084CB;
+        position: relative;
+        top: 25%;      
+        .chaseui-inner{
+            color: #FFF;
+            font-family: 'GroteskReg';
+            font-size: 2.375em;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-top: 145px;
+        }
+    }
+}
+
+//STEP3
+.chaseui-pagebody.step3{
+    background-color:#444;
+    background-size:auto;
+    position:relative;
+    height:600px;
+}
+.chaseui-pagebody.step4{
+    background-color:#032a54;
+    background-size:auto;
+    position:relative;
+    height:600px;
+}
+.chaseui-pagebody.step5{
+    background-color:#ddd;
+    background-size:auto;
+    position:relative;
+    height:600px;
+}
+.chaseui-pagebody.step6{
+    background-color:#032a54;
+    background-size:auto;
+    position:relative;
+    height:600px;
+}

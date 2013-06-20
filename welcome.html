@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+        // function to check browser type (this will be replaced with server side logic at some point...)
+        (function () {
+            var ua = navigator.userAgent;
+            var ie = /MSIE/.test(ua) && ua.replace(/.*?MSIE (.).*/, "$1");
+            var ff = /Firefox/.test(ua) && ua.replace(/.*?Firefox\/(.)\.(.).*/, "$1_$2");
+            var safari = /Safari/.test(ua) && ua.replace(/.*?Version\/(.).*/, "$1");
+            var chrome = /Chrome/.test(ua) && ua.replace(/.*?Chrome\/(.).*/, "$1");
+            var opera = /Opera/.test(ua) && ua.replace(/.*?Opera\/(.).*/, "$1");
+            document.getElementsByTagName("html")[0].className = "js" + (ie ? " ie ie" + ie : ff ? " ff ff" + ff : chrome ? " chrome chrome" + chrome : safari ? " safari safari" + safari : opera ? " opera opera" + opera : "");
+        })();
+    </script>
+
+    <!-- minimum scripts to load.  All others will be loaded via requirejs dependencies -->
+    <!-- end minimum scripts to load -->
+    
+	<link rel="stylesheet" type="text/css" href="stylesheets/welcome.css">
+    
+    <title>NCJ Concept 3</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://lesscss.org/js/less.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <div class="chaseui-container">
+            <h1 class="chaseui-pagelogo small"><img src="images/logo.png" /></h1>
+            <ul class="chaseui-utilitynav">
+                <li>Return to Chase.com</li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        
+    </nav>
+    <div class="chaseui-pagebody">
+		<div class="chaseui-form">         
+			<div class="chaseui-intro">
+					<h3>Thank you for your interest in a</h3>
+					<h2>Chase Sapphire Preferred card</h2>
+					<div>Connect With</div>
+					<button class="chaseui-button small chaseui-thirdparty chaseui-button-facebook">
+							<i class="chaseui-icon chaseui-icon-facebook"></i>Facebook
+					</button>
+					 <button class="chaseui-button small chaseui-thirdparty chaseui-button-amazon">
+							<i class="chaseui-icon chaseui-icon-facebook"></i>Amazon
+					</button>
+					 <button class="chaseui-button small chaseui-thirdparty chaseui-button-google">
+							<i class="chaseui-icon chaseui-icon-facebook"></i>Google
+					</button>
+					<div class="chaseui-form-separator"><hr /><span>OR</span><hr /></div>
+			</div>
+			<form>
+				<span>Create an account</span>
+				<div class="chaseui-fields">						
+					<div style="float:left">
+						<input class="email_address" type="email" name="email_address" placeholder="Email address" size="20">
+					</div>
+					<div style="float:left">
+						<input class="password" type="password" name="password" placeholder="Password" size="20">                    
+						<div>
+							<input id="remember_me" type="checkbox" name="remember_me" /><label for="remember_me">Remember me at next log on</label>
+						</div>
+					</div>
+				</div>				
+				<div class="chaseui-formnav">
+					<button class="chaseui-button chaseui-submit">Sign Up</button>
+					<a href="#">Already an user?  Log in</a>
+				</div>
+			</form>
+		</div>
+		<div class="chaseui-voice">
+			<h4>Benefits</h4>
+			<ul>
+				<li>Lorem ipsume dolor sit amet</li>
+				<li>Ut labore et dolore</li>
+				<li>Lorem ipsume dolor sit amet</li>
+				<li>Consectetur adipiscing elit</li>
+			</ul>
+		</div>		
+	</div>
+</body>
+<script>
+    $(function() {
+		$(".chaseui-submit").on("click", function() {
+			window.location = "forms.html";
+		});
+		$(".chaseui-button-amazon").on("click", function() {
+			window.location = "amazon-signin.html"
+		});
+    });    
+</script>
+</html>

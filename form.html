@@ -26,64 +26,214 @@
     <script src="JS/jquery-ui.min.js" type="text/javascript"></script>
     <script src="JS/jquery.stellar.min.js" type="text/javascript"></script>  
     <script src="JS/jquery.scrollorama.js" type="text/javascript"></script>   
+    <script src="JS/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>   
+    
 </head>
 
 <body>
+    <div class="headerbgimg">
+            <img src="images/header_desktop_full_no_logo.png"/>
+        </div>
     <header>
         <div class="chaseui-container">
-            <h1 class="chaseui-pagelogo"><img src="images/logo2.png" /></h1>
+            <h1 class="chaseui-pagelogo"><img src="images/header_sapphire_logo.png" /></h1>
         </div>
     </header>
-    
-    <div class="status">
-
-    </div>
     <div class="chaseui-section">
         <!-- START STEP 1 -->
-        <div class="chaseui-pagebody step1" data-stellar-background-ratio="2">
-            <div id="form1" class="wrapper" style="position:relative;top:100px;">
-                <h3 style="padding:0px;margin:0px;">Tell us a bit more about yourself and <strong>get started in minutes!</strong></h3>
+        <div class="chaseui-pagebody step1" data-stellar-background-ratio="1">
+			<div class="chaseui-container">
+				<div id="form0" class="wrapper">
+					<div class="chaseui-welcome-message">Thank you for your interest in a</div>
+					<div class="chaseui-welcome-message">Chase Sapphire Preferred<sup>&reg;</sup> card</div>					
+					<div class="chaseui-form">						
+						<div class="chaseui-thirdparty-signup">
+							<h4>Sign up using</h4>
+							<button class="chaseui-button small chaseui-button-facebook">
+								<i class="chaseui-icon facebook"></i>Facebook
+							</button>
+							 <button class="chaseui-button chaseui-button-amazon">
+									<i class="chaseui-icon amazon"></i>Amazon
+							</button>
+							 <button class="chaseui-button small chaseui-thirdparty chaseui-button-google">
+									<i class="chaseui-icon google"></i>Google
+							</button>
+						</div>					
+						<div class="chaseui-form-separator"><hr /><span></span><hr /></div>
+						
+						<form>
+							<div class="chaseui-form-title">Create an account</div>
+							<div class="chaseui-fields">														
+								<input class="email_address" type="email" size="20" name="email_address" placeholder="Email address">
+								<input class="password" type="password" size="20" name="password" placeholder="Password">                    														
+							</div>				
+							<div class="chaseui-formnav">
+								<button class="chaseui-button chaseui-submit">Sign Up</button>
+								<a href="#">Already an user? <span>Log in >></span></a>
+							</div>
+						</form>
+					</div>
+				</div>						
+			</div>
+        </div>
+        <!-- END STEP 1 -->
+        
+        <!-- START STEP 2 -->
+        <div class="chaseui-pagebody step2" data-stellar-background-ratio="0.5">
+            <div class="chaseui-container">
+            <div id="voice2">
+                <span class="voicedetails">We just need the basics here, Brian so go ahead and start dreaming about how you’ll use your rewards!</span>
+                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
+            </div>
+            <div id="form2" class="wrapper">
                 <form>
-                    <input class="first_name" type="text" name="first_name" placeholder="First Name" size="20">
-                    <input class="middle_name" type="text" name="middle_name" placeholder="M.I." size="2">
-                    <input class="last_name" type="text" name="last_name" placeholder="Last Name" size="20">
-                    <input class="address" type="text" name="home_address" placeholder="Home Address" size="35">
-                    <input class="city" type="text" name="city" placeholder="City">
-                    <input class="state" type="text" name="zip_code" placeholder="State" size="9">
-                    <input class="zip" type="number" name="zip_code" placeholder="Zip Code" size="9">
-                    <input class="phone" type="tel" name="phone_number" placeholder="Primary phone number" size="20">
-                    <br/>Date of Birth: <input class="dob" type="date" name="bday">
+                    <h3>Tell us about yourself</h3>
+                    <label>Name</label>
+                    <input class="first_name" type="text" name="first_name" placeholder="First Name" size="20" value="Brian">
+                    <input class="middle_name" type="text" name="middle_name" placeholder="M.I." size="2" value="J">
+                    <input class="last_name" type="text" name="last_name" placeholder="Last Name" size="20" value="McCune">
+                    <div class="sublabel">add suffix</div>
+                    <label>Home Address</label>
+                    <input class="address" type="text" name="home_address" placeholder="Home Address" size="35" value="961 Kentish Rd.">
+                    <div class="sublabel">add another line</div>
+                    <input class="city" type="text" name="city" placeholder="City" value="Lynnwood">
+                    <input class="state" list="state" name="state" placeholder="State" value="Wa">
+                        <datalist id="state">
+                        <option value="" selected="selected">State</option><option value="AL">Alabama</option><option value="AK">Alaska</option> 
+                        <option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option> 
+                        <option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option> 
+                        <option value="DC">District Of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option> 
+                        <option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option> 
+                        <option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option> 
+                        <option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option> 
+                        <option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option> 
+                        <option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option> 
+                        <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option> 
+                        <option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option> 
+                        <option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option> 
+                        <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option> 
+                        <option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option> 
+                        <option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option> 
+                        <option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option> 
+                        <option value="WY">Wyoming</option>
+                        </datalist>
+                    <input class="zip" type="number" name="zip_code" placeholder="Zip Code" size="9" value="98036">
+                    <label>Phone number</label>
+                    <input class="phone" type="tel" name="phone_number" placeholder="Primary phone number" size="20" value="(909) 702-2211">
+                    <div class="sublabel">add another phone number</div>
+                    <label>Birthday</label>
+                    <input class="dob" type="date" placeholder="Birthday" name="bday">
+                    <button id="step2">Continue</button>
                 </form>
             </div>
         </div>
-        <!-- END STEP 1 -->
-        <!-- START STEP 2 -->
-        <div class="chaseui-pagebody step2" data-stellar-background-ratio="0.5">
-            
         </div>
         <!-- END STEP 2 -->
         <!-- START STEP 3 -->
         <div class="chaseui-pagebody step3" data-stellar-background-ratio="0.5">
-            <div id="example1" style="position:relative;top:200px;">
-                HELLO
+            <div class="chaseui-container">
+
+            <div id="voice3">
+                <span class="voicedetails">We want to let you know right away if you’ve been approved.  This information helps us quickly verify your identity and check your credit score.</span>
+                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
             </div>
+            <div id="form3" class="wrapper">
+                <form>
+                    <h3>Share your financial information</h3>
+                    <div class="floatleft">
+                        <label>Last 4 Social Security Number</label>
+                        <input class="ssn" type="text" name="first_name" placeholder="XXX-XX-" size="20">
+                    </div>
+                    <div class="floatright">
+                        <label>What is your gross annual income?</label>
+                        <input class="income" type="text" name="middle_name" placeholder="Annual income" size="2">
+                    </div>
+                    <div class="floatleft">
+                        <label>Do you Rent?</label>
+                        <input class="rent" type="text" name="last_name" placeholder="Yes" size="20">
+                    </div>
+                    <div class="floatright">
+                        <label>How Much is Your monthly rent</label>
+                        <input class="amount" type="text" name="home_address" placeholder="$" size="35">
+                    </div>
+                    <button id="step3">Continue</button>
+                </form>
+            </div></div>
         </div>
         <!-- END STEP 3 -->
         <!-- START STEP 4 -->
-        <div class="chaseui-pagebody step4" data-stellar-background-ratio="2">
-            
+        <div class="chaseui-pagebody step4" data-stellar-background-ratio="0.5">
+            <div class="chaseui-container">
+            <div id="voice4">
+                <span class="voicedetails">We want to let you know right away if you’ve been approved.  This information helps us quickly verify your identity and check your credit score.</span>
+                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
+            </div>
+            <div id="form4" class="wrapper">
+                <form>
+                    <h3>Account setup and agree to terms</h3>
+                    <div class="floatleft">
+                        <label>Remember Chase your ID is</label>
+                        <input class="account" type="text" name="account" placeholder="BrianMcCune">
+                    </div>
+                    <div class="floatright">
+                        <label>Create chase password</label>
+                        <input class="password" type="text" name="password" placeholder="Password">
+                    </div>
+                    <ul>
+                        <li>I certify that the information I provided is true and correct.</li>
+                        <li>I agree that to service and manage my accounts JPMorgan Chase Ban, N.A. representative and/or affiliates may contact the telephone number I provided.</li>
+                        <li>I reviewed the pricing &amp; terms and privacy policy and understand my responsbilities.</li>
+                        <li>As the primary card member you will be liable for all account balances.</li>
+                        <li>I certify JPMorgan Chase to run a credit check approve my account and confirm my identity.</li>
+                    </ul>
+                    <button id="step4">Submit Application</button>
+                </form>
+            </div></div>
         </div>
         <!-- END STEP 4 -->
+        <div class="chaseui-pagebody voice" data-stellar-background-ratio="0.5">
+            <div class="chaseui-voicetext">
+                <div class="chaseui-inner">
+                    <span class="replace">Verifying identity</span><span class="one">.</span><span class="two">.</span><span class="three">.</span>
+                </div>
+            </div>
+        </div>
         <!-- START STEP 5 -->
         <div class="chaseui-pagebody step5" data-stellar-background-ratio="0.5">
-            
+         <div class="chaseui-container">
+            <div id="voice5">
+                <span class="voicedetails">We want to help you earn those 40,000 bonus points!<br/><br/>Make Sapphire your default shopping card at online stores. Or use your card number online.</span>
+                <span class="carddetails">1234-5678-2222-9388<br/>exp 10/16 cvv 332</span>
+                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
+            </div>
+            <div id="form5" class="wrapper">
+                    <h3>You're approved, Brian!</h3>
+                    <p class="pone">Your Chase Sapphire Preferred card is on its way, but you can start shopping now!</p>
+                    <p class="ptwo">Your credit limit is <strong>$10,000</strong></p>
+                    <div class="rate">0%<sup>*</sup><span>12 Month APR</span></div>
+                    <div class="fee">$0<sup>*</sup><span>Annual Fee</span></div>
+                    <p class="pthree"><sup>*</sup>Review rates &amp; fees for details >></p>
+                    <p class="pfour">We'll mail your card in 7-10 business days<span>Card Member Agreement >></span></p>
+            </div>
+            <div id="shop5" class="wrapper">
+                <h3>Update your favorite stores with your new card.</h3>
+                <p class="pone">Tap a brand to add your card to the store.</p>
+                <img src="images/partner_amazon.png">
+                <img src="images/partner_zappos.png">
+                <img src="images/partner_target.png">
+                <img src="images/partner_googleplay.png">
+                <img src="images/partner_bestbuy.png">
+                <img src="images/partner_lowes.png">
+                <hr>
+                <h4>Find your favorite store</h4>
+                <input class="stores" placeholder="Store name or web address">
+                <p class="ptwo">View all partner stores >></p>
+                <button id="step5">View My Dashboard</button>
+            </div>
+         </div>   
         </div>
-        <!-- END STEP 5 -->
-        <!-- START STEP 6 -->
-        <div class="chaseui-pagebody step6" data-stellar-background-ratio="0.5">
-            
-        </div>
-        
+        <!-- END STEP 5 -->        
     </div>
 </body>
 <script>
@@ -103,10 +253,54 @@
             blocks:'.chaseui-pagebody',
             enablePin:false
         });
-        scrollorama.animate('#form1',{ duration: 200, property:'opacity', end:0 }) 
-        scrollorama.animate('#example1',{ delay: 400, duration: 300, property:'opacity', start:0 }) 
+       // scrollorama.animate('#form1',{ delay: 400, duration: 200, property:'opacity', end:0 }) 
+        scrollorama.animate('.chaseui-inner',{ delay: 600, duration: 300, property:'opacity', start:0 }) 
         scrollorama.onBlockChange(function() {
             console.log('You just scrolled to block#'+scrollorama.blockIndex);
+        });
+        $('button.chaseui-button-amazon').click(function(event){
+            event.preventDefault();
+            window.open('amazon-signin.html');
+            var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
+            $('body').scrollTo(pageheight+100, 800 );
+        });
+        $('button#step2').click(function(event){
+            event.preventDefault();
+            var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
+            pageheight = pageheight * 2;
+            pageheight = pageheight + 100;
+            $('body').scrollTo( pageheight, 800 );
+        });
+        $('button#step3').click(function(event){
+            event.preventDefault();
+            var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
+            pageheight = pageheight * 3;
+            pageheight = pageheight + 100;
+            $('body').scrollTo( pageheight, 800 );
+        });
+        $('button#step4').click(function(event){
+            event.preventDefault();
+            var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
+            pageheight = pageheight * 4;
+            pageheight = pageheight + 100;
+            $('body').scrollTo( pageheight, 800 );
+            setTimeout(function(){
+                $('.replace').text('Checking credit history');
+            }, 3000);
+            setTimeout(function(){
+                $('.replace').text('Getting credit score');
+            }, 6000);
+            setTimeout(function(){
+                $('.replace').text('Calculating credit limit');
+            }, 9000);
+            setTimeout(function(){
+                pageheight = pageheight * 5;
+                pageheight = pageheight + 100;
+                $('body').scrollTo( pageheight, 800 );
+            }, 12000);
+        });
+        $('button#step5').click(function(event){
+            event.preventDefault();
         });
     });
     $(window).resize(function() {
