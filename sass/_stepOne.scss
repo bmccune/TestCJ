@@ -3,31 +3,39 @@ $headingColor: #002d62;
 .chaseui-pagebody.step1 {
 	position:relative;
     background-color:#ddd;
-    background-image: url('../images/bng_test_image.jpg');
-    background-size:130%;
+    background-image: url('../images/bng_evergreen_forest.jpg');
     background-repeat:no-repeat;
     background-attachment:fixed;
     height:600px;
     overflow-y:scroll;
     overflow-x:hidden;
     #form0{
-        margin: 60px 0px 0px 0px;
+        margin: 140px 0px 0px 0px;
         font-size: 2.5em;
-        font-weight: bold;
+        text-align:center;
         color: #002d62;
     }
+    #voice1{
+    position:relative;
+    font-weight:normal;
+    top:170px;
+    color:#FFF;
+    font-size:1.125em;
+    background-color:rgba(0, 51, 102, 0.9);
+    @include span-columns(4,16);
+    @include isolate(2);
+    }
 	.wrapper {
-		@include prefix(3);
-		@include suffix(3);
-		@include span-columns(10);
+		@include span-columns(16);
 		
         .chaseui-welcome-message {
 			color: $headingColor;
             margin-bottom:8px;
 		}
 		.chaseui-form {
-			@include span-columns(4, 4);
-			background-color: rgba(255, 255, 255, 0.5);
+            @include span-columns(10,16);
+            @include isolate(6);
+			background-color: rgba(255, 255, 255, 0.8);
 			padding: 20px 0 40px 0;
             margin-top:30px;
 			form {
@@ -85,7 +93,8 @@ $headingColor: #002d62;
 			text-align: center;
 			h4 {
 				color: #43444e;
-                font-size:0.8em;
+                font-size:0.7em;
+                font-weight:normal;
                 margin:20px 0px 25px 0px;
 			}
 			button {
@@ -94,7 +103,7 @@ $headingColor: #002d62;
 				display: inline;
 				font-size: 18px;
 				float: none;
-				background: #00456e;
+				background: #0084CB;
 				background-image: none;
 				text-align: left;
 				.chaseui-icon {
@@ -147,11 +156,14 @@ $headingColor: #002d62;
 
 
 @include at-breakpoint($mini) {
+    #voice1{
+        display:none;
+    }
     .chaseui-pagebody.step1 {
         background-size:auto;
         #form0{
-            margin: 30px 0px 0px 0px;
             font-size:1.1em;
+            margin-top:40px;
         }
 	   .wrapper {
             @include prefix(0);
@@ -161,9 +173,11 @@ $headingColor: #002d62;
                 margin-bottom:0px;
             }
             .chaseui-form{
-                background-color: rgba(255, 255, 255, 0);
+                background-color: rgba(255, 255, 255, 0.9);
                 padding: 0px;
                 margin-top: 0px;
+                @include span-columns(5,5);
+                @include isolate(1);
                 form{
                     .chaseui-form-title{
                         margin-bottom:25px;
@@ -171,8 +185,10 @@ $headingColor: #002d62;
                     }
                     .chaseui-formnav{
                         button{
-                            font-size:1em;
-                            margin:20px auto 10px;
+                            font-size:1em;      
+                            margin: 10px auto 40px;
+                            @include span-columns(3,5);
+                            @include pre(1);
                         }
                         a{
                             font-size:1em;
@@ -187,28 +203,114 @@ $headingColor: #002d62;
             }
             .chaseui-thirdparty-signup {
                 h4{
-                    font-size:1em;
+                    font-size:1.5em;
                     margin:20px 0px 10px 0px;
                 }
                 button {
-                    @include span-columns(4);
-                    min-width: 8em;
-                    display: inline;
-                    font-size: 18px;
-                    float: none;
+                    @include span-columns(1);
+                    font-size: 0px;
                     background: #00456e;
                     background-image: none;
                     text-align: left;
 				    .chaseui-icon {
-				        border-right: solid #fff 1px;
-                        padding: 10px;
-				        margin-right: 10px;
+				        display:none;
                     }
+                    &:nth-child(2){
+                        @include pre(1);
+                    }
+                    
                 }
             }
             .chaseui-form-separator {
                 text-align: center;
-                margin: 20px 0 0 0;
+                margin: 30px 0 20px 0;
+                @include span-columns(5);
+            }
+        }  
+    }
+    .chaseui-form-separator{
+        span{
+            background-size:100%;
+            bottom:5px;
+            width:26px;
+            height:26px;
+        }
+    }
+}
+
+
+
+//Mobile
+@include at-breakpoint($mobile) {
+    #voice1{
+        display:none;
+    }
+    .chaseui-pagebody.step1 {
+        background-size:auto;
+        #form0{
+            font-size:1.1em;
+            margin-top:40px;
+        }
+	   .wrapper {
+            @include prefix(0);
+            @include suffix(0);
+            @include span-columns(8);
+            .chaseui-welcome-message {
+                margin-bottom:0px;
+            }
+            .chaseui-form{
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: 0px;
+                margin-top: 0px;
+                @include span-columns(8,8);
+                @include isolate(1);
+                form{
+                    .chaseui-form-title{
+                        margin-bottom:25px;
+                        font-size:1em;
+                    }
+                    .chaseui-formnav{
+                        button{
+                            font-size:1em;      
+                            margin: 10px auto 40px;
+                            @include span-columns(6,8);
+                            @include pre(1);
+                        }
+                        a{
+                            font-size:1em;
+                        }
+                    }
+                    input {										
+				        width:92%;
+                        font-size:0.727em;
+                        margin-bottom:10px;
+                    }
+                }
+            }
+            .chaseui-thirdparty-signup {
+                h4{
+                    font-size:1.5em;
+                    margin:20px 0px 10px 0px;
+                }
+                button {
+                    @include span-columns(2);
+                    font-size: 0px;
+                    background: #00456e;
+                    background-image: none;
+                    text-align: left;
+				    .chaseui-icon {
+				        display:none;
+                    }
+                    &:nth-child(2){
+                        @include pre(1);
+                    }
+                    
+                }
+            }
+            .chaseui-form-separator {
+                text-align: center;
+                margin: 30px 0 20px 0;
+                @include span-columns(8);
             }
         }  
     }

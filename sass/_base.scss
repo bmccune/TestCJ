@@ -52,12 +52,8 @@ h3{
     border-right:1px solid #666;
 }
 button{
-    min-width:18em;
     display:block;
     float:left;
-    clear:both;
-    margin:10px 0;
-    padding:10px 0;
     font-size:1.125em;
     height:54px;
     background-color:#0084CB;
@@ -86,7 +82,6 @@ button{
         @include background-image(linear-gradient(top,  #439b09 0%,#186602 100%));
         color:#FFFFFF;
         border:1px solid #0b6306;
-        min-width:190px;
     }
 }
 a:link, a:visited, a:hover, a:active{

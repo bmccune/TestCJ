@@ -40,8 +40,37 @@ header{
         
     }
     .chaseui-container, .chaseui-pagebody{
-        @include container;
+       // @include container;
         //@include susy-grid-background;
+
+    }
+    .headerbgimg img{
+        height:80px;
+        margin-left: -888px;
+    }
+    header{
+        h1{
+            @include span-columns(3,5);
+            @include isolate(1);
+            margin-top:0px;
+            margin-bottom:0px;
+            padding-top:0px;
+            text-align:center;
+            img{
+                width:80%;
+            }
+        }
+    }
+}
+@include at-breakpoint($mobile) {
+    
+    .mobilevoice{
+        display:block;
+        
+    }
+    .chaseui-container, .chaseui-pagebody{
+       // @include container;
+        @include susy-grid-background;
 
     }
     .headerbgimg img{

@@ -433,12 +433,8 @@ h3 {
 
 /* line 54, ../sass/_base.scss */
 button {
-  min-width: 18em;
   display: block;
   float: left;
-  clear: both;
-  margin: 10px 0;
-  padding: 10px 0;
   font-size: 1.125em;
   height: 54px;
   background-color: #0084CB;
@@ -446,7 +442,7 @@ button {
   border: none;
   border-radius: 5px;
 }
-/* line 67, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 button.chaseui-button-facebook {
   background-color: #0e85b4;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0e85b4), color-stop(100%, #055175));
@@ -457,7 +453,7 @@ button.chaseui-button-facebook {
   color: #FFF;
   border: 1px solid #086492;
 }
-/* line 75, ../sass/_base.scss */
+/* line 71, ../sass/_base.scss */
 button.chaseui-primary {
   background-color: #fafafa;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #bec6ca));
@@ -468,7 +464,7 @@ button.chaseui-primary {
   color: #43444e;
   border: 1px solid #bebfbf;
 }
-/* line 82, ../sass/_base.scss */
+/* line 78, ../sass/_base.scss */
 button.chaseui-submit {
   background-color: #439b09;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #439b09), color-stop(100%, #186602));
@@ -478,10 +474,9 @@ button.chaseui-submit {
   background-image: linear-gradient(top, #439b09 0%, #186602 100%);
   color: #FFFFFF;
   border: 1px solid #0b6306;
-  min-width: 190px;
 }
 
-/* line 92, ../sass/_base.scss */
+/* line 87, ../sass/_base.scss */
 a:link, a:visited, a:hover, a:active {
   color: #666;
   text-decoration: none;
@@ -554,21 +549,6 @@ header h1 {
     display: block;
   }
 
-  /* line 42, ../sass/_header.scss */
-  .chaseui-container, .chaseui-pagebody {
-    max-width: 24em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 38, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .chaseui-container:after, .chaseui-pagebody:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   /* line 47, ../sass/_header.scss */
   .headerbgimg img {
     height: 80px;
@@ -592,8 +572,55 @@ header h1 {
     width: 80%;
   }
 }
-@media (min-width: 78em) and (max-width: 88em) {
+@media (min-width: 28em) and (max-width: 46em) {
   /* line 67, ../sass/_header.scss */
+  .mobilevoice {
+    display: block;
+  }
+
+  /* line 71, ../sass/_header.scss */
+  .chaseui-container, .chaseui-pagebody {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(10.25641%, rgba(100, 100, 225, 0.25)), color-stop(10.25641%, rgba(0, 0, 0, 0)), color-stop(12.82051%, rgba(0, 0, 0, 0)), color-stop(12.82051%, rgba(100, 100, 225, 0.25)), color-stop(23.07692%, rgba(100, 100, 225, 0.25)), color-stop(23.07692%, rgba(0, 0, 0, 0)), color-stop(25.64103%, rgba(0, 0, 0, 0)), color-stop(25.64103%, rgba(100, 100, 225, 0.25)), color-stop(35.89744%, rgba(100, 100, 225, 0.25)), color-stop(35.89744%, rgba(0, 0, 0, 0)), color-stop(38.46154%, rgba(0, 0, 0, 0)), color-stop(38.46154%, rgba(100, 100, 225, 0.25)), color-stop(48.71795%, rgba(100, 100, 225, 0.25)), color-stop(48.71795%, rgba(0, 0, 0, 0)), color-stop(51.28205%, rgba(0, 0, 0, 0)), color-stop(51.28205%, rgba(100, 100, 225, 0.25)), color-stop(61.53846%, rgba(100, 100, 225, 0.25)), color-stop(61.53846%, rgba(0, 0, 0, 0)), color-stop(64.10256%, rgba(0, 0, 0, 0)), color-stop(64.10256%, rgba(100, 100, 225, 0.25)), color-stop(74.35897%, rgba(100, 100, 225, 0.25)), color-stop(74.35897%, rgba(0, 0, 0, 0)), color-stop(76.92308%, rgba(0, 0, 0, 0)), color-stop(76.92308%, rgba(100, 100, 225, 0.25)), color-stop(87.17949%, rgba(100, 100, 225, 0.25)), color-stop(87.17949%, rgba(0, 0, 0, 0)), color-stop(89.74359%, rgba(0, 0, 0, 0)), color-stop(89.74359%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+
+  /* line 76, ../sass/_header.scss */
+  .headerbgimg img {
+    height: 80px;
+    margin-left: -888px;
+  }
+
+  /* line 81, ../sass/_header.scss */
+  header h1 {
+    width: 58.33333%;
+    float: left;
+    margin-right: 4.16667%;
+    margin-right: -100%;
+    margin-left: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+  }
+  /* line 88, ../sass/_header.scss */
+  header h1 img {
+    width: 80%;
+  }
+}
+@media (min-width: 78em) and (max-width: 88em) {
+  /* line 96, ../sass/_header.scss */
   .chaseui-container {
     max-width: 79em;
     padding-left: 1em;
@@ -608,7 +635,7 @@ header h1 {
     clear: both;
   }
 
-  /* line 75, ../sass/_header.scss */
+  /* line 104, ../sass/_header.scss */
   header h1 {
     width: 17.72152%;
     float: left;
@@ -631,56 +658,69 @@ body {
 .chaseui-pagebody.step1 {
   position: relative;
   background-color: #ddd;
-  background-image: url("../images/bng_test_image.jpg");
-  background-size: 130%;
+  background-image: url("../images/bng_evergreen_forest.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 600px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-/* line 13, ../sass/_stepOne.scss */
+/* line 12, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 #form0 {
-  margin: 60px 0px 0px 0px;
+  margin: 140px 0px 0px 0px;
   font-size: 2.5em;
-  font-weight: bold;
+  text-align: center;
   color: #002d62;
 }
-/* line 19, ../sass/_stepOne.scss */
+/* line 18, ../sass/_stepOne.scss */
+.chaseui-pagebody.step1 #voice1 {
+  position: relative;
+  font-weight: normal;
+  top: 170px;
+  color: #FFF;
+  font-size: 1.125em;
+  background-color: rgba(0, 51, 102, 0.9);
+  width: 24.05063%;
+  float: left;
+  margin-right: 1.26582%;
+  margin-right: -100%;
+  margin-left: 6.32911%;
+}
+/* line 28, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper {
-  padding-left: 18.98734%;
-  padding-right: 18.98734%;
-  width: 62.02532%;
+  width: 100%;
   float: left;
   margin-right: 1.26582%;
 }
-/* line 24, ../sass/_stepOne.scss */
+/* line 31, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-welcome-message {
   color: #002d62;
   margin-bottom: 8px;
 }
-/* line 28, ../sass/_stepOne.scss */
+/* line 35, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form {
-  width: 100%;
+  width: 62.02532%;
   float: left;
-  margin-right: 5.26316%;
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: 1.26582%;
+  margin-right: -100%;
+  margin-left: 31.64557%;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 0 40px 0;
   margin-top: 30px;
 }
-/* line 34, ../sass/_stepOne.scss */
+/* line 42, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-form-title {
   text-align: center;
   margin-bottom: 10px;
   color: #43444e;
   font-size: 0.8em;
 }
-/* line 40, ../sass/_stepOne.scss */
+/* line 48, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-fields {
   margin: 0 auto;
   text-align: center;
 }
-/* line 44, ../sass/_stepOne.scss */
+/* line 52, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form input {
   width: 36.70886%;
   float: left;
@@ -693,23 +733,23 @@ body {
   font-size: 0.4em;
   float: none;
 }
-/* line 53, ../sass/_stepOne.scss */
+/* line 61, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form input.placeholder {
   color: #000;
 }
-/* line 56, ../sass/_stepOne.scss */
+/* line 64, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form input:-moz-placeholder {
   color: #000;
 }
-/* line 59, ../sass/_stepOne.scss */
+/* line 67, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form input::-webkit-input-placeholder {
   color: #000;
 }
-/* line 63, ../sass/_stepOne.scss */
+/* line 71, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav {
   text-align: center;
 }
-/* line 65, ../sass/_stepOne.scss */
+/* line 73, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav button {
   background: #0084cb;
   border: none;
@@ -719,26 +759,27 @@ body {
   width: 280px;
   margin: 20px auto -10px;
 }
-/* line 74, ../sass/_stepOne.scss */
+/* line 82, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav a {
   color: #43444e;
   font-size: 0.4em;
 }
-/* line 77, ../sass/_stepOne.scss */
+/* line 85, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav a span {
   color: #0084cb;
 }
-/* line 84, ../sass/_stepOne.scss */
+/* line 92, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup {
   text-align: center;
 }
-/* line 86, ../sass/_stepOne.scss */
+/* line 94, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup h4 {
   color: #43444e;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-weight: normal;
   margin: 20px 0px 25px 0px;
 }
-/* line 91, ../sass/_stepOne.scss */
+/* line 100, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button {
   width: 24.05063%;
   float: left;
@@ -747,23 +788,23 @@ body {
   display: inline;
   font-size: 18px;
   float: none;
-  background: #00456e;
+  background: #0084CB;
   background-image: none;
   text-align: left;
 }
-/* line 100, ../sass/_stepOne.scss */
+/* line 109, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-icon {
   border-right: solid #fff 1px;
   padding: 10px;
   margin-right: 10px;
 }
-/* line 107, ../sass/_stepOne.scss */
+/* line 116, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form-separator {
   text-align: center;
   margin: 40px 0 0 0;
 }
 
-/* line 115, ../sass/_stepOne.scss */
+/* line 124, ../sass/_stepOne.scss */
 .chaseui-form-separator hr {
   display: inline-block;
   width: 10%;
@@ -773,7 +814,7 @@ body {
   position: relative;
   bottom: 8px;
 }
-/* line 124, ../sass/_stepOne.scss */
+/* line 133, ../sass/_stepOne.scss */
 .chaseui-form-separator span {
   position: relative;
   bottom: 10px;
@@ -783,33 +824,38 @@ body {
   display: inline-block;
 }
 
-/* line 134, ../sass/_stepOne.scss */
+/* line 143, ../sass/_stepOne.scss */
 .chaseui-icon.facebook:before {
   font-family: "social";
   content: '\e801';
 }
-/* line 138, ../sass/_stepOne.scss */
+/* line 147, ../sass/_stepOne.scss */
 .chaseui-icon.amazon:before {
   font-family: "social";
   content: '\e800';
 }
-/* line 142, ../sass/_stepOne.scss */
+/* line 151, ../sass/_stepOne.scss */
 .chaseui-icon.google:before {
   font-family: "social";
   content: '\e802';
 }
 
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 150, ../sass/_stepOne.scss */
+  /* line 159, ../sass/_stepOne.scss */
+  #voice1 {
+    display: none;
+  }
+
+  /* line 162, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 {
     background-size: auto;
   }
-  /* line 152, ../sass/_stepOne.scss */
+  /* line 164, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 #form0 {
-    margin: 30px 0px 0px 0px;
     font-size: 1.1em;
+    margin-top: 40px;
   }
-  /* line 156, ../sass/_stepOne.scss */
+  /* line 168, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper {
     padding-left: 0%;
     padding-right: 0%;
@@ -817,67 +863,180 @@ body {
     float: left;
     margin-right: 4.16667%;
   }
-  /* line 160, ../sass/_stepOne.scss */
+  /* line 172, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-welcome-message {
     margin-bottom: 0px;
   }
-  /* line 163, ../sass/_stepOne.scss */
+  /* line 175, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 0px;
     margin-top: 0px;
+    width: 100%;
+    float: left;
+    margin-right: 4.16667%;
+    margin-right: -100%;
+    margin-left: 0%;
   }
-  /* line 168, ../sass/_stepOne.scss */
+  /* line 182, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-form-title {
     margin-bottom: 25px;
     font-size: 1em;
   }
-  /* line 173, ../sass/_stepOne.scss */
+  /* line 187, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav button {
     font-size: 1em;
-    margin: 20px auto 10px;
+    margin: 10px auto 40px;
+    width: 58.33333%;
+    float: left;
+    margin-right: 4.16667%;
+    margin-left: 20.83333%;
   }
-  /* line 177, ../sass/_stepOne.scss */
+  /* line 193, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav a {
     font-size: 1em;
   }
-  /* line 181, ../sass/_stepOne.scss */
+  /* line 197, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form input {
     width: 92%;
     font-size: 0.727em;
     margin-bottom: 10px;
   }
-  /* line 189, ../sass/_stepOne.scss */
+  /* line 205, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup h4 {
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 20px 0px 10px 0px;
   }
-  /* line 193, ../sass/_stepOne.scss */
+  /* line 209, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button {
-    width: 79.16667%;
+    width: 16.66667%;
     float: left;
     margin-right: 4.16667%;
-    min-width: 8em;
-    display: inline;
-    font-size: 18px;
-    float: none;
+    font-size: 0px;
     background: #00456e;
     background-image: none;
     text-align: left;
   }
-  /* line 202, ../sass/_stepOne.scss */
+  /* line 215, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-icon {
-    border-right: solid #fff 1px;
-    padding: 10px;
-    margin-right: 10px;
+    display: none;
   }
-  /* line 209, ../sass/_stepOne.scss */
+  /* line 218, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button:nth-child(2) {
+    margin-left: 20.83333%;
+  }
+  /* line 224, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form-separator {
     text-align: center;
-    margin: 20px 0 0 0;
+    margin: 30px 0 20px 0;
+    width: 100%;
+    float: left;
+    margin-right: 4.16667%;
   }
 
-  /* line 216, ../sass/_stepOne.scss */
+  /* line 232, ../sass/_stepOne.scss */
+  .chaseui-form-separator span {
+    background-size: 100%;
+    bottom: 5px;
+    width: 26px;
+    height: 26px;
+  }
+}
+@media (min-width: 28em) and (max-width: 46em) {
+  /* line 245, ../sass/_stepOne.scss */
+  #voice1 {
+    display: none;
+  }
+
+  /* line 248, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 {
+    background-size: auto;
+  }
+  /* line 250, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 #form0 {
+    font-size: 1.1em;
+    margin-top: 40px;
+  }
+  /* line 254, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper {
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+    float: left;
+    margin-right: 2.5641%;
+  }
+  /* line 258, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-welcome-message {
+    margin-bottom: 0px;
+  }
+  /* line 261, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0px;
+    margin-top: 0px;
+    width: 100%;
+    float: left;
+    margin-right: 2.5641%;
+    margin-right: -100%;
+    margin-left: 0%;
+  }
+  /* line 268, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-form-title {
+    margin-bottom: 25px;
+    font-size: 1em;
+  }
+  /* line 273, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav button {
+    font-size: 1em;
+    margin: 10px auto 40px;
+    width: 74.35897%;
+    float: left;
+    margin-right: 2.5641%;
+    margin-left: 12.82051%;
+  }
+  /* line 279, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav a {
+    font-size: 1em;
+  }
+  /* line 283, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-form form input {
+    width: 92%;
+    font-size: 0.727em;
+    margin-bottom: 10px;
+  }
+  /* line 291, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup h4 {
+    font-size: 1.5em;
+    margin: 20px 0px 10px 0px;
+  }
+  /* line 295, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button {
+    width: 23.07692%;
+    float: left;
+    margin-right: 2.5641%;
+    font-size: 0px;
+    background: #00456e;
+    background-image: none;
+    text-align: left;
+  }
+  /* line 301, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-icon {
+    display: none;
+  }
+  /* line 304, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button:nth-child(2) {
+    margin-left: 12.82051%;
+  }
+  /* line 310, ../sass/_stepOne.scss */
+  .chaseui-pagebody.step1 .wrapper .chaseui-form-separator {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    width: 100%;
+    float: left;
+    margin-right: 2.5641%;
+  }
+
+  /* line 318, ../sass/_stepOne.scss */
   .chaseui-form-separator span {
     background-size: 100%;
     bottom: 5px;
@@ -2069,6 +2228,20 @@ div.chaseui-container:after {
     padding-right: 1em;
     margin-left: auto;
     margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(16.66667%, rgba(100, 100, 225, 0.25)), color-stop(16.66667%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(100, 100, 225, 0.25)), color-stop(37.5%, rgba(100, 100, 225, 0.25)), color-stop(37.5%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(100, 100, 225, 0.25)), color-stop(58.33333%, rgba(100, 100, 225, 0.25)), color-stop(58.33333%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(100, 100, 225, 0.25)), color-stop(79.16667%, rgba(100, 100, 225, 0.25)), color-stop(79.16667%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
   }
   /* line 38, ../../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   div.chaseui-container:after {

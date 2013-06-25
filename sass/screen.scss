@@ -30,7 +30,7 @@ div.chaseui-container {
 //5
     div.chaseui-container {
         @include container;
-  //      @include susy-grid-background;
+        @include susy-grid-background;
     }
 }
 @include at-breakpoint($desktopmedium) {
