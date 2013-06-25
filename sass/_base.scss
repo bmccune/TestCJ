@@ -23,33 +23,6 @@ $media-layout   : 12 lt-ie9;
 $show-grid-backgrounds  : true;
 
 
-// ----------------------
-// Fonts
-@font-face {
-  font-family: 'GroteskReg';
-  src: url('../fonts/akzidgrostdlig-webfont.eot');
-  src: url('../fonts/akzidgrostdlig-webfont.eot') format('embedded-opentype'),
-    url('../fonts/akzidgrostdlig-webfont.woff') format('woff'),
-    url('../fonts/akzidgrostdlig-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Interstate';
-  src: url('../fonts/interstate?v=3.0.1');
-  src: url('../fonts/interstate.eot?#iefix&v=3.0.1') format('embedded-opentype'),
-    url('../fonts/interstate.woff?v=3.0.1') format('woff'),
-    url('../fonts/interstate.ttf?v=3.0.1') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face{
-    font-family:"Amplitude";
-    src:url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-2.eot");
-    src:url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-2.eot?") format("embedded-opentype"),url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-3.woff") format("woff"),url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-1.ttf") format("truetype"),url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-4.svg#web") format("svg");font-style:normal;font-weight:normal;}
-@font-face{
-    font-family:AmplitudeMedium;src:url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-2.eot");src:url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-2.eot?") format("embedded-opentype"),url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-3.woff") format("woff"),url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-1.ttf") format("truetype"),url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-4.svg#web") format("svg");font-style:normal;font-weight:normal;}
-
 @font-face {
   font-family: 'social';
   src: url('../fonts/social.eot?78558470');
@@ -61,17 +34,19 @@ $show-grid-backgrounds  : true;
   font-style: normal;
 }
 
-
-html{
-    font-family:verdana,arial,helvetica,sans-serif;
+@font-face {
+  font-family: 'Chase';
+  src:  url("../fonts/chaseiconsneue.eot");
+  src:  url("../fonts/chaseiconsneue.eot") format("embedded-opentype"), 
+        url("../fonts/chaseiconsneue.woff") format("woff"), 
+        url("../fonts/chaseiconsneue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
+
 h3{
     font-weight:normal;
-    font-family: 'Amplitude';
     font-size:1.7em;
-    strong{
-        font-family: 'AmplitudeMedium';
-    }
 }
 .chaseutil-border-right{
     border-right:1px solid #666;
@@ -88,6 +63,7 @@ button{
     background-color:#0084CB;
     color:#FFF;
     border:none;
+    border-radius:5px;
     &.chaseui-button-facebook{
         // needs latest Compass, add '@import "compass"' to your scss
         background-color: #0e85b4; // Old browsers

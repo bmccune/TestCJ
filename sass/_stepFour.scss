@@ -12,7 +12,6 @@
     position:relative;
     top:200px;
     color:#FFF;
-    font-family:'GroteskReg';
     font-size:2.375em;
     background-color:rgba(0, 132, 203, 0.9);
     @include span-columns(4,16);
@@ -31,7 +30,7 @@
 }
 #form4{
     position:relative;
-    top:200px;
+    top:1260px;
     background-color:rgba(0, 0, 0, 0.2);
     @include span-columns(9,16);
     @include isolate(6);
@@ -46,7 +45,6 @@
     form{
         padding:40px;
         h3{
-            font-family: 'GroteskReg';
             font-size:2.625em;
             margin-top:0px;
             margin-bottom:30px;
@@ -61,7 +59,6 @@
             text-align:left;
             display:block;
             font-size:1em;
-            font-family:'GroteskReg';
             margin-bottom:-5px;
         }
         input, select{
@@ -142,9 +139,7 @@
 @include at-breakpoint($mini) {
 //5
     #voice4{
-    @include span-columns(5 omega,5);
-    top:130px;
-    font-size:1.375em;
+display:none;
     }
     .help{
         margin-left:20px;
@@ -217,7 +212,6 @@
         top: 25%;      
         .chaseui-inner{
             color: #FFF;
-            font-family: 'GroteskReg';
             font-size: 2.375em;
             max-width: 900px;
             margin: 0 auto;

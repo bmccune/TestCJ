@@ -27,7 +27,7 @@
     <script src="JS/jquery.stellar.min.js" type="text/javascript"></script>  
     <script src="JS/jquery.scrollorama.js" type="text/javascript"></script>   
     <script src="JS/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>   
-    
+    <script src="JS/concept3.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -44,13 +44,12 @@
         <div class="chaseui-pagebody step1" data-stellar-background-ratio="1">
 			<div class="chaseui-container">
 				<div id="form0" class="wrapper">
-					<div class="chaseui-welcome-message">Thank you for your interest in a</div>
-					<div class="chaseui-welcome-message">Chase Sapphire Preferred<sup>&reg;</sup> card</div>					
+					<div class="chaseui-welcome-message">Apply quickly by connecting with</div>					
 					<div class="chaseui-form">						
 						<div class="chaseui-thirdparty-signup">
 							<h4>Sign up using</h4>
 							<button class="chaseui-button small chaseui-button-facebook">
-								<i class="chaseui-icon facebook"></i>Facebook
+								Chase <i class="chaseui-icon chase"></i>
 							</button>
 							 <button class="chaseui-button chaseui-button-amazon">
 									<i class="chaseui-icon amazon"></i>Amazon
@@ -59,17 +58,10 @@
 									<i class="chaseui-icon google"></i>Google
 							</button>
 						</div>					
-						<div class="chaseui-form-separator"><hr /><span></span><hr /></div>
-						
-						<form>
-							<div class="chaseui-form-title">Create an account</div>
-							<div class="chaseui-fields">														
-								<input class="email_address" type="email" size="20" name="email_address" placeholder="Email address">
-								<input class="password" type="password" size="20" name="password" placeholder="Password">                    														
-							</div>				
+                            <div class="chaseui-form-separator"><hr /><span></span><hr /></div>
+						<form>			
 							<div class="chaseui-formnav">
-								<button class="chaseui-button chaseui-submit">Sign Up</button>
-								<a href="#">Already an user? <span>Log in >></span></a>
+								<button class="chaseui-button chaseui-submit">Go to application</button>
 							</div>
 						</form>
 					</div>
@@ -127,18 +119,7 @@
                     <button id="step2">Continue</button>
                 </form>
             </div>
-        </div>
-        </div>
-        <!-- END STEP 2 -->
-        <!-- START STEP 3 -->
-        <div class="chaseui-pagebody step3" data-stellar-background-ratio="0.5">
-            <div class="chaseui-container">
-
-            <div id="voice3">
-                <span class="voicedetails">We want to let you know right away if you’ve been approved.  This information helps us quickly verify your identity and check your credit score.</span>
-                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
-            </div>
-            <div id="form3" class="wrapper">
+                        <div id="form3" class="wrapper">
                 <form>
                     <h3>Share your financial information</h3>
                     <div class="floatleft">
@@ -159,15 +140,6 @@
                     </div>
                     <button id="step3">Continue</button>
                 </form>
-            </div></div>
-        </div>
-        <!-- END STEP 3 -->
-        <!-- START STEP 4 -->
-        <div class="chaseui-pagebody step4" data-stellar-background-ratio="0.5">
-            <div class="chaseui-container">
-            <div id="voice4">
-                <span class="voicedetails">We want to let you know right away if you’ve been approved.  This information helps us quickly verify your identity and check your credit score.</span>
-                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
             </div>
             <div id="form4" class="wrapper">
                 <form>
@@ -189,9 +161,10 @@
                     </ul>
                     <button id="step4">Submit Application</button>
                 </form>
-            </div></div>
+            </div>
         </div>
-        <!-- END STEP 4 -->
+        </div>
+        <!-- END STEP 2 -->
         <div class="chaseui-pagebody voice" data-stellar-background-ratio="0.5">
             <div class="chaseui-voicetext">
                 <div class="chaseui-inner">
@@ -235,76 +208,6 @@
         </div>
         <!-- END STEP 5 -->        
     </div>
+    <div class="mobilevoice"></div>
 </body>
-<script>
-    function resizeME(){
-         var viewportHeight = $(window).height()
-        $('.chaseui-pagebody').css('height',viewportHeight + 'px');
-    }
-    $(function(){
-        $.stellar({
-            horizontalScrolling: false,
-            verticalScrolling: true,
-            verticalOffset: 40,
-            responsive: true
-        });
-        resizeME();
-        var scrollorama = $.scrollorama({
-            blocks:'.chaseui-pagebody',
-            enablePin:false
-        });
-       // scrollorama.animate('#form1',{ delay: 400, duration: 200, property:'opacity', end:0 }) 
-        scrollorama.animate('.chaseui-inner',{ delay: 600, duration: 300, property:'opacity', start:0 }) 
-        scrollorama.onBlockChange(function() {
-            console.log('You just scrolled to block#'+scrollorama.blockIndex);
-        });
-        $('button.chaseui-button-amazon').click(function(event){
-            event.preventDefault();
-            window.open('amazon-signin.html');
-            var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
-            $('body').scrollTo(pageheight+100, 800 );
-        });
-        $('button#step2').click(function(event){
-            event.preventDefault();
-            var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
-            pageheight = pageheight * 2;
-            pageheight = pageheight + 100;
-            $('body').scrollTo( pageheight, 800 );
-        });
-        $('button#step3').click(function(event){
-            event.preventDefault();
-            var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
-            pageheight = pageheight * 3;
-            pageheight = pageheight + 100;
-            $('body').scrollTo( pageheight, 800 );
-        });
-        $('button#step4').click(function(event){
-            event.preventDefault();
-            var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
-            pageheight = pageheight * 4;
-            pageheight = pageheight + 100;
-            $('body').scrollTo( pageheight, 800 );
-            setTimeout(function(){
-                $('.replace').text('Checking credit history');
-            }, 3000);
-            setTimeout(function(){
-                $('.replace').text('Getting credit score');
-            }, 6000);
-            setTimeout(function(){
-                $('.replace').text('Calculating credit limit');
-            }, 9000);
-            setTimeout(function(){
-                pageheight = pageheight * 5;
-                pageheight = pageheight + 100;
-                $('body').scrollTo( pageheight, 800 );
-            }, 12000);
-        });
-        $('button#step5').click(function(event){
-            event.preventDefault();
-        });
-    });
-    $(window).resize(function() {
-        resizeME();    
-    });
-</script>
 </html>

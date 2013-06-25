@@ -405,38 +405,6 @@ table {
 }
 
 @font-face {
-  font-family: 'GroteskReg';
-  src: url("../fonts/akzidgrostdlig-webfont.eot");
-  src: url("../fonts/akzidgrostdlig-webfont.eot") format("embedded-opentype"), url("../fonts/akzidgrostdlig-webfont.woff") format("woff"), url("../fonts/akzidgrostdlig-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Interstate';
-  src: url("../fonts/interstate?v=3.0.1");
-  src: url("../fonts/interstate.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../fonts/interstate.woff?v=3.0.1") format("woff"), url("../fonts/interstate.ttf?v=3.0.1") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Amplitude";
-  src: url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-2.eot");
-  src: url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-2.eot?") format("embedded-opentype"), url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-3.woff") format("woff"), url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-1.ttf") format("truetype"), url("http://chase.com/etc/designs/chasecom/fonts/8b10efc3-e37f-468c-9326-3f261bc2b6e9-4.svg#web") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: AmplitudeMedium;
-  src: url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-2.eot");
-  src: url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-2.eot?") format("embedded-opentype"), url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-3.woff") format("woff"), url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-1.ttf") format("truetype"), url("http://chase.com/etc/designs/chasecom/fonts/5c91d7e8-9155-43e0-a01c-f4c8b4ab0369-4.svg#web") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
   font-family: 'social';
   src: url("../fonts/social.eot?78558470");
   src: url("../fonts/social.eot?78558470#iefix") format("embedded-opentype"), url("../fonts/social.woff?78558470") format("woff"), url("../fonts/social.ttf?78558470") format("truetype"), url("../fonts/social.svg?78558470#fontello") format("svg");
@@ -444,28 +412,26 @@ table {
   font-style: normal;
 }
 
-/* line 65, ../sass/_base.scss */
-html {
-  font-family: verdana,arial,helvetica,sans-serif;
+@font-face {
+  font-family: 'Chase';
+  src: url("../fonts/chaseiconsneue.eot");
+  src: url("../fonts/chaseiconsneue.eot") format("embedded-opentype"), url("../fonts/chaseiconsneue.woff") format("woff"), url("../fonts/chaseiconsneue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* line 68, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
 h3 {
   font-weight: normal;
-  font-family: 'Amplitude';
   font-size: 1.7em;
 }
-/* line 72, ../sass/_base.scss */
-h3 strong {
-  font-family: 'AmplitudeMedium';
-}
 
-/* line 76, ../sass/_base.scss */
+/* line 51, ../sass/_base.scss */
 .chaseutil-border-right {
   border-right: 1px solid #666;
 }
 
-/* line 79, ../sass/_base.scss */
+/* line 54, ../sass/_base.scss */
 button {
   min-width: 18em;
   display: block;
@@ -478,8 +444,9 @@ button {
   background-color: #0084CB;
   color: #FFF;
   border: none;
+  border-radius: 5px;
 }
-/* line 91, ../sass/_base.scss */
+/* line 67, ../sass/_base.scss */
 button.chaseui-button-facebook {
   background-color: #0e85b4;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0e85b4), color-stop(100%, #055175));
@@ -490,7 +457,7 @@ button.chaseui-button-facebook {
   color: #FFF;
   border: 1px solid #086492;
 }
-/* line 99, ../sass/_base.scss */
+/* line 75, ../sass/_base.scss */
 button.chaseui-primary {
   background-color: #fafafa;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #bec6ca));
@@ -501,7 +468,7 @@ button.chaseui-primary {
   color: #43444e;
   border: 1px solid #bebfbf;
 }
-/* line 106, ../sass/_base.scss */
+/* line 82, ../sass/_base.scss */
 button.chaseui-submit {
   background-color: #439b09;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #439b09), color-stop(100%, #186602));
@@ -514,7 +481,7 @@ button.chaseui-submit {
   min-width: 190px;
 }
 
-/* line 116, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 a:link, a:visited, a:hover, a:active {
   color: #666;
   text-decoration: none;
@@ -549,8 +516,24 @@ header h1 {
   padding-top: 0px;
 }
 
+/* line 25, ../sass/_header.scss */
+.mobilevoice {
+  display: none;
+  height: 46px;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 132, 203, 0.9);
+}
+
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 27, ../sass/_header.scss */
+  /* line 38, ../sass/_header.scss */
+  .mobilevoice {
+    display: block;
+  }
+
+  /* line 42, ../sass/_header.scss */
   .chaseui-container, .chaseui-pagebody {
     max-width: 24em;
     padding-left: 1em;
@@ -565,13 +548,13 @@ header h1 {
     clear: both;
   }
 
-  /* line 32, ../sass/_header.scss */
+  /* line 47, ../sass/_header.scss */
   .headerbgimg img {
     height: 80px;
     margin-left: -888px;
   }
 
-  /* line 37, ../sass/_header.scss */
+  /* line 52, ../sass/_header.scss */
   header h1 {
     width: 58.33333%;
     float: left;
@@ -583,13 +566,13 @@ header h1 {
     padding-top: 0px;
     text-align: center;
   }
-  /* line 44, ../sass/_header.scss */
+  /* line 59, ../sass/_header.scss */
   header h1 img {
     width: 80%;
   }
 }
 @media (min-width: 78em) and (max-width: 88em) {
-  /* line 52, ../sass/_header.scss */
+  /* line 67, ../sass/_header.scss */
   .chaseui-container {
     max-width: 79em;
     padding-left: 1em;
@@ -604,7 +587,7 @@ header h1 {
     clear: both;
   }
 
-  /* line 60, ../sass/_header.scss */
+  /* line 75, ../sass/_header.scss */
   header h1 {
     width: 17.72152%;
     float: left;
@@ -635,7 +618,9 @@ nav ul li {
 
 /* line 1, ../sass/_body.scss */
 body {
-  overflow: hidden;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* line 1, ../sass/_footer.scss */
