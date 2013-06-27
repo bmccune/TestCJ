@@ -1,11 +1,12 @@
-$primaryBlue: #0084cb;
+$primaryBlue: #0084CB;
 $headingColor: #002d62;
 .chaseui-pagebody.step1 {
 	position:relative;
     background-color:#ddd;
-    background-image: url('../images/bng_evergreen_forest.jpg');
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background-image: url("../images/bg_oneN.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
     height:600px;
     overflow-y:scroll;
     overflow-x:hidden;
@@ -18,7 +19,7 @@ $headingColor: #002d62;
     #voice1{
     position:relative;
     font-weight:normal;
-    top:170px;
+    top:140px;
     color:#FFF;
     font-size:1.125em;
     background-color:rgba(0, 51, 102, 0.9);
@@ -27,7 +28,8 @@ $headingColor: #002d62;
     }
 	.wrapper {
 		@include span-columns(16);
-		
+        //@include susy-grid-background;
+
         .chaseui-welcome-message {
 			color: $headingColor;
             margin-bottom:8px;
@@ -37,7 +39,7 @@ $headingColor: #002d62;
             @include isolate(6);
 			background-color: rgba(255, 255, 255, 0.8);
 			padding: 20px 0 40px 0;
-            margin-top:30px;
+            margin-top:0px;
 			form {
 				.chaseui-form-title {
 					text-align: center;
@@ -91,21 +93,23 @@ $headingColor: #002d62;
 		}
 		.chaseui-thirdparty-signup {
 			text-align: center;
+            .card{
+                margin-top:10px;
+            }
 			h4 {
 				color: #43444e;
                 font-size:0.7em;
                 font-weight:normal;
-                margin:20px 0px 25px 0px;
+                margin:0px 0px 25px 0px;
 			}
 			button {
-				@include span-columns(4);
-				min-width: 8em;
-				display: inline;
+				@include span-columns(3,10);
+                display:inline;
+                float:inherit;
 				font-size: 18px;
-				float: none;
-				background: #0084CB;
+				background: $primaryBlue;
 				background-image: none;
-				text-align: left;
+                text-align:center;
 				.chaseui-icon {
 					border-right: solid #fff 1px;
 					padding: 10px;
@@ -140,9 +144,13 @@ $headingColor: #002d62;
 	}
 }
 .chaseui-icon {
-	&.facebook:before {
-		font-family: "social";
-		content: '\e801';		
+    &.chase{
+        border:none !important;
+    }
+	&.chase:before {
+		font-family: "Chase";
+		content: '\e014';
+        font-style:normal;
 	}
 	&.amazon:before {
 		font-family: "social";
@@ -159,11 +167,14 @@ $headingColor: #002d62;
     #voice1{
         display:none;
     }
+    button{
+        height:45px;
+    }
     .chaseui-pagebody.step1 {
         background-size:auto;
         #form0{
-            font-size:1.1em;
-            margin-top:40px;
+            font-size:1em;
+            margin-top:70px;
         }
 	   .wrapper {
             @include prefix(0);
@@ -173,7 +184,7 @@ $headingColor: #002d62;
                 margin-bottom:0px;
             }
             .chaseui-form{
-                background-color: rgba(255, 255, 255, 0.9);
+                background-color: rgba(255, 255, 255, 0);
                 padding: 0px;
                 margin-top: 0px;
                 @include span-columns(5,5);
@@ -186,7 +197,7 @@ $headingColor: #002d62;
                     .chaseui-formnav{
                         button{
                             font-size:1em;      
-                            margin: 10px auto 40px;
+                            margin: 0px auto 40px;
                             @include span-columns(3,5);
                             @include pre(1);
                         }
@@ -208,14 +219,17 @@ $headingColor: #002d62;
                 }
                 button {
                     @include span-columns(1);
-                    font-size: 0px;
-                    background: #00456e;
+                    font-size: 1em;
+                    background: $primaryBlue;
                     background-image: none;
                     text-align: left;
 				    .chaseui-icon {
-				        display:none;
+                        border:none !important;
                     }
-                    &:nth-child(2){
+                    span{
+                        display:none;
+                    }
+                    &.chaseui-button-chase{
                         @include pre(1);
                     }
                     
@@ -225,6 +239,9 @@ $headingColor: #002d62;
                 text-align: center;
                 margin: 30px 0 20px 0;
                 @include span-columns(5);
+                hr{
+                    width:30%;
+                }
             }
         }  
     }
@@ -242,6 +259,14 @@ $headingColor: #002d62;
 
 //Mobile
 @include at-breakpoint($mobile) {
+    button{
+        i{
+            float:left;
+        }
+        span{
+            display:none;
+        }
+    }
     #voice1{
         display:none;
     }
@@ -249,7 +274,8 @@ $headingColor: #002d62;
         background-size:auto;
         #form0{
             font-size:1.1em;
-            margin-top:40px;
+            margin-top:0px;
+            padding-top:100px;
         }
 	   .wrapper {
             @include prefix(0);
@@ -259,7 +285,7 @@ $headingColor: #002d62;
                 margin-bottom:0px;
             }
             .chaseui-form{
-                background-color: rgba(255, 255, 255, 0.9);
+                background-color: rgba(255, 255, 255, 0);
                 padding: 0px;
                 margin-top: 0px;
                 @include span-columns(8,8);
@@ -294,14 +320,14 @@ $headingColor: #002d62;
                 }
                 button {
                     @include span-columns(2);
-                    font-size: 0px;
-                    background: #00456e;
+                    font-size: 1em;
+                    background: $primaryBlue;
                     background-image: none;
                     text-align: left;
 				    .chaseui-icon {
 				        display:none;
                     }
-                    &:nth-child(2){
+                    &.chaseui-button-chase{
                         @include pre(1);
                     }
                     
@@ -311,6 +337,9 @@ $headingColor: #002d62;
                 text-align: center;
                 margin: 30px 0 20px 0;
                 @include span-columns(8);
+                hr{
+                    width:30%;
+                }
             }
         }  
     }
@@ -322,4 +351,32 @@ $headingColor: #002d62;
             height:26px;
         }
     }
+}
+.mobilevoice {
+	height: auto;
+	padding: 5px 15px;
+	color: #fff;
+	.slidebox {			
+		.text {
+			.close {
+				text-align: right;
+				display: block;
+			}
+			border-bottom: solid 1px #fff;
+			padding-bottom: 10px;
+			display: none;
+			position: relative;
+		}
+	}
+	.chat {		
+		background: url(../Images/icon_chat_with_us.png) 0 0 no-repeat;
+		width: 100%;
+		height: 37px;
+		position: relative;		
+		div {
+			display: block;
+			margin: 0 0 0 67px;
+			padding-top: 10px;
+		}
+	}
 }

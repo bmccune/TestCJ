@@ -4,6 +4,7 @@
           //  width:100%;
         }
     }
+.mobile{display:none;}
 header{
     position:fixed;
     z-index:999999;
@@ -11,8 +12,12 @@ header{
     padding:0px;
     width:100%;
     top:0px;
-    height:5px;
-    background-color:#0084CB;
+    height:100px;
+    background-color: #007cbf;
+    background-image: url('../images/header_desktop_full_no_logo.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position-x: right;
     h1{        
         @include span-columns(3,16);
         @include isolate(2);
@@ -25,7 +30,7 @@ header{
 .mobilevoice{
     display:none;
     height:46px;
-    width:100%;
+    @include span-columns(15);
     position:fixed;
     left:0px;
     bottom:0px;
@@ -34,7 +39,8 @@ header{
 
 // BREAK POINTS
 @include at-breakpoint($mini) {
-    
+    .notmobile{display:none;}
+    .mobile{display:block;}
     .mobilevoice{
         display:block;
         
@@ -44,11 +50,9 @@ header{
         //@include susy-grid-background;
 
     }
-    .headerbgimg img{
-        height:80px;
-        margin-left: -888px;
-    }
+
     header{
+        height:70px;
         h1{
             @include span-columns(3,5);
             @include isolate(1);
@@ -70,7 +74,7 @@ header{
     }
     .chaseui-container, .chaseui-pagebody{
        // @include container;
-        @include susy-grid-background;
+        //@include susy-grid-background;
 
     }
     .headerbgimg img{

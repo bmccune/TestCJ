@@ -1,7 +1,7 @@
 .chaseui-pagebody.step4{
     position:relative;
     background-color:#ddd;
-    background-image: url('../images/bng_test_image4_market_sound.jpg');
+    background-image: url('../images/bg_three.jpg');
     background-repeat:no-repeat;
     background-attachment:fixed;
     height:600px;
@@ -10,10 +10,12 @@
 }
 #voice4{
     position:relative;
-    top:200px;
+    top:1107px;
+    font-weight:normal;
     color:#FFF;
-    font-size:2.375em;
-    background-color:rgba(0, 132, 203, 0.9);
+    color:#FFF;
+    font-size:1.125em;
+    background-color:rgba(0, 51, 102, 0.9);
     @include span-columns(4,16);
     @include isolate(2);
 }
@@ -30,8 +32,8 @@
 }
 #form4{
     position:relative;
-    top:1260px;
-    background-color:rgba(0, 0, 0, 0.2);
+    top:1107px;
+    background-color:rgba(255, 255, 255, 0.75);
     @include span-columns(9,16);
     @include isolate(6);
     button{
@@ -45,11 +47,11 @@
     form{
         padding:40px;
         h3{
-            font-size:2.625em;
+            font-size:1.5em;
             margin-top:0px;
             margin-bottom:30px;
             font-weight:normal;
-            color:white;
+            color:#43444E;
             strong{
                 font-weight:bold;
             }
@@ -80,7 +82,7 @@
         }
         ul{
             font-size:0.8em;
-            color:#FFF;
+            color:#43444E;
             clear:both;
                li{
                     margin-bottom:5px;
@@ -107,7 +109,7 @@
             border-right:5px solid #FFF;
             padding:4%;
             background-color:rgba(255, 255, 255, 1);
-            margin-bottom:20px;
+            margin-bottom:50px;
 
         }
         .password{
@@ -137,7 +139,7 @@
 
 
 @include at-breakpoint($mini) {
-//5
+    
     #voice4{
 display:none;
     }
@@ -154,7 +156,9 @@ display:none;
     }
     #form4{
         @include span-columns(5 omega,5);
-        top:150px;
+        top:60px;
+        background-color:rgba(255, 255, 255, 0);
+
         button{
             min-width:257px;
             width:257px;
@@ -162,6 +166,8 @@ display:none;
             text-align:center;
         }
         form{
+            padding:0px;
+            padding-top:40px;
             ul{
                 font-size:0.6em;
                 padding-left:21px;
@@ -176,13 +182,16 @@ display:none;
                 width:100%;
             }
             h3{
-                font-size:1.625em;
+                font-size:1.3em;
                 margin-bottom:20px;
             }
             .account, .password{
-                width:91%;
+                width:94%;
+                padding:5% 2%;
+                border-right:none;
                 margin-top:5px;
                 margin-bottom:5px;
+                background-color:rgba(255, 255, 255, 0.85);
             }
         }
     }

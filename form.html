@@ -31,40 +31,39 @@
 </head>
 
 <body>
-    <div class="headerbgimg">
-            <img src="images/header_desktop_full_no_logo.png"/>
-        </div>
     <header>
         <div class="chaseui-container">
-            <h1 class="chaseui-pagelogo"><img src="images/header_sapphire_logo.png" /></h1>
+            <h1 class="chaseui-pagelogo"><img src="images/header_sapphire_logoN.png" /></h1>
         </div>
     </header>
     <div class="chaseui-section">
         <!-- START STEP 1 -->
-        <div class="chaseui-pagebody step1" data-stellar-background-ratio="1">
+        <div id="section1" class="chaseui-pagebody step1" data-stellar-background-ratio="1">
 			<div class="chaseui-container">
                  <div id="voice1">
-                <span class="voicedetails">Get started fast, pre-fill the application when you sign in with your Chase, Amazon or Google account.</span>
+                <span class="voicedetails">Get started fast when you use your Chase account, or one of our trusted partners. Or simply go right to the application.</span>
                 <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
             </div>
 				<div id="form0" class="wrapper">
 					<div class="chaseui-form">						
 						<div class="chaseui-thirdparty-signup">
-							<h4>Apply quickly by connecting with</h4>
-							<button class="chaseui-button small chaseui-button-facebook">
-								Chase <i class="chaseui-icon chase"></i>
+                            <div class="card notmobile"><img src="images/card.png" /></div>
+							<h4 class="notmobile">Apply quickly by connecting with</h4>
+                            <h4 class="mobile">Apply quickly using</h4>
+							<button class="chaseui-button small chaseui-button-chase">
+								<span>CHASE</span><i class="chaseui-icon chase"></i>
 							</button>
 							 <button class="chaseui-button chaseui-button-amazon">
-									<i class="chaseui-icon amazon"></i>Amazon
+									<i class="chaseui-icon amazon"></i><span>Amazon</span>
 							</button>
 							 <button class="chaseui-button small chaseui-thirdparty chaseui-button-google">
-									<i class="chaseui-icon google"></i>Google
+									<i class="chaseui-icon google"></i><span>Google</span>
 							</button>
 						</div>					
                             <div class="chaseui-form-separator"><hr /><span></span><hr /></div>
 						<form>			
 							<div class="chaseui-formnav">
-								<button class="chaseui-button chaseui-submit">Go to application</button>
+								<button id="step1" class="chaseui-button chaseui-submit continue">Go to application</button>
 							</div>
 						</form>
 					</div>
@@ -74,25 +73,25 @@
         <!-- END STEP 1 -->
         
         <!-- START STEP 2 -->
-        <div class="chaseui-pagebody step2" data-stellar-background-ratio="0.5">
+        <div id="section2" class="chaseui-pagebody step2" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="1175">
             <div class="chaseui-container">
             <div id="voice2">
-                <span class="voicedetails">We just need the basics here, Brian so go ahead and start dreaming about how you’ll use your rewards!</span>
+                <span class="voicedetails">We just need the basics here, Pat, so we know how to contact you and where to mail your card.</span>
                 <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
             </div>
             <div id="form2" class="wrapper">
                 <form>
                     <h3>Tell us about yourself</h3>
                     <label>Name</label>
-                    <input class="first_name" type="text" name="first_name" placeholder="First Name" size="20" value="Brian">
-                    <input class="middle_name" type="text" name="middle_name" placeholder="M.I." size="2" value="J">
-                    <input class="last_name" type="text" name="last_name" placeholder="Last Name" size="20" value="McCune">
+                    <input id="first_name" class="first_name" type="text" name="first_name" placeholder="First Name" size="20" value="">
+                    <input id="middle_name" class="middle_name" type="text" name="middle_name" placeholder="M.I." size="2" value="">
+                    <input id="last_name" class="last_name" type="text" name="last_name" placeholder="Last Name" size="20" value="">
                     <div class="sublabel">add suffix</div>
                     <label>Home Address</label>
-                    <input class="address" type="text" name="home_address" placeholder="Home Address" size="35" value="961 Kentish Rd.">
-                    <div class="sublabel">add another line</div>
-                    <input class="city" type="text" name="city" placeholder="City" value="Lynnwood">
-                    <input class="state" list="state" name="state" placeholder="State" value="Wa">
+                    <input id="address1" class="address" type="text" name="home_address" placeholder="Home Address" size="35" value="">
+                    <div class="plussign"><i></i></div>
+                    <input id="city" class="city" type="text" name="city" placeholder="City" value="">
+                    <input id="state_list" class="state" list="state" name="state" placeholder="State" value="">
                         <datalist id="state">
                         <option value="" selected="selected">State</option><option value="AL">Alabama</option><option value="AK">Alaska</option> 
                         <option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option> 
@@ -113,62 +112,76 @@
                         <option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option> 
                         <option value="WY">Wyoming</option>
                         </datalist>
-                    <input class="zip" type="number" name="zip_code" placeholder="Zip Code" size="9" value="98036">
-                    <label>Phone number</label>
-                    <input class="phone" type="tel" name="phone_number" placeholder="Primary phone number" size="20" value="(909) 702-2211">
-                    <div class="sublabel">add another phone number</div>
+                    <input id="zip" class="zip" type="number" name="zip_code" placeholder="Zip Code" size="9" value="">
+                    <select id="phonetype" class="phonetype">
+                        <option>Cell phone</option>
+                        <option>Home phone</option>
+                    </select>
+                    <input id="phone1" class="phone" type="tel" name="phone_number" placeholder="Primary phone number" size="20" value="">
+                    <div class="plussign"><i></i></div>
                     <label>Birthday</label>
-                    <input class="dob" type="date" placeholder="Birthday" name="bday">
-                    <button id="step2">Continue</button>
+                    <input id="dob" class="dob" type="date" placeholder="Birthday" name="bday">
                 </form>
             </div>
-                        <div id="form3" class="wrapper">
+            <div id="voice3">
+                <span class="voicedetails">This information will help us quickly verify your identity and check your credit score.</span>
+                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
+            </div>
+            <div id="form3" class="wrapper">
                 <form>
                     <h3>Share your financial information</h3>
                     <div class="floatleft">
-                        <label>Last 4 Social Security Number</label>
-                        <input class="ssn" type="text" name="first_name" placeholder="XXX-XX-" size="20">
+                        <input id="ssn" class="ssn" type="text" name="first_name" placeholder="Last 4 SSN" size="20">
                     </div>
                     <div class="floatright">
-                        <label>What is your gross annual income?</label>
-                        <input class="income" type="text" name="middle_name" placeholder="Annual income" size="2">
+                        <input id="income" class="income" type="text" name="middle_name" placeholder="Gross Annual Income" size="2">
                     </div>
                     <div class="floatleft">
-                        <label>Do you Rent?</label>
-                        <input class="rent" type="text" name="last_name" placeholder="Yes" size="20">
+                        <input id="rent" class="rent" type="text" name="last_name" placeholder="Do you rent?" size="20">
                     </div>
                     <div class="floatright">
-                        <label>How Much is Your monthly rent</label>
-                        <input class="amount" type="text" name="home_address" placeholder="$" size="35">
+                        
                     </div>
-                    <button id="step3">Continue</button>
                 </form>
+            </div>
+            <div id="voice4">
+                <span class="voicedetails">With a Chase login, you can set your payment due date, add authorized users and cusomize your card art.</span>
+                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
             </div>
             <div id="form4" class="wrapper">
                 <form>
-                    <h3>Account setup and agree to terms</h3>
+                    <h3>Create Your Chase Login</h3>
                     <div class="floatleft">
-                        <label>Remember Chase your ID is</label>
-                        <input class="account" type="text" name="account" placeholder="BrianMcCune">
+                        <input id="account_name" class="account" type="text" name="account" placeholder="Enter your email">
                     </div>
                     <div class="floatright">
-                        <label>Create chase password</label>
-                        <input class="password" type="text" name="password" placeholder="Password">
+                        <input id="password" class="password" type="text" name="password" placeholder="Enter a password">
                     </div>
+                </form>
+            </div>
+            <div id="voice5">
+                <span class="voicedetails">With a Chase login, you can set your payment due date, add authorized users and cusomize your card art.</span>
+                <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
+            </div>
+            <div id="form5" class="wrapper">
+                <form>
+                    <h3>Certify and Agree to Terms</h3>
                     <ul>
                         <li>I certify that the information I provided is true and correct.</li>
-                        <li>I agree that to service and manage my accounts JPMorgan Chase Ban, N.A. representative and/or affiliates may contact the telephone number I provided.</li>
+                        <li>I agree that to service and manage my accounts JPMorgan Chase Bank, N.A. representative and/or affiliates may contact the telephone number I provided.</li>
                         <li>I reviewed the pricing &amp; terms and privacy policy and understand my responsbilities.</li>
                         <li>As the primary card member you will be liable for all account balances.</li>
                         <li>I certify JPMorgan Chase to run a credit check approve my account and confirm my identity.</li>
                     </ul>
-                    <button id="step4">Submit Application</button>
+                    <input type="checkbox" name="confirm" value="confirm"> I have read and agree to all of the above statements
+                    
                 </form>
             </div>
+                <button id="step4" class="continue">Submit Application</button>
         </div>
         </div>
         <!-- END STEP 2 -->
-        <div class="chaseui-pagebody voice" data-stellar-background-ratio="0.5">
+        <div class="chaseui-pagebody voice" data-stellar-background-ratio="1">
             <div class="chaseui-voicetext">
                 <div class="chaseui-inner">
                     <span class="replace">Verifying identity</span><span class="one">.</span><span class="two">.</span><span class="three">.</span>
@@ -176,41 +189,48 @@
             </div>
         </div>
         <!-- START STEP 5 -->
-        <div class="chaseui-pagebody step5" data-stellar-background-ratio="0.5">
+        <div id="section3" class="chaseui-pagebody step6" data-stellar-background-ratio="1">
          <div class="chaseui-container">
-            <div id="voice5">
-                <span class="voicedetails">We want to help you earn those 40,000 bonus points!<br/><br/>Make Sapphire your default shopping card at online stores. Or use your card number online.</span>
-                <span class="carddetails">1234-5678-2222-9388<br/>exp 10/16 cvv 332</span>
+            <div id="voice6">
+                <span class="voicedetails">Your card is on the way and will arrive in 7-10 business days, but you can start shopping now!</span>
                 <div class="help"><img src="images/icon_chat_with_us.png"><span>Chat with Us</span></div>
             </div>
-            <div id="form5" class="wrapper">
-                    <h3>You're approved, Brian!</h3>
-                    <p class="pone">Your Chase Sapphire Preferred card is on its way, but you can start shopping now!</p>
-                    <p class="ptwo">Your credit limit is <strong>$10,000</strong></p>
-                    <div class="rate">0%<sup>*</sup><span>12 Month APR</span></div>
-                    <div class="fee">$0<sup>*</sup><span>Annual Fee</span></div>
-                    <p class="pthree"><sup>*</sup>Review rates &amp; fees for details >></p>
-                    <p class="pfour">We'll mail your card in 7-10 business days<span>Card Member Agreement >></span></p>
-            </div>
-            <div id="shop5" class="wrapper">
-                <h3>Update your favorite stores with your new card.</h3>
-                <p class="pone">Tap a brand to add your card to the store.</p>
-                <img src="images/partner_amazon.png">
-                <img src="images/partner_zappos.png">
-                <img src="images/partner_target.png">
-                <img src="images/partner_googleplay.png">
-                <img src="images/partner_bestbuy.png">
-                <img src="images/partner_lowes.png">
-                <hr>
-                <h4>Find your favorite store</h4>
-                <input class="stores" placeholder="Store name or web address">
-                <p class="ptwo">View all partner stores >></p>
-                <button id="step5">View My Dashboard</button>
-            </div>
+            <div id="form6" class="wrapper">
+				<div class="chaseui-carddetails">
+					<h3>You're approved, Pat!</h3>					
+					<p class="credit-limit">Your credit limit is $10,000</p>                                       
+					<p class="agreement">View your <a href="#">Card Member Agreement</a> here</p>
+				</div>
+				<div class="chaseui-shop">
+					<h4>Start earning points now!</h4>
+					<p>Select your favorite store, login and go shopping.  We'll automatically</p>
+					<p>add your card for you.  <a href="#">View all partner stores.</a></p>
+					<div class="chaseui-partners">
+						<img src="images/logo_amazon.png">
+						<img src="images/logo_zappos.png">
+						<img src="images/logo_target.png">
+						<img src="images/logo_googleplay.png">
+						<img src="images/logo_bestbuy.png">
+						<img src="images/logo_lowes.png">
+					</div>
+					<h4>Find your favorite store</h4>
+					<input class="stores" placeholder="Store name or web address">
+					<div class="chaseui-search"><i></i></div>
+				</div>
+            </div>            
          </div>   
         </div>
         <!-- END STEP 5 -->        
     </div>
-    <div class="mobilevoice"></div>
+    <div class="mobilevoice">
+		<div class="slidebox">			
+			<div class="text">
+				<span class="close">X</span>
+				Get started fast when you use your Chase account, or one of our trusted partners.
+				Or simply go right to the application.
+			</div>
+		</div>
+		<div class="chat"><div>We're here to help</div></div>
+	</div>
 </body>
 </html>

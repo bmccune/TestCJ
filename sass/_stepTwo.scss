@@ -1,19 +1,24 @@
 .chaseui-pagebody.step2{
     position:relative;
     background-color:#FFF;
-    background-image: url('../images/bng_test_image2.jpg');
+    background-image: url('../images/bg_twoN.jpg');
     background-attachment:fixed;
     background-repeat:no-repeat;
+ 
     height:600px;
     overflow-y:scroll;
     overflow-x:hidden;
+    div.chaseui-container{
+        height:1900px;
+    }
 }
 #voice2{
     position:relative;
+    font-weight:normal;
     top:200px;
     color:#FFF;
-    font-size:2.375em;
-    background-color:rgba(0, 132, 203, 0.9);
+    font-size:1.125em;
+    background-color:rgba(0, 51, 102, 0.9);
     @include span-columns(4,16);
     @include isolate(2);
 }
@@ -59,7 +64,7 @@
 #form2{
     position:relative;
     top:200px;
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:rgba(255, 255, 255, 0.75);
     @include span-columns(9,16);
     @include isolate(6);
     button{
@@ -71,11 +76,11 @@
         display:none;
     }
     h3{
-        font-size:2.625em;
+        font-size:1.5em;
         margin-top:0px;
         margin-bottom:30px;
         font-weight:normal;
-        color:white;
+        color:#43444E;
         strong{
             font-weight:bold;
         }
@@ -87,7 +92,7 @@
         }
         input, select{
             border-radius:0;
-            border:none;
+            border:2px solid #ccc;
             padding:8px;
             color:#000;
             margin:0px 0px;
@@ -103,7 +108,8 @@
             } 
         }
         .first_name{
-            width:84%;
+            width:83%;
+            border-right:none;
             padding:2%;
             background-color:rgba(255, 255, 255, 1);
 
@@ -112,50 +118,89 @@
             width:7%;
             padding:2%;
             margin-left:-5px;
-            border-right:5px solid #FFF;
+            border-right:2px solid #CCC;
             background-color:rgba(255, 255, 255, 1);
         }
         .last_name{
-            width:96%;
+            width:94%;
             padding:2%;
-            margin-top:2px;
+            border-top:none;
+            margin-top:1px;
             background-color:rgba(255, 255, 255, 1);
         }
         .address{
-            width:96%;
+            width:83%;
             padding:2%;
             margin-top:24px;
+            border-right:none;
             background-color:rgba(255, 255, 255, 1);
         }
-        .city{
-            width:38%;
+        .plussign{
+            width:7%;
             padding:2%;
-            margin-top:2px;
+            margin-left:-5px;
+            border:2px solid #CCC;
+            border-radius:0;
+            display:inline-block;
+            font-size:1em;
+            font-family: "Chase";
+            min-height:18px;
+            background-color:rgba(255, 255, 255, 1);
+            i:after{
+                content: '\002b';
+                padding-left:30%;
+                color:#CCC;
+            }
+        }
+        .city{
+            width:39%;
+            padding:2%;
+            top:-3px;
+            position:relative;
+            border-right:2px solid #CCC;
             background-color:rgba(255, 255, 255, 1);
         }
         .state{
-            width:24%;
+            width:23%;
+            margin-left:-4px;
             padding:2%;
-            margin-left:-5px;
-            border-right:5px solid #FFF;
+            top:-3px;
+            position:relative;
+            border-right:none;
+            border-left:none;
             background-color:rgba(255, 255, 255, 1);
         }
         .zip{
             width:24%;
-            padding:2%;
+            padding:2% 2% 2% 11px;
             margin-top:2px;
             margin-left:-5px;
-            border-right:5px solid #FFF;
+            top:-3px;
+            position:relative;
+            border-right:2px solid #CCC;
             background-color:rgba(255, 255, 255, 1);
         }
+        .phonetype{
+            width:24%;
+            border-radius:0;
+            border:2px solid #ccc;
+            padding:2%;
+            color:#000;
+            margin:0px 0px;
+            background-color:rgba(255, 255, 255, 1);
+            -webkit-appearance:none;
+        }
         .phone{
-            width:96%;
+            width:60%;
             padding:2%;
             margin-top:24px;
+            margin-left:-10px;
+            border-left:2px solid #CCC;
+            border-right:none;
             background-color:rgba(255, 255, 255, 1);
         }
         .dob{
-            width:96%;
+            width:94%;
             padding:2%;
             margin-top:24px;
             background-color:rgba(255, 255, 255, 1);
@@ -164,7 +209,11 @@
 }
 
 @include at-breakpoint($mini) {
-//5
+.chaseui-pagebody.step2{
+    div.chaseui-container{
+        height:1600px;
+    }
+}
     #voice2{
     display:none;
     }
@@ -181,7 +230,8 @@
     }
     #form2{
         @include span-columns(5 omega,5);
-        top:150px;
+        top:60px;
+        background-color: rgba(255, 255, 255, 0);
         button{
             min-width:257px;
             width:257px;
@@ -189,64 +239,77 @@
             text-align:center;
         }
         h3{
-            font-size:1.625em;
+            font-size:1.3em;
+            margin-bottom:10px;
         }
         form{
+            padding:0px;
+            padding-top:20px;
             .first_name{
-                width:82%;
-                padding:2%;
+                width:80%;
+                padding:5% 2%;
+                background-color:rgba(255, 255, 255, 0.85);
+
             }
             .middle_name{
-                width:7%;
-                padding:2%;
+                width:10%;
+                padding:5% 2%;
                 margin-left:-5px;
-                border-right:4px solid #FFF;
-                background-color:rgba(255, 255, 255, 1);
+                background-color:rgba(255, 255, 255, 0.85);
             }
             .last_name{
-                width:95%;
-                padding:2%;
-                margin-top:2px;
-                background-color:rgba(255, 255, 255, 1);
+                width:94%;
+                padding:5% 2% 5% 7px;
+                background-color:rgba(255, 255, 255, 0.85);
             }
             .address{
                 width:95%;
-                padding:2%;
+                padding:5% 2% 5% 4px;
                 margin-top:15px;
-                background-color:rgba(255, 255, 255, 1);
+                border-right:2px solid #CCC;
+                background-color:rgba(255, 255, 255, 0.85);
             }
             .city{
                 width:35%;
-                padding:2%;
+                padding:5% 2%;
                 margin-top:2px;
-                background-color:rgba(255, 255, 255, 1);
+                background-color:rgba(255, 255, 255, 0.85);
+            }
+            .plussign{
+                display:none;
             }
             .state{
-                width:17%;
-                padding:2%;
-                margin-left:-5px;
-                border-right:5px solid #FFF;
-                background-color:rgba(255, 255, 255, 1);
+                width:19%;
+                padding:5% 2%;
+                margin-left:-4px;
+                background-color:rgba(255, 255, 255, 0.85);
             }
             .zip{
                 width:31%;
-                padding:2%;
+                padding:5% 2%;
                 margin-top:2px;
                 margin-left:-5px;
-                border-right:3px solid #FFF;
-                background-color:rgba(255, 255, 255, 1);
+                border-right:2px solid #CCC;
+                background-color:rgba(255, 255, 255, 0.85);
+            }
+            .phonetype{
+                padding:5% 2%;
+                width:40%;
+                background-color:rgba(255, 255, 255, 0.85);
             }
             .phone{
-                width:96%;
-                padding:2%;
+                width:55%;
+                margin-left:-6px;
+                padding:5% 2%;
                 margin-top:15px;
-                background-color:rgba(255, 255, 255, 1);
+                border-right:2px solid #CCC;
+                background-color:rgba(255, 255, 255, 0.85);
             }
             .dob{
-                width:96%;
-                padding:2%;
+                width:94%;
+                padding:5% 2%;
                 margin-top:15px;
-                background-color:rgba(255, 255, 255, 1);
+                background-color:rgba(255, 255, 255, 0.85);
             }
         }
     }
@@ -256,7 +319,7 @@
     #form2{
         position:relative;
         top:200px;
-        background-color:rgba(0, 0, 0, 0.2);
+        background-color:rgba(255, 255, 255, 0.75);
         @include span-columns(9,16);
         @include isolate(6);
     }

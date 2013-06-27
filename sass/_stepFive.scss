@@ -1,7 +1,7 @@
-.chaseui-pagebody.step5{
+.chaseui-pagebody.step4{
     position:relative;
     background-color:#ddd;
-    background-image: url('../images/bng_test_image5_market.jpg');
+    background-image: url('../images/bg_three.jpg');
     background-repeat:no-repeat;
     background-attachment:fixed;
     height:600px;
@@ -10,18 +10,14 @@
 }
 #voice5{
     position:relative;
-    top:200px;
+    top:1388px;
+    font-weight:normal;
     color:#FFF;
-    font-family:'GroteskReg';
-    font-size:2.375em;
-    background-color:rgba(0, 132, 203, 0.9);
+    color:#FFF;
+    font-size:1.125em;
+    background-color:rgba(0, 51, 102, 0.9);
     @include span-columns(4,16);
     @include isolate(2);
-    .carddetails{
-        display: block;
-        padding: 0px 20px 10px 20px;
-        font-size: 0.5em;
-    }
 }
 .help{
     margin-left:20px;
@@ -34,7 +30,246 @@
         margin-left: 50px;
     }
 }
-#shop5{
+#step4{
+    @include span-columns(3,16);
+    @include isolate(9);
+    position:relative;
+    top:1750px;
+}
+#form5{
+    position:relative;
+    top:1388px;
+    background-color:rgba(255, 255, 255, 0.75);
+    @include span-columns(9,16);
+    @include isolate(6);
+    margin-bottom:50px;
+    button{
+        width:280px;
+        margin:40px 40px 40px 130px;
+        text-align:center;
+    }
+    div.sublabel{
+        display:none;
+    }
+    form{
+        padding:40px;
+        h3{
+            font-size:1.5em;
+            margin-top:0px;
+            margin-bottom:30px;
+            font-weight:normal;
+            color:#43444E;
+            strong{
+                font-weight:bold;
+            }
+        }
+        label{
+            color:#FFF;
+            text-align:left;
+            display:block;
+            font-size:1em;
+            margin-bottom:-5px;
+        }
+        input, select{
+            border-radius:0;
+            border:none;
+            padding:8px;
+            color:#000;
+            margin:0px 0px;
+            background-color:rgba(255, 255, 255, 1);
+            &.placeholder {
+                color: #000; 
+            }
+            &:-moz-placeholder {
+                color: #000; 
+            }
+            &::-webkit-input-placeholder {
+                color: #000; 
+            } 
+        }
+        ul{
+            font-size:0.8em;
+            color:#43444E;
+            clear:both;
+               li{
+                    margin-bottom:5px;
+                }
+        }
+        .floatleft{
+            float:left;
+            width:50%;
+            clear:left;
+        }
+        .floatright{
+            float:right;
+            width:50%;
+        }
+        p{
+            clear:both;
+            margin-top:25px;
+            color:#FFF;
+            padding:25px;
+        }
+        .account{
+            width:85%;
+            margin-top:10px;
+            border-right:5px solid #FFF;
+            padding:4%;
+            background-color:rgba(255, 255, 255, 1);
+            margin-bottom:50px;
+
+        }
+        .password{
+            width:90%;
+            margin-top:10px;
+            border-right:5px solid #FFF;
+            padding:4%;
+            background-color:rgba(255, 255, 255, 1);
+            margin-bottom:20px;
+        }
+        .rent{
+            width:85%;
+            margin-top:10px;
+            border-right:5px solid #FFF;
+            padding:4%;
+            background-color:rgba(255, 255, 255, 1);
+        }
+        .amount{
+            width:90%;
+            margin-top:10px;
+            border-right:5px solid #FFF;
+            padding:4%;
+            background-color:rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+
+@include at-breakpoint($mini) {
+#step4{
+        top:125px;
+        @include span-columns(5,5);
+    @include isolate(1);
+    }
+    #voice5{
+display:none;
+    }
+    .help{
+        margin-left:20px;
+        margin-top:0px;
+        font-size:0.6em;
+        span{
+            margin-top: -35px;
+            display: block;
+            margin-bottom: 35px;
+            margin-left: 50px;
+        }
+    }
+    #form5{
+        @include span-columns(5 omega,5);
+        top:150px;
+        button{
+            min-width:257px;
+            width:257px;
+            margin:40px 40px 40px 0px;
+            text-align:center;
+        }
+        form{
+            ul{
+                font-size:0.6em;
+                padding-left:21px;
+                li{
+                    margin-bottom:5px;
+                }
+            }
+            .floatleft{
+                width:100%;
+            }
+            .floatright{
+                width:100%;
+            }
+            h3{
+                font-size:1.625em;
+                margin-bottom:20px;
+            }
+            .account, .password{
+                width:91%;
+                margin-top:5px;
+                margin-bottom:5px;
+            }
+        }
+    }
+}
+
+
+
+//voice
+.chaseui-pagebody.voice{
+    background-color:#FFF;
+    background-size:auto;
+    position:relative;
+    height:600px;
+    .chaseui-voicetext{
+        width:100%;
+        height: 400px;
+        background-color: #0084CB;
+        position: relative;
+        top: 25%;      
+        .chaseui-inner{
+            color: #FFF;
+            font-size: 2.375em;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-top: 145px;
+        }
+    }
+}
+
+
+
+
+
+.chaseui-pagebody.step6{
+    position:relative;
+    background-color:#ddd;
+    background-image: url('../images/bg_threeN.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+    height:600px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+	@include susy-grid-background;
+}
+#voice6{
+    position:relative;
+    font-weight:normal;
+    top:200px;
+    color:#FFF;
+    font-size:1.125em;
+    background-color:rgba(0, 51, 102, 0.9);
+    @include span-columns(4,16);
+    @include isolate(2);
+    .carddetails{
+        display: block;
+        padding: 0px 20px 10px 20px;
+        font-size: 0.5em;
+    }
+}
+.help{
+    margin-left:20px;
+    margin-top:10px;
+    font-size:0.6em;
+	border-top: solid 1px #fff;
+	padding-top: 10px;
+    span{
+        margin-top: -35px;
+        display: block;
+        margin-bottom: 35px;
+        margin-left: 50px;
+    }
+}
+#shop6{
     position:relative;
     top:600px;
     height:510px;
@@ -42,7 +277,6 @@
     @include span-columns(9,16);
     @include isolate(6);
     text-align:center;
-    font-family:'GroteskReg';
     font-size:1em;
     margin-bottom:780px;
     h3{
@@ -79,49 +313,100 @@
     }
 
 }
-#form5{
+#form6{
     position:relative;
     top:200px;
-    background-color:rgba(0, 45, 98, 0.9);
-    @include span-columns(9,16);
+    background-color:rgba(255,255,255,0.6);
+    color:black;
+    @include span-columns(7,16);
     @include isolate(6);
+	@include pad(1,1);
+	padding-bottom: 30px;
     font-weight:normal;
     text-align:center;
-    color:white;
-    font-family: 'GroteskReg';
+    color:000;
     button{
         width:280px;
         margin:40px 40px 40px 130px;
         text-align:center;
     }
-    h3{
-
-        font-size:2.625em;
-        margin-top:20px;
-        margin-bottom:30px;
-    }
-    p{
-        &.pone{
-            font-size: 1.5em;
-            padding: 0px 50px;
-        }
-        &.ptwo{
-            font-size:1.6em;
-        }
-        &.pthree{
-            margin-top: 108px;
-            padding: 0px;
-            font-size: 0.8em;
-            clear: both;
-        }
-        &.pfour{
-            font-size: 0.9em;   
-            span{
-                display:block;
-                font-size:0.8em;
+	a {
+		color: #0084CB;
+		text-decoration: underline;
+	}	
+	p {
+		font-size: 1.1em;
+		margin: 0;
+	}
+	.chaseui-carddetails {
+		border-bottom: solid 1px gray;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		h3{
+			font-size:36px;
+			margin:20px 0 0;
+			font-weight:bold;
+		}
+		p{
+			margin: 0;
+			&.credit-limit {
+				font-size: 30px;
+				font-weight: light;
+			}
+			&.agreement{				
+				margin-top: 30px;
+				font-size: 1.1em;
+			}			
+		}
+	}
+	.chaseui-shop {
+		text-align: left;
+		h4 {
+			font-size: 25px;
+			margin: 0 0 20px 0;
+			font-weight: bold;
+		}
+		p {
+			line-height: 20px;
+			font-size: 15px;
+		}
+		input {
+			@include span-columns(4,6);
+			border-radius:0;
+            border:none;
+            padding:8px;
+            color:#000;
+            margin:0px 0px;
+            background-color:rgba(255,255,255,1);
+            &.placeholder {
+                color: #000; 
             }
-        }
-    }
+            &:-moz-placeholder {
+                color: #000; 
+            }
+            &::-webkit-input-placeholder {
+                color: #000; 
+            }         
+		}
+		.chaseui-partners {
+			margin: 30px 0 50px 0;
+			img {
+				width: 170px;
+			}
+		}
+		.chaseui-search {
+			background-color: rgba(0, 132, 203, 1);			
+			padding: 10px 15px 2px;
+			height: 24px;
+			display: inline-block;
+			i:before {
+				font-family: "Chase";
+				content: "\e00c";
+				color: #fff;
+				font-size: 40px;
+			}
+		}
+	}
     div.rate{
         width: 20%;
         text-align: center;
@@ -198,13 +483,7 @@
         }
     }
 }
-@include at-breakpoint($desktopmedium) {
-//16
-    #form5{
-        @include span-columns(9,16);
-        @include isolate(6);
-    }
-}
+
 
 
 
@@ -223,7 +502,6 @@
         top: 25%;      
         .chaseui-inner{
             color: #FFF;
-            font-family: 'GroteskReg';
             font-size: 2.375em;
             max-width: 900px;
             margin: 0 auto;
