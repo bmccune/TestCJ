@@ -546,7 +546,7 @@ header {
   background-image: url("../images/header_desktop_full_no_logo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: right;
+  background-position: top right;
 }
 /* line 21, ../sass/_header.scss */
 header h1 {
@@ -819,18 +819,31 @@ body {
   text-align: center;
 }
 /* line 113, ../sass/_stepOne.scss */
-.chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-icon {
-  border-right: solid #fff 1px;
-  padding: 10px;
-  margin-right: 10px;
+.chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-btntext.chase {
+  float: left;
+  margin: 10px 0px 0px 50px;
+}
+/* line 117, ../sass/_stepOne.scss */
+.chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-btntext.amazon {
+  margin: 10px 65px 0px 0px;
 }
 /* line 120, ../sass/_stepOne.scss */
+.chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-btntext.google {
+  margin: 10px 65px 0px 0px;
+}
+/* line 123, ../sass/_stepOne.scss */
+.chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-icon {
+  border-right: solid rgba(255, 255, 255, 0.5) 1px;
+  padding-right: 15px;
+  margin: 10px;
+}
+/* line 130, ../sass/_stepOne.scss */
 .chaseui-pagebody.step1 .wrapper .chaseui-form-separator {
   text-align: center;
   margin: 40px 0 0 0;
 }
 
-/* line 128, ../sass/_stepOne.scss */
+/* line 138, ../sass/_stepOne.scss */
 .chaseui-form-separator hr {
   display: inline-block;
   width: 10%;
@@ -840,7 +853,7 @@ body {
   position: relative;
   bottom: 8px;
 }
-/* line 137, ../sass/_stepOne.scss */
+/* line 147, ../sass/_stepOne.scss */
 .chaseui-form-separator span {
   position: relative;
   bottom: 10px;
@@ -850,48 +863,48 @@ body {
   display: inline-block;
 }
 
-/* line 147, ../sass/_stepOne.scss */
+/* line 157, ../sass/_stepOne.scss */
 .chaseui-icon.chase {
   border: none !important;
 }
-/* line 150, ../sass/_stepOne.scss */
+/* line 160, ../sass/_stepOne.scss */
 .chaseui-icon.chase:before {
   font-family: "Chase";
   content: '\e014';
   font-style: normal;
 }
-/* line 155, ../sass/_stepOne.scss */
+/* line 165, ../sass/_stepOne.scss */
 .chaseui-icon.amazon:before {
   font-family: "social";
   content: '\e800';
 }
-/* line 159, ../sass/_stepOne.scss */
+/* line 169, ../sass/_stepOne.scss */
 .chaseui-icon.google:before {
   font-family: "social";
   content: '\e802';
 }
 
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 167, ../sass/_stepOne.scss */
+  /* line 177, ../sass/_stepOne.scss */
   #voice1 {
     display: none;
   }
 
-  /* line 170, ../sass/_stepOne.scss */
+  /* line 180, ../sass/_stepOne.scss */
   button {
     height: 45px;
   }
 
-  /* line 173, ../sass/_stepOne.scss */
+  /* line 183, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 {
     background-size: auto;
   }
-  /* line 175, ../sass/_stepOne.scss */
+  /* line 185, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 #form0 {
     font-size: 1em;
     margin-top: 70px;
   }
-  /* line 179, ../sass/_stepOne.scss */
+  /* line 189, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper {
     padding-left: 0%;
     padding-right: 0%;
@@ -899,11 +912,11 @@ body {
     float: left;
     margin-right: 4.16667%;
   }
-  /* line 183, ../sass/_stepOne.scss */
+  /* line 193, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-welcome-message {
     margin-bottom: 0px;
   }
-  /* line 186, ../sass/_stepOne.scss */
+  /* line 196, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form {
     background-color: rgba(255, 255, 255, 0);
     padding: 0px;
@@ -914,12 +927,12 @@ body {
     margin-right: -100%;
     margin-left: 0%;
   }
-  /* line 193, ../sass/_stepOne.scss */
+  /* line 203, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-form-title {
     margin-bottom: 25px;
     font-size: 1em;
   }
-  /* line 198, ../sass/_stepOne.scss */
+  /* line 208, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav button {
     font-size: 1em;
     margin: 0px auto 40px;
@@ -928,22 +941,22 @@ body {
     margin-right: 4.16667%;
     margin-left: 20.83333%;
   }
-  /* line 204, ../sass/_stepOne.scss */
+  /* line 214, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav a {
     font-size: 1em;
   }
-  /* line 208, ../sass/_stepOne.scss */
+  /* line 218, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form input {
     width: 92%;
     font-size: 0.727em;
     margin-bottom: 10px;
   }
-  /* line 216, ../sass/_stepOne.scss */
+  /* line 226, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup h4 {
     font-size: 1.5em;
     margin: 20px 0px 10px 0px;
   }
-  /* line 220, ../sass/_stepOne.scss */
+  /* line 230, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button {
     width: 16.66667%;
     float: left;
@@ -953,19 +966,21 @@ body {
     background-image: none;
     text-align: left;
   }
-  /* line 226, ../sass/_stepOne.scss */
+  /* line 236, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-icon {
     border: none !important;
+    padding: 15px;
+    margin: 0px;
   }
-  /* line 229, ../sass/_stepOne.scss */
+  /* line 242, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button span {
     display: none;
   }
-  /* line 232, ../sass/_stepOne.scss */
+  /* line 245, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button.chaseui-button-chase {
     margin-left: 20.83333%;
   }
-  /* line 238, ../sass/_stepOne.scss */
+  /* line 251, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form-separator {
     text-align: center;
     margin: 30px 0 20px 0;
@@ -973,12 +988,12 @@ body {
     float: left;
     margin-right: 4.16667%;
   }
-  /* line 242, ../sass/_stepOne.scss */
+  /* line 255, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form-separator hr {
     width: 30%;
   }
 
-  /* line 249, ../sass/_stepOne.scss */
+  /* line 262, ../sass/_stepOne.scss */
   .chaseui-form-separator span {
     background-size: 100%;
     bottom: 5px;
@@ -987,31 +1002,31 @@ body {
   }
 }
 @media (min-width: 28em) and (max-width: 46em) {
-  /* line 263, ../sass/_stepOne.scss */
+  /* line 276, ../sass/_stepOne.scss */
   button i {
     float: left;
   }
-  /* line 266, ../sass/_stepOne.scss */
+  /* line 279, ../sass/_stepOne.scss */
   button span {
     display: none;
   }
 
-  /* line 270, ../sass/_stepOne.scss */
+  /* line 283, ../sass/_stepOne.scss */
   #voice1 {
     display: none;
   }
 
-  /* line 273, ../sass/_stepOne.scss */
+  /* line 286, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 {
     background-size: auto;
   }
-  /* line 275, ../sass/_stepOne.scss */
+  /* line 288, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 #form0 {
     font-size: 1.1em;
     margin-top: 0px;
     padding-top: 100px;
   }
-  /* line 280, ../sass/_stepOne.scss */
+  /* line 293, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper {
     padding-left: 0%;
     padding-right: 0%;
@@ -1019,11 +1034,11 @@ body {
     float: left;
     margin-right: 2.5641%;
   }
-  /* line 284, ../sass/_stepOne.scss */
+  /* line 297, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-welcome-message {
     margin-bottom: 0px;
   }
-  /* line 287, ../sass/_stepOne.scss */
+  /* line 300, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form {
     background-color: rgba(255, 255, 255, 0);
     padding: 0px;
@@ -1034,12 +1049,12 @@ body {
     margin-right: -100%;
     margin-left: 0%;
   }
-  /* line 294, ../sass/_stepOne.scss */
+  /* line 307, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-form-title {
     margin-bottom: 25px;
     font-size: 1em;
   }
-  /* line 299, ../sass/_stepOne.scss */
+  /* line 312, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav button {
     font-size: 1em;
     margin: 10px auto 40px;
@@ -1048,22 +1063,22 @@ body {
     margin-right: 2.5641%;
     margin-left: 12.82051%;
   }
-  /* line 305, ../sass/_stepOne.scss */
+  /* line 318, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form .chaseui-formnav a {
     font-size: 1em;
   }
-  /* line 309, ../sass/_stepOne.scss */
+  /* line 322, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form form input {
     width: 92%;
     font-size: 0.727em;
     margin-bottom: 10px;
   }
-  /* line 317, ../sass/_stepOne.scss */
+  /* line 330, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup h4 {
     font-size: 1.5em;
     margin: 20px 0px 10px 0px;
   }
-  /* line 321, ../sass/_stepOne.scss */
+  /* line 334, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button {
     width: 23.07692%;
     float: left;
@@ -1073,15 +1088,15 @@ body {
     background-image: none;
     text-align: left;
   }
-  /* line 327, ../sass/_stepOne.scss */
+  /* line 340, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button .chaseui-icon {
     display: none;
   }
-  /* line 330, ../sass/_stepOne.scss */
+  /* line 343, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-thirdparty-signup button.chaseui-button-chase {
     margin-left: 12.82051%;
   }
-  /* line 336, ../sass/_stepOne.scss */
+  /* line 349, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form-separator {
     text-align: center;
     margin: 30px 0 20px 0;
@@ -1089,12 +1104,12 @@ body {
     float: left;
     margin-right: 2.5641%;
   }
-  /* line 340, ../sass/_stepOne.scss */
+  /* line 353, ../sass/_stepOne.scss */
   .chaseui-pagebody.step1 .wrapper .chaseui-form-separator hr {
     width: 30%;
   }
 
-  /* line 347, ../sass/_stepOne.scss */
+  /* line 360, ../sass/_stepOne.scss */
   .chaseui-form-separator span {
     background-size: 100%;
     bottom: 5px;
@@ -1102,32 +1117,32 @@ body {
     height: 26px;
   }
 }
-/* line 355, ../sass/_stepOne.scss */
+/* line 368, ../sass/_stepOne.scss */
 .mobilevoice {
   height: auto;
   padding: 5px 15px;
   color: #fff;
 }
-/* line 360, ../sass/_stepOne.scss */
+/* line 373, ../sass/_stepOne.scss */
 .mobilevoice .slidebox .text {
   border-bottom: solid 1px #fff;
   padding-bottom: 10px;
   display: none;
   position: relative;
 }
-/* line 361, ../sass/_stepOne.scss */
+/* line 374, ../sass/_stepOne.scss */
 .mobilevoice .slidebox .text .close {
   text-align: right;
   display: block;
 }
-/* line 371, ../sass/_stepOne.scss */
+/* line 384, ../sass/_stepOne.scss */
 .mobilevoice .chat {
   background: url(../Images/icon_chat_with_us.png) 0 0 no-repeat;
   width: 100%;
   height: 37px;
   position: relative;
 }
-/* line 376, ../sass/_stepOne.scss */
+/* line 389, ../sass/_stepOne.scss */
 .mobilevoice .chat div {
   display: block;
   margin: 0 0 0 67px;
@@ -1398,7 +1413,7 @@ body {
 @media (min-width: 0em) and (max-width: 28em) {
   /* line 213, ../sass/_stepTwo.scss */
   .chaseui-pagebody.step2 div.chaseui-container {
-    height: 1600px;
+    height: 1500px;
   }
 
   /* line 217, ../sass/_stepTwo.scss */
@@ -2189,34 +2204,40 @@ body {
   color: #000;
 }
 /* line 90, ../sass/_stepFive.scss */
+#form5 form input[type="checkbox"] {
+  margin-right: 10px;
+}
+/* line 93, ../sass/_stepFive.scss */
 #form5 form ul {
   font-size: 0.8em;
   color: #43444E;
   clear: both;
+  margin-left: 3%;
+  padding-left: 0px;
 }
-/* line 94, ../sass/_stepFive.scss */
+/* line 99, ../sass/_stepFive.scss */
 #form5 form ul li {
   margin-bottom: 5px;
 }
-/* line 98, ../sass/_stepFive.scss */
+/* line 103, ../sass/_stepFive.scss */
 #form5 form .floatleft {
   float: left;
   width: 50%;
   clear: left;
 }
-/* line 103, ../sass/_stepFive.scss */
+/* line 108, ../sass/_stepFive.scss */
 #form5 form .floatright {
   float: right;
   width: 50%;
 }
-/* line 107, ../sass/_stepFive.scss */
+/* line 112, ../sass/_stepFive.scss */
 #form5 form p {
   clear: both;
   margin-top: 25px;
   color: #FFF;
   padding: 25px;
 }
-/* line 113, ../sass/_stepFive.scss */
+/* line 118, ../sass/_stepFive.scss */
 #form5 form .account {
   width: 85%;
   margin-top: 10px;
@@ -2225,7 +2246,7 @@ body {
   background-color: white;
   margin-bottom: 50px;
 }
-/* line 122, ../sass/_stepFive.scss */
+/* line 127, ../sass/_stepFive.scss */
 #form5 form .password {
   width: 90%;
   margin-top: 10px;
@@ -2234,7 +2255,7 @@ body {
   background-color: white;
   margin-bottom: 20px;
 }
-/* line 130, ../sass/_stepFive.scss */
+/* line 135, ../sass/_stepFive.scss */
 #form5 form .rent {
   width: 85%;
   margin-top: 10px;
@@ -2242,7 +2263,7 @@ body {
   padding: 4%;
   background-color: white;
 }
-/* line 137, ../sass/_stepFive.scss */
+/* line 142, ../sass/_stepFive.scss */
 #form5 form .amount {
   width: 90%;
   margin-top: 10px;
@@ -2252,9 +2273,9 @@ body {
 }
 
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 149, ../sass/_stepFive.scss */
+  /* line 154, ../sass/_stepFive.scss */
   #step4 {
-    top: 125px;
+    top: 450px;
     width: 100%;
     float: left;
     margin-right: 4.16667%;
@@ -2262,18 +2283,18 @@ body {
     margin-left: 0%;
   }
 
-  /* line 154, ../sass/_stepFive.scss */
+  /* line 159, ../sass/_stepFive.scss */
   #voice5 {
     display: none;
   }
 
-  /* line 157, ../sass/_stepFive.scss */
+  /* line 162, ../sass/_stepFive.scss */
   .help {
     margin-left: 20px;
     margin-top: 0px;
     font-size: 0.6em;
   }
-  /* line 161, ../sass/_stepFive.scss */
+  /* line 166, ../sass/_stepFive.scss */
   .help span {
     margin-top: -35px;
     display: block;
@@ -2281,57 +2302,57 @@ body {
     margin-left: 50px;
   }
 
-  /* line 168, ../sass/_stepFive.scss */
+  /* line 173, ../sass/_stepFive.scss */
   #form5 {
     width: 100%;
     float: right;
     margin-right: 0;
     top: 150px;
   }
-  /* line 171, ../sass/_stepFive.scss */
+  /* line 176, ../sass/_stepFive.scss */
   #form5 button {
     min-width: 257px;
     width: 257px;
     margin: 40px 40px 40px 0px;
     text-align: center;
   }
-  /* line 178, ../sass/_stepFive.scss */
+  /* line 183, ../sass/_stepFive.scss */
   #form5 form ul {
-    font-size: 0.6em;
+    font-size: 1em;
     padding-left: 21px;
   }
-  /* line 181, ../sass/_stepFive.scss */
+  /* line 186, ../sass/_stepFive.scss */
   #form5 form ul li {
     margin-bottom: 5px;
   }
-  /* line 185, ../sass/_stepFive.scss */
+  /* line 190, ../sass/_stepFive.scss */
   #form5 form .floatleft {
     width: 100%;
   }
-  /* line 188, ../sass/_stepFive.scss */
+  /* line 193, ../sass/_stepFive.scss */
   #form5 form .floatright {
     width: 100%;
   }
-  /* line 191, ../sass/_stepFive.scss */
+  /* line 196, ../sass/_stepFive.scss */
   #form5 form h3 {
-    font-size: 1.625em;
+    font-size: 2em;
     margin-bottom: 20px;
   }
-  /* line 195, ../sass/_stepFive.scss */
+  /* line 200, ../sass/_stepFive.scss */
   #form5 form .account, #form5 form .password {
     width: 91%;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 }
-/* line 207, ../sass/_stepFive.scss */
+/* line 212, ../sass/_stepFive.scss */
 .chaseui-pagebody.voice {
   background-color: #FFF;
   background-size: auto;
   position: relative;
   height: 600px;
 }
-/* line 212, ../sass/_stepFive.scss */
+/* line 217, ../sass/_stepFive.scss */
 .chaseui-pagebody.voice .chaseui-voicetext {
   width: 100%;
   height: 400px;
@@ -2339,7 +2360,7 @@ body {
   position: relative;
   top: 25%;
 }
-/* line 218, ../sass/_stepFive.scss */
+/* line 223, ../sass/_stepFive.scss */
 .chaseui-pagebody.voice .chaseui-voicetext .chaseui-inner {
   color: #FFF;
   font-size: 2.375em;
@@ -2348,7 +2369,7 @@ body {
   padding-top: 145px;
 }
 
-/* line 232, ../sass/_stepFive.scss */
+/* line 237, ../sass/_stepFive.scss */
 .chaseui-pagebody.step6 {
   position: relative;
   background-color: #ddd;
@@ -2369,7 +2390,7 @@ body {
   background-clip: content-box;
 }
 
-/* line 244, ../sass/_stepFive.scss */
+/* line 249, ../sass/_stepFive.scss */
 #voice6 {
   position: relative;
   font-weight: normal;
@@ -2383,14 +2404,14 @@ body {
   margin-right: -100%;
   margin-left: 6.32911%;
 }
-/* line 253, ../sass/_stepFive.scss */
+/* line 258, ../sass/_stepFive.scss */
 #voice6 .carddetails {
   display: block;
   padding: 0px 20px 10px 20px;
   font-size: 0.5em;
 }
 
-/* line 259, ../sass/_stepFive.scss */
+/* line 264, ../sass/_stepFive.scss */
 .help {
   margin-left: 20px;
   margin-top: 10px;
@@ -2398,7 +2419,7 @@ body {
   border-top: solid 1px #fff;
   padding-top: 10px;
 }
-/* line 265, ../sass/_stepFive.scss */
+/* line 270, ../sass/_stepFive.scss */
 .help span {
   margin-top: -35px;
   display: block;
@@ -2406,7 +2427,7 @@ body {
   margin-left: 50px;
 }
 
-/* line 272, ../sass/_stepFive.scss */
+/* line 277, ../sass/_stepFive.scss */
 #shop6 {
   position: relative;
   top: 600px;
@@ -2421,45 +2442,45 @@ body {
   font-size: 1em;
   margin-bottom: 780px;
 }
-/* line 282, ../sass/_stepFive.scss */
+/* line 287, ../sass/_stepFive.scss */
 #shop6 h3 {
   font-size: 2em;
   padding: 0 20%;
 }
-/* line 287, ../sass/_stepFive.scss */
+/* line 292, ../sass/_stepFive.scss */
 #shop6 p.pone {
   margin-top: -20px;
   margin-bottom: 25px;
   font-size: 1.2em;
 }
-/* line 292, ../sass/_stepFive.scss */
+/* line 297, ../sass/_stepFive.scss */
 #shop6 p.ptwo {
   text-align: left;
   margin-left: 60px;
   font-size: 0.8em;
 }
-/* line 298, ../sass/_stepFive.scss */
+/* line 303, ../sass/_stepFive.scss */
 #shop6 hr {
   margin-top: 32px;
 }
-/* line 301, ../sass/_stepFive.scss */
+/* line 306, ../sass/_stepFive.scss */
 #shop6 h4 {
   margin-top: 26px;
   text-align: left;
   padding-left: 60px;
 }
-/* line 306, ../sass/_stepFive.scss */
+/* line 311, ../sass/_stepFive.scss */
 #shop6 input {
   width: 80%;
   padding: 1%;
   font-size: 1em;
 }
-/* line 311, ../sass/_stepFive.scss */
+/* line 316, ../sass/_stepFive.scss */
 #shop6 button {
   margin: 45px 20px 0 190px;
 }
 
-/* line 316, ../sass/_stepFive.scss */
+/* line 321, ../sass/_stepFive.scss */
 #form6 {
   position: relative;
   top: 200px;
@@ -2477,110 +2498,110 @@ body {
   text-align: center;
   color: 000;
 }
-/* line 328, ../sass/_stepFive.scss */
+/* line 333, ../sass/_stepFive.scss */
 #form6 button {
   width: 280px;
   margin: 40px 40px 40px 130px;
   text-align: center;
 }
-/* line 333, ../sass/_stepFive.scss */
+/* line 338, ../sass/_stepFive.scss */
 #form6 a {
   color: #0084CB;
   text-decoration: underline;
 }
-/* line 337, ../sass/_stepFive.scss */
+/* line 342, ../sass/_stepFive.scss */
 #form6 p {
   font-size: 1.1em;
   margin: 0;
 }
-/* line 341, ../sass/_stepFive.scss */
+/* line 346, ../sass/_stepFive.scss */
 #form6 .chaseui-carddetails {
   border-bottom: solid 1px gray;
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-/* line 345, ../sass/_stepFive.scss */
+/* line 350, ../sass/_stepFive.scss */
 #form6 .chaseui-carddetails h3 {
   font-size: 36px;
   margin: 20px 0 0;
   font-weight: bold;
 }
-/* line 350, ../sass/_stepFive.scss */
+/* line 355, ../sass/_stepFive.scss */
 #form6 .chaseui-carddetails p {
   margin: 0;
 }
-/* line 352, ../sass/_stepFive.scss */
+/* line 357, ../sass/_stepFive.scss */
 #form6 .chaseui-carddetails p.credit-limit {
   font-size: 30px;
   font-weight: light;
 }
-/* line 356, ../sass/_stepFive.scss */
+/* line 361, ../sass/_stepFive.scss */
 #form6 .chaseui-carddetails p.agreement {
   margin-top: 30px;
   font-size: 1.1em;
 }
-/* line 362, ../sass/_stepFive.scss */
+/* line 367, ../sass/_stepFive.scss */
 #form6 .chaseui-shop {
   text-align: left;
 }
-/* line 364, ../sass/_stepFive.scss */
+/* line 369, ../sass/_stepFive.scss */
 #form6 .chaseui-shop h4 {
   font-size: 25px;
   margin: 0 0 20px 0;
   font-weight: bold;
 }
-/* line 369, ../sass/_stepFive.scss */
+/* line 374, ../sass/_stepFive.scss */
 #form6 .chaseui-shop p {
   line-height: 20px;
   font-size: 15px;
 }
-/* line 373, ../sass/_stepFive.scss */
+/* line 378, ../sass/_stepFive.scss */
 #form6 .chaseui-shop input {
-  width: 65.51724%;
+  width: 82.75862%;
   float: left;
   margin-right: 3.44828%;
   border-radius: 0;
   border: none;
-  padding: 8px;
+  padding: 2%;
   color: #000;
   margin: 0px 0px;
   background-color: white;
 }
-/* line 381, ../sass/_stepFive.scss */
+/* line 386, ../sass/_stepFive.scss */
 #form6 .chaseui-shop input.placeholder {
   color: #000;
 }
-/* line 384, ../sass/_stepFive.scss */
+/* line 389, ../sass/_stepFive.scss */
 #form6 .chaseui-shop input:-moz-placeholder {
   color: #000;
 }
-/* line 387, ../sass/_stepFive.scss */
+/* line 392, ../sass/_stepFive.scss */
 #form6 .chaseui-shop input::-webkit-input-placeholder {
   color: #000;
 }
-/* line 391, ../sass/_stepFive.scss */
+/* line 396, ../sass/_stepFive.scss */
 #form6 .chaseui-shop .chaseui-partners {
   margin: 30px 0 50px 0;
 }
-/* line 393, ../sass/_stepFive.scss */
+/* line 398, ../sass/_stepFive.scss */
 #form6 .chaseui-shop .chaseui-partners img {
   width: 170px;
 }
-/* line 397, ../sass/_stepFive.scss */
+/* line 402, ../sass/_stepFive.scss */
 #form6 .chaseui-shop .chaseui-search {
   background-color: #0084cb;
-  padding: 10px 15px 2px;
+  padding: 7px 8px 8px;
   height: 24px;
   display: inline-block;
 }
-/* line 402, ../sass/_stepFive.scss */
+/* line 407, ../sass/_stepFive.scss */
 #form6 .chaseui-shop .chaseui-search i:before {
   font-family: "Chase";
   content: "\e00c";
   color: #fff;
-  font-size: 40px;
+  font-size: 1.6em;
 }
-/* line 410, ../sass/_stepFive.scss */
+/* line 415, ../sass/_stepFive.scss */
 #form6 div.rate {
   width: 20%;
   text-align: center;
@@ -2588,12 +2609,12 @@ body {
   float: left;
   padding-left: 30%;
 }
-/* line 416, ../sass/_stepFive.scss */
+/* line 421, ../sass/_stepFive.scss */
 #form6 div.rate span {
   display: block;
   font-size: 0.5em;
 }
-/* line 421, ../sass/_stepFive.scss */
+/* line 426, ../sass/_stepFive.scss */
 #form6 div.fee {
   width: 20%;
   float: left;
@@ -2601,56 +2622,134 @@ body {
   text-align: center;
   font-size: 2.2em;
 }
-/* line 427, ../sass/_stepFive.scss */
+/* line 432, ../sass/_stepFive.scss */
 #form6 div.fee span {
   display: block;
   font-size: 0.5em;
 }
 
 @media (min-width: 0em) and (max-width: 28em) {
-  /* line 437, ../sass/_stepFive.scss */
+  /* line 442, ../sass/_stepFive.scss */
   #voice5 {
     width: 100%;
     float: right;
     margin-right: 0;
   }
-  /* line 439, ../sass/_stepFive.scss */
+  /* line 444, ../sass/_stepFive.scss */
   #voice5 .voicedetails {
     font-size: 0.5em;
   }
-  /* line 442, ../sass/_stepFive.scss */
+  /* line 447, ../sass/_stepFive.scss */
   #voice5 .carddetails {
     font-size: 0.4em;
   }
-  /* line 445, ../sass/_stepFive.scss */
+  /* line 450, ../sass/_stepFive.scss */
   #voice5 .help {
     font-size: 0.4em;
   }
 
-  /* line 449, ../sass/_stepFive.scss */
+  /* line 454, ../sass/_stepFive.scss */
+  #voice6 {
+    display: none;
+  }
+
+  /* line 457, ../sass/_stepFive.scss */
+  #form6 {
+    width: 100%;
+    float: left;
+    margin-right: 4.16667%;
+    margin-right: -100%;
+    margin-left: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    top: 100px;
+    font-size: 0.6em;
+  }
+  /* line 463, ../sass/_stepFive.scss */
+  #form6 .chaseui-carddetails {
+    pading-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 466, ../sass/_stepFive.scss */
+  #form6 .chaseui-carddetails h3 {
+    font-size: 2em;
+    margin: 20px 20px 0px;
+    text-align: left;
+  }
+  /* line 471, ../sass/_stepFive.scss */
+  #form6 .chaseui-carddetails p.credit-limit {
+    font-size: 1.7em;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  /* line 477, ../sass/_stepFive.scss */
+  #form6 .chaseui-carddetails p.agreement {
+    font-size: 1.1em;
+    text-align: left;
+    margin-left: 23px;
+    margin-top: 10px;
+  }
+  /* line 484, ../sass/_stepFive.scss */
+  #form6 .chaseui-shop {
+    font-size: 2em;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  /* line 488, ../sass/_stepFive.scss */
+  #form6 .chaseui-shop i {
+    font-size: 0.5em;
+  }
+  /* line 491, ../sass/_stepFive.scss */
+  #form6 .chaseui-shop .chaseui-search {
+    margin-left: -10px;
+  }
+  /* line 494, ../sass/_stepFive.scss */
+  #form6 .chaseui-shop h4 {
+    font-size: 1em;
+  }
+  /* line 497, ../sass/_stepFive.scss */
+  #form6 .chaseui-shop .chaseui-partners img {
+    width: 110px;
+  }
+  /* line 500, ../sass/_stepFive.scss */
+  #form6 .chaseui-shop input {
+    width: 79.16667%;
+    float: left;
+    margin-right: 4.16667%;
+    font-size: 0.8em;
+    padding: 4% 2%;
+  }
+
+  /* line 507, ../sass/_stepFive.scss */
   #form5 {
     width: 100%;
     float: right;
     margin-right: 0;
+    font-size: 0.6em;
   }
-  /* line 451, ../sass/_stepFive.scss */
+  /* line 510, ../sass/_stepFive.scss */
+  #form5 form {
+    padding: 10px;
+  }
+  /* line 514, ../sass/_stepFive.scss */
   #form5 h3 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
-  /* line 455, ../sass/_stepFive.scss */
+  /* line 518, ../sass/_stepFive.scss */
   #form5 p.pone {
     font-size: 1em;
   }
-  /* line 458, ../sass/_stepFive.scss */
+  /* line 521, ../sass/_stepFive.scss */
   #form5 p.ptwo {
     font-size: 1.1em;
   }
-  /* line 462, ../sass/_stepFive.scss */
+  /* line 525, ../sass/_stepFive.scss */
   #form5 div.rate, #form5 div.fee {
     font-size: 1.5em;
   }
 
-  /* line 466, ../sass/_stepFive.scss */
+  /* line 529, ../sass/_stepFive.scss */
   #shop5 {
     width: 100%;
     float: right;
@@ -2659,29 +2758,29 @@ body {
     height: 800px;
     margin-bottom: 300px;
   }
-  /* line 471, ../sass/_stepFive.scss */
+  /* line 534, ../sass/_stepFive.scss */
   #shop5 button {
     margin: 45px 20px 0px 2px;
   }
-  /* line 474, ../sass/_stepFive.scss */
+  /* line 537, ../sass/_stepFive.scss */
   #shop5 h3 {
     font-size: 1.4em;
     padding: 0 5%;
   }
-  /* line 479, ../sass/_stepFive.scss */
+  /* line 542, ../sass/_stepFive.scss */
   #shop5 p.pone {
     margin-top: -10px;
     font-size: 1em;
   }
 }
-/* line 492, ../sass/_stepFive.scss */
+/* line 555, ../sass/_stepFive.scss */
 .chaseui-pagebody.voice {
   background-color: #FFF;
   background-size: auto;
   position: relative;
   height: 600px;
 }
-/* line 497, ../sass/_stepFive.scss */
+/* line 560, ../sass/_stepFive.scss */
 .chaseui-pagebody.voice .chaseui-voicetext {
   width: 100%;
   height: 400px;
@@ -2689,7 +2788,7 @@ body {
   position: relative;
   top: 25%;
 }
-/* line 503, ../sass/_stepFive.scss */
+/* line 566, ../sass/_stepFive.scss */
 .chaseui-pagebody.voice .chaseui-voicetext .chaseui-inner {
   color: #FFF;
   font-size: 2.375em;

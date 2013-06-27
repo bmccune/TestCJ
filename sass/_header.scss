@@ -17,7 +17,7 @@ header{
     background-image: url('../images/header_desktop_full_no_logo.png');
     background-repeat:no-repeat;
     background-attachment:fixed;
-    background-position-x: right;
+    background-position:top right;
     h1{        
         @include span-columns(3,16);
         @include isolate(2);

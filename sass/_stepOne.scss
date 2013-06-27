@@ -110,10 +110,20 @@ $headingColor: #002d62;
 				background: $primaryBlue;
 				background-image: none;
                 text-align:center;
-				.chaseui-icon {
-					border-right: solid #fff 1px;
-					padding: 10px;
-					margin-right: 10px;
+				.chaseui-btntext.chase{
+                    float:left;
+                    margin:10px 0px 0px 50px;
+                }
+                .chaseui-btntext.amazon{
+                    margin:10px 65px 0px 0px;
+                }
+                .chaseui-btntext.google{
+                    margin:10px 65px 0px 0px;
+                }
+                .chaseui-icon {
+					border-right: solid rgba(255, 255, 255, 0.5) 1px;
+					padding-right: 15px;
+					margin: 10px;
 				}
 			}
 		}
@@ -225,6 +235,9 @@ $headingColor: #002d62;
                     text-align: left;
 				    .chaseui-icon {
                         border:none !important;
+                        padding:15px;
+                        margin:0px;
+
                     }
                     span{
                         display:none;

@@ -525,7 +525,7 @@ header {
   background-image: url("../images/header_desktop_full_no_logo.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position-x: right;
+  background-position: top right;
 }
 /* line 21, ../sass/_header.scss */
 header h1 {

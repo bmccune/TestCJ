@@ -57,7 +57,7 @@ $(function(){
 	   verticalScrolling: true,
         responsive: true
    });
-     $('#section2').stellar();
+    $('#section2').stellar();
     isVoiceOpen = false;
 	animationDone = false;
 	$mobileVoice = $(".mobilevoice"),
@@ -85,6 +85,11 @@ $(function(){
 		event.preventDefault();
 		window.open('amazon-signin.html');
 		prefill();
+		$('body').scrollTo(pageheight, 800 );
+	});
+    $('button#step1, button.chaseui-button-chase, button.chaseui-button-google').on("click", function(event){
+        var pageheight = parseInt($('.chaseui-pagebody').css('height').replace(/[^-\d\.]/g, ''));
+		event.preventDefault();
 		$('body').scrollTo(pageheight, 800 );
 	});
 	$('button#step4').on("click", function(event){

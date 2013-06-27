@@ -87,10 +87,15 @@
                 color: #000; 
             } 
         }
+        input[type="checkbox"]{
+            margin-right:10px;
+        }
         ul{
             font-size:0.8em;
             color:#43444E;
             clear:both;
+            margin-left:3%;
+            padding-left:0px;
                li{
                     margin-bottom:5px;
                 }
@@ -146,13 +151,13 @@
 
 
 @include at-breakpoint($mini) {
-#step4{
-        top:125px;
+    #step4{
+        top:450px;
         @include span-columns(5,5);
-    @include isolate(1);
+        @include isolate(1);
     }
     #voice5{
-display:none;
+        display:none;
     }
     .help{
         margin-left:20px;
@@ -176,7 +181,7 @@ display:none;
         }
         form{
             ul{
-                font-size:0.6em;
+                font-size:1em;
                 padding-left:21px;
                 li{
                     margin-bottom:5px;
@@ -189,7 +194,7 @@ display:none;
                 width:100%;
             }
             h3{
-                font-size:1.625em;
+                font-size:2em;
                 margin-bottom:20px;
             }
             .account, .password{
@@ -371,10 +376,10 @@ display:none;
 			font-size: 15px;
 		}
 		input {
-			@include span-columns(4,6);
+			@include span-columns(5,6);
 			border-radius:0;
             border:none;
-            padding:8px;
+            padding:2%;
             color:#000;
             margin:0px 0px;
             background-color:rgba(255,255,255,1);
@@ -396,14 +401,14 @@ display:none;
 		}
 		.chaseui-search {
 			background-color: rgba(0, 132, 203, 1);			
-			padding: 10px 15px 2px;
+			padding: 7px 8px 8px;
 			height: 24px;
 			display: inline-block;
 			i:before {
 				font-family: "Chase";
 				content: "\e00c";
 				color: #fff;
-				font-size: 40px;
+				font-size: 1.6em;
 			}
 		}
 	}
@@ -446,10 +451,68 @@ display:none;
             font-size:0.4em;
         }
     }
+    #voice6{
+        display:none;
+    }
+    #form6{
+        @include span-columns(5,5);
+        @include isolate(1);
+	    @include pad(0,0);
+        top:100px;
+        font-size:0.6em;
+        .chaseui-carddetails{
+            pading-bottom:20px;
+            margin-bottom:20px;
+            h3{
+                font-size:2em;
+                margin:20px 20px 0px;
+                text-align:left;
+            }
+            p.credit-limit{
+                font-size:1.7em;
+                text-align:left;
+                margin-left:20px;
+                margin-top:5px;
+            }
+            p.agreement{
+                font-size:1.1em;
+                text-align:left;
+                margin-left:23px;
+                margin-top:10px;
+            }
+        }
+        .chaseui-shop{
+            font-size:2em;
+            margin-left:20px;
+            margin-bottom:50px;
+            i{
+                font-size:0.5em;
+            }
+            .chaseui-search{
+                margin-left:-10px;
+            }
+            h4{
+                font-size:1em;
+            }
+            .chaseui-partners img{
+                width:110px;
+            }
+            input{
+                @include span-columns(4,5);
+                font-size:0.8em;
+                padding:4% 2%;
+            }
+        }
+    }
     #form5{
         @include span-columns(5 omega,5);
+        font-size:0.6em;
+        form{
+            padding:10px;
+
+        }
         h3{
-            font-size:1.8em;
+            font-size:2em;
         }
         p{
             &.pone{
